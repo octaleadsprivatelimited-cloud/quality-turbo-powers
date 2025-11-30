@@ -3,8 +3,10 @@ import { ArrowRight } from "lucide-react";
 import service1 from "@/assets/service-1.jpg";
 import service2 from "@/assets/service-2.jpg";
 import service3 from "@/assets/service-3.jpg";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const ServicesSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const services = [
     {
       title: "Field Support & Engineering Services",
@@ -25,7 +27,7 @@ const ServicesSection = () => {
 
   return (
     <section id="services" className="py-20 bg-muted">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4" ref={ref}>
         <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-16 uppercase">
           Our Services
         </h2>
@@ -33,7 +35,10 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-background rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105"
+              className={`bg-background rounded-lg shadow-lg overflow-hidden hover-lift transition-all duration-700 ${
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              }`}
+              style={{ transitionDelay: `${index * 150}ms` }}
             >
               <img 
                 src={service.image} 
