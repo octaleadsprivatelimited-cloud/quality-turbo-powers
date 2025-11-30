@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const WelcomeSection = () => {
   return (
@@ -16,8 +17,9 @@ const WelcomeSection = () => {
             team who are capable of facing any challenging projects and execute them successfully within 
             a stipulated time.
           </p>
-          <Button variant="default" size="lg" className="bg-accent hover:bg-accent/90">
+          <Button variant="default" size="lg" className="bg-accent hover:bg-accent/90 gap-2">
             View Details
+            <ArrowRight size={20} />
           </Button>
         </div>
       </div>

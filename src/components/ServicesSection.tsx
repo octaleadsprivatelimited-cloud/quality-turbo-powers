@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import service1 from "@/assets/service-1.jpg";
 import service2 from "@/assets/service-2.jpg";
 import service3 from "@/assets/service-3.jpg";
@@ -46,8 +47,9 @@ const ServicesSection = () => {
                 <p className="text-foreground/70 mb-6 leading-relaxed">
                   {service.description}
                 </p>
-                <Button variant="outline" className="w-full">
+                <Button variant="outline" className="w-full gap-2 group">
                   Read More
+                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>
             </div>
