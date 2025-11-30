@@ -1,11 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const WelcomeSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
     <section id="company" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-5xl">
+        <div 
+          ref={ref}
+          className={`max-w-5xl transition-all duration-700 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 uppercase">
             Welcome to Quality Turbo Power Services
           </h2>

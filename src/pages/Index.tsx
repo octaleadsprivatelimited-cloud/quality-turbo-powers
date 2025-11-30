@@ -7,6 +7,7 @@ import ServicedUnitsSection from "@/components/ServicedUnitsSection";
 import ServicesSection from "@/components/ServicesSection";
 import IndustriesSection from "@/components/IndustriesSection";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <ServicesSection />
       <IndustriesSection />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import { Factory, Zap, Flame, Building2, Container, Cog } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const IndustriesSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const industries = [
     {
       icon: Zap,
@@ -36,7 +38,7 @@ const IndustriesSection = () => {
 
   return (
     <section className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4" ref={ref}>
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 uppercase">
             Industries We Serve
@@ -51,7 +53,10 @@ const IndustriesSection = () => {
             return (
               <div 
                 key={index}
-                className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"
+                className={`bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-all duration-700 ${
+                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                }`}
+                style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="bg-accent/10 text-accent w-16 h-16 rounded-lg flex items-center justify-center mb-4">
                   <Icon size={32} />
