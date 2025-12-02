@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#1a2c65"/>
+  
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <!-- Gradient orbs -->
+  <circle cx="200" cy="150" r="200" fill="rgba(59,130,246,0.15)"/>
+  <circle cx="1000" cy="500" r="250" fill="rgba(59,130,246,0.1)"/>
+  
+  <!-- Logo box -->
+  <rect x="100" y="250" width="80" height="80" rx="16" fill="#3b82f6"/>
+  <text x="140" y="305" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700" fill="white">Q</text>
+  
+  <!-- Company name -->
+  <text x="200" y="280" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="700" fill="white">Quality Turbo Power</text>
+  <text x="200" y="325" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="500" fill="rgba(255,255,255,0.6)" letter-spacing="4">SERVICES</text>
+  
+  <!-- Tagline -->
+  <text x="100" y="420" font-family="Inter, Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.8)">A Complete Solution for Rotating Equipments</text>
+  
+  <!-- Certifications -->
+  <text x="100" y="480" font-family="Inter, Arial, sans-serif" font-size="16" fill="#3b82f6">ISO 9001:2015 | ISO 14001:2015 | ISO 45001:2018 Certified</text>
+  
+  <!-- Contact -->
+  <text x="100" y="550" font-family="Inter, Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.6)">📞 +91 94921 21315  |  📧 qualityturboservices@gmail.com</text>
+</svg>
+

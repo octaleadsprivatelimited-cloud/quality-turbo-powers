@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Premium Design System */
 
 @layer base {
   :root {
@@ -26,7 +24,7 @@ All colors MUST be HSL.
     --muted: 215 20% 95%;
     --muted-foreground: 215 15% 45%;
 
-    --accent: 25 95% 53%;
+    --accent: 217 91% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -36,11 +34,11 @@ All colors MUST be HSL.
     --input: 215 20% 88%;
     --ring: 215 85% 16%;
 
-    --radius: 0.25rem;
+    --radius: 0.5rem;
 
     --industrial-navy: 215 85% 16%;
     --industrial-steel: 215 15% 45%;
-    --industrial-amber: 25 95% 53%;
+    --industrial-blue: 217 91% 60%;
     --industrial-light: 215 20% 95%;
   }
 
@@ -63,7 +61,7 @@ All colors MUST be HSL.
     --muted: 215 25% 22%;
     --muted-foreground: 215 15% 65%;
 
-    --accent: 25 95% 53%;
+    --accent: 217 91% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
@@ -85,19 +83,77 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased font-medium;
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-400;
+  }
+}
+
+@layer components {
+  /* Glass effect */
+  .glass {
+    @apply bg-white/10 backdrop-blur-xl border border-white/20;
+  }
+
+  .glass-dark {
+    @apply bg-black/10 backdrop-blur-xl border border-black/10;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-600;
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-xl;
+  }
+
+  /* Button glow */
+  .btn-glow {
+    @apply relative overflow-hidden;
+  }
+
+  .btn-glow::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full;
+    animation: shimmer 2s infinite;
   }
 }
 
 @layer utilities {
+  /* Hover effects */
   .hover-lift {
-    @apply transition-transform duration-300 hover:-translate-y-2;
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-lg;
   }
 
   .hover-scale {
     @apply transition-transform duration-300 hover:scale-105;
   }
 
+  .hover-glow {
+    @apply transition-shadow duration-300 hover:shadow-lg hover:shadow-blue-500/20;
+  }
+
+  /* Animation utilities */
   .animate-on-scroll {
     @apply opacity-0 translate-y-10 transition-all duration-700;
   }
@@ -105,4 +161,151 @@ All colors MUST be HSL.
   .animate-on-scroll.visible {
     @apply opacity-100 translate-y-0;
   }
+
+  /* Text utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Gradient backgrounds */
+  .bg-grid-pattern {
+    background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  /* Line clamp */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/* Keyframe animations */
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.5s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Stagger animations */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.6s; }
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+/* Selection styling */
+::selection {
+  @apply bg-blue-500/30 text-slate-900;
+}
+
+/* Focus styles */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-blue-500;
+}
+
+/* Smooth image loading */
+img {
+  @apply transition-opacity duration-300;
+}
+
+img[loading] {
+  @apply opacity-0;
+}
+
+img:not([loading]) {
+  @apply opacity-100;
 }
