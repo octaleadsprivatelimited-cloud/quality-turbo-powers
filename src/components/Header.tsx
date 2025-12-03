@@ -51,11 +51,11 @@ const Header = () => {
         <div className="container mx-auto px-6 md:px-12 lg:px-20">
           <div className="flex items-center justify-between text-xs">
             <div className="flex items-center gap-5">
-              <a href="tel:+919492121315" className="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                <a href="tel:+919492121315" className="flex items-center gap-1.5 hover:text-[#72c530] transition-colors">
                 <Phone className="w-3 h-3" />
                 <span>+91 94921 21315</span>
               </a>
-              <a href="mailto:qualityturboservices@gmail.com" className="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                <a href="mailto:qualityturboservices@gmail.com" className="flex items-center gap-1.5 hover:text-[#72c530] transition-colors">
                 <Mail className="w-3 h-3" />
                 <span>qualityturboservices@gmail.com</span>
               </a>
@@ -74,7 +74,7 @@ const Header = () => {
             ? 'shadow-lg shadow-slate-900/20' 
             : ''
         }`}
-        style={{ backgroundColor: '#1a2c65' }}
+        style={{ backgroundColor: '#283852' }}
       >
         <div className="container mx-auto px-6 md:px-12 lg:px-20">
           <div className="flex items-center justify-between h-14 lg:h-16">
@@ -119,7 +119,7 @@ const Header = () => {
               <Link to="/contact">
                 <Button 
                   size="sm"
-                  className="bg-white hover:bg-white/90 text-[#1a2c65] rounded-full px-5 h-9 text-sm font-semibold shadow-md transition-all hover:scale-105"
+                  className="bg-white hover:bg-white/90 text-[#283852] rounded-full px-5 h-9 text-sm font-semibold shadow-md transition-all hover:scale-105"
                 >
                   <Phone className="w-4 h-4 mr-2" />
                   Get Quote
@@ -164,13 +164,13 @@ const Header = () => {
         >
           {/* Menu Header */}
           <div className="flex items-center justify-between p-4 border-b border-slate-100">
-            <span className="text-[#1a2c65] font-semibold">Menu</span>
+            <span className="text-[#283852] font-semibold">Menu</span>
             <button
               onClick={() => setMobileMenuOpen(false)}
               className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-100 hover:bg-slate-200 transition-colors"
               aria-label="Close menu"
             >
-              <X className="w-4 h-4 text-[#1a2c65]" />
+              <X className="w-4 h-4 text-[#283852]" />
             </button>
           </div>
 
@@ -184,8 +184,8 @@ const Header = () => {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`flex items-center justify-between px-4 py-3 rounded-xl transition-all font-medium ${
                     isActive(link.href)
-                      ? 'text-[#1a2c65] bg-blue-50'
-                      : 'text-slate-600 hover:text-[#1a2c65] hover:bg-slate-50'
+                      ? 'text-[#283852] bg-[#72c530]/10'
+                      : 'text-slate-600 hover:text-[#283852] hover:bg-slate-50'
                   }`}
                 >
                   {link.label}
@@ -200,8 +200,8 @@ const Header = () => {
                 href="tel:+919492121315" 
                 className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600"
               >
-                <div className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center">
-                  <Phone className="w-4 h-4 text-[#1a2c65]" />
+                <div className="w-8 h-8 bg-[#72c530]/10 rounded-lg flex items-center justify-center">
+                  <Phone className="w-4 h-4 text-[#283852]" />
                 </div>
                 <span>24/7 Support Available</span>
               </a>
@@ -209,8 +209,8 @@ const Header = () => {
                 href="mailto:qualityturboservices@gmail.com" 
                 className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600"
               >
-                <div className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center">
-                  <Mail className="w-4 h-4 text-[#1a2c65]" />
+                <div className="w-8 h-8 bg-[#72c530]/10 rounded-lg flex items-center justify-center">
+                  <Mail className="w-4 h-4 text-[#283852]" />
                 </div>
                 <span className="text-xs">qualityturboservices@gmail.com</span>
               </a>
@@ -218,14 +218,14 @@ const Header = () => {
                 <a 
                   href="/brochure.pdf" 
                   download="QTPS-Brochure.pdf"
-                  className="inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-[#1a2c65] border border-slate-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-[#283852] border border-slate-200 rounded-xl hover:border-[#72c530] hover:bg-[#72c530]/10 transition-all"
                 >
                   <Download className="w-4 h-4" />
                   Download Brochure
                 </a>
                 <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
                   <Button 
-                    className="w-full bg-[#1a2c65] hover:bg-[#1a2c65]/90 text-white font-semibold rounded-xl"
+                    className="w-full bg-[#283852] hover:bg-[#283852]/90 text-white font-semibold rounded-xl"
                   >
                     <Phone className="w-4 h-4 mr-2" />
                     Get Quote

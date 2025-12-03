@@ -21,14 +21,14 @@ const HeroSection = () => {
           <div>
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/30 rounded-full px-4 py-1.5 mb-4">
-              <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+              <span className="w-2 h-2 bg-[#72c530] rounded-full animate-pulse"></span>
               <span className="text-white text-sm font-medium">Quality Turbo Power Services</span>
             </div>
 
             {/* Heading */}
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-4 leading-tight">
               Excellence in
-              <span className="block text-blue-400">Turbine Services</span>
+              <span className="block text-[#72c530]">Turbine Services</span>
             </h1>
 
             {/* Description */}
@@ -39,7 +39,7 @@ const HeroSection = () => {
             {/* Buttons */}
             <div className="flex flex-wrap gap-3 mb-8">
               <Link to="/services">
-                <Button className="bg-blue-500 hover:bg-blue-600 text-white h-10 px-6 text-sm font-semibold rounded-lg">
+                <Button className="bg-[#72c530] hover:bg-[#72c530]/90 text-white h-10 px-6 text-sm font-semibold rounded-lg">
                   Explore Services
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -70,7 +70,7 @@ const HeroSection = () => {
           {/* Right - Card */}
           <div className="hidden lg:block">
             <div className="bg-white/15 backdrop-blur-sm border border-white/30 rounded-xl p-6 max-w-xs ml-auto">
-              <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[#283852] rounded-lg flex items-center justify-center mb-4">
                 <Zap className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">Quick Response</h3>
@@ -79,13 +79,13 @@ const HeroSection = () => {
               </p>
               <div className="flex items-center gap-3 pt-3 border-t border-white/30">
                 <div className="flex -space-x-2">
-                  <div className="w-7 h-7 rounded-full bg-blue-600 border-2 border-white/30 flex items-center justify-center">
+                  <div className="w-7 h-7 rounded-full bg-[#283852] border-2 border-white/30 flex items-center justify-center">
                     <Users className="w-3.5 h-3.5 text-white" />
                   </div>
-                  <div className="w-7 h-7 rounded-full bg-blue-500 border-2 border-white/30 flex items-center justify-center">
+                  <div className="w-7 h-7 rounded-full bg-[#72c530] border-2 border-white/30 flex items-center justify-center">
                     <Users className="w-3.5 h-3.5 text-white" />
                   </div>
-                  <div className="w-7 h-7 rounded-full bg-blue-400 border-2 border-white/30 flex items-center justify-center">
+                  <div className="w-7 h-7 rounded-full bg-[#283852] border-2 border-white/30 flex items-center justify-center">
                     <Users className="w-3.5 h-3.5 text-white" />
                   </div>
                 </div>

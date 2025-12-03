@@ -46,23 +46,23 @@ const TroubleshootingOverhauls = () => {
           <div className="absolute inset-0 bg-slate-900/60" />
         </div>
         
-        <div className="absolute top-10 left-1/4 w-48 h-48 bg-blue-500/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-10 right-1/4 w-48 h-48 bg-blue-500/15 rounded-full blur-3xl" />
+        <div className="absolute top-10 left-1/4 w-48 h-48 bg-[#283852]/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-10 right-1/4 w-48 h-48 bg-[#283852]/15 rounded-full blur-3xl" />
         
         <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-blue-500/20 border border-blue-500/30 text-blue-400 text-xs font-semibold px-3 py-1.5 rounded-full mb-4">
+            <div className="inline-flex items-center gap-2 bg-[#283852]/20 border border-[#283852]/30 text-[#72c530] text-xs font-semibold px-3 py-1.5 rounded-full mb-4">
               <Sparkles className="w-3 h-3" />
               Our Services
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-              Troubleshooting & <span className="text-blue-400">Overhauls</span>
+              Troubleshooting & <span className="text-[#72c530]">Overhauls</span>
             </h1>
             <p className="text-lg text-white/70 mb-6">
               Complete technical and operational problem-solving solutions for power plant equipment with expert diagnostic capabilities.
             </p>
             <Link to="/contact">
-              <Button className="bg-blue-500 hover:bg-blue-600 text-white rounded-xl h-12 px-8 shadow-lg shadow-blue-500/25">
+              <Button className="bg-[#283852] hover:bg-[#72c530] text-white rounded-xl h-12 px-8 shadow-lg shadow-[#283852]/25">
                 <Phone className="w-4 h-4 mr-2" />
                 Get a Quote
               </Button>
@@ -82,7 +82,7 @@ const TroubleshootingOverhauls = () => {
               {/* Left Content */}
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+                  <div className="w-14 h-14 bg-gradient-to-br from-[#283852] to-[#72c530] rounded-xl flex items-center justify-center shadow-lg">
                     <Wrench className="w-7 h-7 text-white" />
                   </div>
                   <div>
@@ -104,7 +104,7 @@ const TroubleshootingOverhauls = () => {
                 <div className="grid grid-cols-2 gap-3">
                   {features.map((feature, index) => (
                     <div key={index} className="flex items-center gap-2 bg-slate-50 rounded-lg px-4 py-3">
-                      <CheckCircle2 className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-[#283852] flex-shrink-0" />
                       <span className="text-sm text-slate-700">{feature}</span>
                     </div>
                   ))}
@@ -117,8 +117,8 @@ const TroubleshootingOverhauls = () => {
                 <div className="space-y-5">
                   {services.map((item, index) => (
                     <div key={index} className="flex gap-4">
-                      <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <CheckCircle2 className="w-5 h-5 text-blue-500" />
+                      <div className="w-10 h-10 bg-[#72c530]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <CheckCircle2 className="w-5 h-5 text-[#283852]" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-slate-900">{item.title}</h4>
@@ -134,7 +134,7 @@ const TroubleshootingOverhauls = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16" style={{ backgroundColor: '#1a2c65' }}>
+      <section className="py-16" style={{ backgroundColor: '#283852' }}>
         <div className="container mx-auto px-6 md:px-12 lg:px-20">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
@@ -145,7 +145,7 @@ const TroubleshootingOverhauls = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link to="/contact">
-                <Button className="bg-white hover:bg-white/90 text-[#1a2c65] font-semibold rounded-xl h-12 px-8">
+                <Button className="bg-white hover:bg-white/90 text-[#283852] font-semibold rounded-xl h-12 px-8">
                   <Phone className="w-4 h-4 mr-2" />
                   Contact Us
                 </Button>

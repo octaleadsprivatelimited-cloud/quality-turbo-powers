@@ -7,12 +7,12 @@ const IndustriesSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   const industries = [
-    { icon: Zap, name: "Power Plants", color: "from-blue-500 to-orange-600", bg: "bg-amber-50" },
-    { icon: Factory, name: "Petrochemicals", color: "from-blue-500 to-cyan-600", bg: "bg-blue-50" },
-    { icon: Building2, name: "Steel & Cement", color: "from-blue-500 to-blue-600", bg: "bg-slate-50" },
-    { icon: Container, name: "Fertilizers", color: "from-blue-500 to-blue-600", bg: "bg-emerald-50" },
-    { icon: Flame, name: "Oil & Gas", color: "from-blue-500 to-blue-600", bg: "bg-orange-50" },
-    { icon: Cog, name: "Manufacturing", color: "from-blue-500 to-blue-600", bg: "bg-violet-50" },
+    { icon: Zap, name: "Power Plants", color: "from-[#283852] to-[#72c530]", bg: "bg-amber-50" },
+    { icon: Factory, name: "Petrochemicals", color: "from-[#283852] to-[#72c530]", bg: "bg-[#72c530]/10" },
+    { icon: Building2, name: "Steel & Cement", color: "from-[#283852] to-[#72c530]", bg: "bg-slate-50" },
+    { icon: Container, name: "Fertilizers", color: "from-[#283852] to-[#72c530]", bg: "bg-emerald-50" },
+    { icon: Flame, name: "Oil & Gas", color: "from-[#283852] to-[#72c530]", bg: "bg-orange-50" },
+    { icon: Cog, name: "Manufacturing", color: "from-[#283852] to-[#72c530]", bg: "bg-violet-50" },
   ];
 
   return (
@@ -27,7 +27,7 @@ const IndustriesSection = () => {
           {/* Header */}
           <div className="text-center mb-8">
             <div 
-              className={`inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-600 text-xs font-medium px-4 py-1.5 rounded-full mb-3 transition-all duration-700 delay-100 ${
+              className={`inline-flex items-center gap-2 bg-[#72c530]/10 border border-[#72c530]/20 text-[#283852] text-xs font-medium px-4 py-1.5 rounded-full mb-3 transition-all duration-700 delay-100 ${
                 isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
               }`}
             >
@@ -40,7 +40,7 @@ const IndustriesSection = () => {
               }`}
             >
               Powering Diverse{" "}
-              <span className="text-blue-600">
+              <span className="text-[#72c530]">
                 Industrial Sectors
               </span>
             </h2>
@@ -60,7 +60,7 @@ const IndustriesSection = () => {
               return (
                 <div 
                   key={index}
-                  className={`group relative bg-slate-50 rounded-xl p-4 border border-slate-100 hover:border-blue-300 hover:bg-blue-50 hover:shadow-lg transition-all duration-500 cursor-pointer ${
+                  className={`group relative bg-slate-50 rounded-xl p-4 border border-slate-100 hover:border-[#72c530] hover:bg-[#72c530]/10 hover:shadow-lg transition-all duration-500 cursor-pointer ${
                     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                   }`}
                   style={{ transitionDelay: `${400 + index * 80}ms` }}
@@ -69,13 +69,13 @@ const IndustriesSection = () => {
                     <div className={`w-10 h-10 bg-gradient-to-br ${industry.color} rounded-lg flex items-center justify-center mb-3 shadow-md group-hover:scale-110 group-hover:shadow-lg transition-all duration-300`}>
                       <Icon className="w-5 h-5 text-white" />
                     </div>
-                    <h3 className="font-medium text-xs text-slate-700 group-hover:text-blue-600 transition-colors">
+                    <h3 className="font-medium text-xs text-slate-700 group-hover:text-[#72c530] transition-colors">
                       {industry.name}
                     </h3>
                   </div>
                   
                   {/* Bottom accent line */}
-                  <div className="absolute bottom-0 left-3 right-3 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 rounded-full" />
+                  <div className="absolute bottom-0 left-3 right-3 h-0.5 bg-gradient-to-r from-[#283852] to-[#72c530] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 rounded-full" />
                 </div>
               );
             })}
@@ -88,7 +88,7 @@ const IndustriesSection = () => {
             }`}
           >
             <Link to="/industries">
-              <Button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-lg h-10 px-6 text-sm shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-300 hover:-translate-y-0.5">
+              <Button className="bg-gradient-to-r from-[#283852] to-[#72c530] hover:from-[#283852] hover:to-[#72c530]/90 text-white rounded-lg h-10 px-6 text-sm shadow-lg shadow-[#72c530]/25 hover:shadow-xl hover:shadow-[#72c530]/30 transition-all duration-300 hover:-translate-y-0.5">
                 View All Industries
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
