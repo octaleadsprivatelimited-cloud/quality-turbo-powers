@@ -37,13 +37,11 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="lg:col-span-1">
               <Link to="/" className="inline-block mb-4 group">
-                <div className="bg-white rounded-lg p-1.5 inline-block">
-                  <img 
-                    src={logoImg} 
-                    alt="Quality Turbo Power Services" 
-                    className="h-10 w-auto group-hover:scale-105 transition-transform"
-                  />
-                </div>
+                <img 
+                  src={logoImg} 
+                  alt="Quality Turbo Power Services" 
+                  className="h-12 w-auto max-h-16 object-contain group-hover:scale-105 transition-transform"
+                />
               </Link>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 A Complete Solution for Rotating Equipments. Providing world-class services since 2018.

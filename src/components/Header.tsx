@@ -72,21 +72,19 @@ const Header = () => {
         className={`sticky top-0 z-50 transition-all duration-300 ${
           scrolled 
             ? 'shadow-lg shadow-slate-900/20' 
-            : ''
+            : 'border-b border-slate-200'
         }`}
-        style={{ backgroundColor: '#283852' }}
+        style={{ backgroundColor: '#e8ecf2' }}
       >
         <div className="container mx-auto px-6 md:px-12 lg:px-20">
           <div className="flex items-center justify-between h-14 lg:h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2 group">
-              <div className="bg-white rounded-lg p-1">
-                <img 
-                  src={logoImg} 
-                  alt="Quality Turbo Power Services" 
-                  className="h-8 lg:h-10 w-auto group-hover:scale-105 transition-transform"
-                />
-              </div>
+            <Link to="/" className="flex items-center gap-2 group py-2">
+              <img 
+                src={logoImg} 
+                alt="Quality Turbo Power Services" 
+                className="h-14 lg:h-16 w-auto max-w-[200px] lg:max-w-[240px] object-contain group-hover:scale-105 transition-transform"
+              />
             </Link>
             
             {/* Desktop Navigation */}
@@ -97,8 +95,8 @@ const Header = () => {
                   to={link.href} 
                   className={`px-4 py-1.5 text-sm font-medium rounded-md transition-all ${
                     isActive(link.href)
-                      ? 'text-white bg-white/20'
-                      : 'text-white/80 hover:text-white hover:bg-white/10'
+                      ? 'text-[#283852] bg-[#72c530]/10'
+                      : 'text-slate-700 hover:text-[#283852] hover:bg-slate-50'
                   }`}
                 >
                   {link.label}
@@ -111,7 +109,7 @@ const Header = () => {
               <a 
                 href="/brochure.pdf" 
                 download="QTPS-Brochure.pdf"
-                className="inline-flex items-center gap-2 px-4 h-9 text-sm font-medium text-white/80 hover:text-white border border-white/30 hover:border-white/50 rounded-full transition-all"
+                className="inline-flex items-center gap-2 px-4 h-9 text-sm font-medium text-slate-700 hover:text-[#283852] border border-slate-300 hover:border-[#72c530] rounded-full transition-all"
               >
                 <Download className="w-4 h-4" />
                 Brochure
@@ -119,7 +117,7 @@ const Header = () => {
               <Link to="/contact">
                 <Button 
                   size="sm"
-                  className="bg-white hover:bg-white/90 text-[#283852] rounded-full px-5 h-9 text-sm font-semibold shadow-md transition-all hover:scale-105"
+                  className="bg-[#72c530] hover:bg-[#72c530]/90 text-white rounded-full px-5 h-9 text-sm font-semibold shadow-md transition-all hover:scale-105"
                 >
                   <Phone className="w-4 h-4 mr-2" />
                   Get Quote
@@ -129,14 +127,14 @@ const Header = () => {
 
             {/* Mobile Menu Button */}
             <button
-              className="lg:hidden w-8 h-8 flex items-center justify-center rounded-md bg-white/10 hover:bg-white/20 transition-colors"
+              className="lg:hidden w-8 h-8 flex items-center justify-center rounded-md bg-slate-100 hover:bg-slate-200 transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? (
-                <X className="w-4 h-4 text-white" />
+                <X className="w-4 h-4 text-[#283852]" />
               ) : (
-                <Menu className="w-4 h-4 text-white" />
+                <Menu className="w-4 h-4 text-[#283852]" />
               )}
             </button>
           </div>
