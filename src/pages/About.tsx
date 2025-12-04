@@ -61,7 +61,7 @@ const About = () => {
 
   const highlights = [
     "Overhauls & Refurbishments",
-    "Spares & Services", 
+    "Spare Parts Supply & Services", 
     "Repairs & Retrofits",
     "Erection & Commissioning",
     "Re-Engineering Solutions",

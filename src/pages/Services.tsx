@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Button } from "@/components/ui/button";
-import { Wrench, Settings, RefreshCw, Cog, CheckCircle2, ArrowRight, Sparkles, Factory, Zap, Box, Flame, Building2, Wheat } from "lucide-react";
+import { Wrench, Settings, RefreshCw, Cog, CheckCircle2, ArrowRight, Sparkles, Factory, Zap, Box, Flame, Building2, Wheat, Package } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
@@ -53,6 +53,15 @@ const Services = () => {
       image: maintenanceImg,
       color: "from-[#283852] to-[#72c530]",
       link: "/services/operation-maintenance"
+    },
+    {
+      icon: Package,
+      title: "Spare Parts Supply",
+      description: "Comprehensive spare parts supply for turbines, compressors, and rotating equipment with genuine OEM parts.",
+      features: ["Genuine Parts", "Quick Delivery", "Wide Inventory", "Technical Support"],
+      image: repairImg,
+      color: "from-[#283852] to-[#72c530]",
+      link: "/services"
     }
   ];
 
@@ -71,7 +80,7 @@ const Services = () => {
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Helmet>
         <title>Our Services | Quality Turbo Power Services - Turbine Solutions</title>
-        <meta name="description" content="Comprehensive turbine services including erection & commissioning, troubleshooting & overhauls, repair & reconditioning, and operation & maintenance. Expert solutions for rotating equipment." />
+        <meta name="description" content="Comprehensive turbine services including erection & commissioning, troubleshooting & overhauls, repair & reconditioning, operation & maintenance, and spare parts supply. Expert solutions for rotating equipment." />
         <meta name="keywords" content="turbine erection, turbine commissioning, turbine overhaul, turbine repair, turbine maintenance, rotating equipment services, steam turbine services, gas turbine services, power plant maintenance" />
         <meta property="og:title" content="Our Services | Quality Turbo Power Services" />
         <meta property="og:description" content="Comprehensive turbine services - erection, commissioning, overhauls, repairs, and maintenance for rotating equipment." />

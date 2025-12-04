@@ -24,6 +24,7 @@ const RepairReconditioning = () => {
     { title: "Advanced Machining", desc: "CNC machining and precision grinding for critical components" },
     { title: "Welding & Fabrication", desc: "Specialized welding techniques for high-temperature alloys" },
     { title: "Balancing Services", desc: "Dynamic balancing to OEM specifications" },
+    { title: "Spare Parts Supply", desc: "Genuine OEM spare parts for quick replacement and minimal downtime" },
     { title: "Quality Assurance", desc: "Comprehensive testing and certification" }
   ];
 

@@ -51,9 +51,9 @@ const ServicesFacilitiesSection = () => {
                   <img 
                     src={service.image} 
                     alt={service.title} 
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-105 contrast-105" 
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/20" />
                   <div className="relative p-6 min-h-[280px] flex flex-col justify-end">
                     <div className="w-12 h-12 bg-[#72c530] rounded-xl flex items-center justify-center mb-4">
                       <Icon className="w-6 h-6 text-white" />
