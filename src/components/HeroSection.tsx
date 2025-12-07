@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Users } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/Turbine.avif";
+import heroImage from "@/assets/hero-background.jpg";
 
 const HeroSection = () => {
   return (
@@ -21,14 +21,14 @@ const HeroSection = () => {
           <div>
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/30 rounded-full px-4 py-1.5 mb-4">
-              <span className="w-2 h-2 bg-[#72c530] rounded-full animate-pulse"></span>
+              <span className="w-2 h-2 bg-[#9ee055] rounded-full animate-pulse"></span>
               <span className="text-white text-sm font-medium">Quality Turbo Power Services</span>
             </div>
 
             {/* Heading */}
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-4 leading-tight">
               Excellence in
-              <span className="block text-[#72c530]">Turbine Services</span>
+              <span className="block text-[#9ee055]">Turbine Services</span>
             </h1>
 
             {/* Description */}
@@ -39,7 +39,7 @@ const HeroSection = () => {
             {/* Buttons */}
             <div className="flex flex-wrap gap-3 mb-8">
               <Link to="/services">
-                <Button className="bg-[#72c530] hover:bg-[#72c530]/90 text-white h-10 px-6 text-sm font-semibold rounded-lg">
+                <Button className="bg-[#9ee055] hover:bg-[#9ee055]/90 text-white h-10 px-6 text-sm font-semibold rounded-lg">
                   Explore Services
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -82,7 +82,7 @@ const HeroSection = () => {
                   <div className="w-7 h-7 rounded-full bg-[#283852] border-2 border-white/30 flex items-center justify-center">
                     <Users className="w-3.5 h-3.5 text-white" />
                   </div>
-                  <div className="w-7 h-7 rounded-full bg-[#72c530] border-2 border-white/30 flex items-center justify-center">
+                  <div className="w-7 h-7 rounded-full bg-[#9ee055] border-2 border-white/30 flex items-center justify-center">
                     <Users className="w-3.5 h-3.5 text-white" />
                   </div>
                   <div className="w-7 h-7 rounded-full bg-[#283852] border-2 border-white/30 flex items-center justify-center">

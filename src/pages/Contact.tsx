@@ -38,25 +38,25 @@ const Contact = () => {
       icon: Phone,
       title: "Phone",
       details: ["+91 9492121315", "+91 9492125536"],
-      color: "from-[#283852] to-[#72c530]"
+      color: "from-[#283852] to-[#9ee055]"
     },
     {
       icon: Mail,
       title: "Email",
       details: ["qualityturboservices@gmail.com"],
-      color: "from-[#283852] to-[#72c530]"
+      color: "from-[#283852] to-[#9ee055]"
     },
     {
       icon: MapPin,
       title: "Address",
       details: ["H.No. 7-66/1, Sai Ram Colony", "Patancheru, Hyderabad - 509 319"],
-      color: "from-[#283852] to-[#72c530]"
+      color: "from-[#283852] to-[#9ee055]"
     },
     {
       icon: Clock,
       title: "Working Hours",
       details: ["Mon - Sat: 9AM - 6PM", "Emergency: 24/7"],
-      color: "from-[#283852] to-[#72c530]"
+      color: "from-[#283852] to-[#9ee055]"
     }
   ];
 
@@ -97,7 +97,7 @@ const Contact = () => {
               Get in Touch
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 leading-tight">
-              Contact <span className="bg-gradient-to-r from-[#72c530] to-[#283852] bg-clip-text text-transparent">Us</span>
+              Contact <span className="bg-gradient-to-r from-[#9ee055] to-[#283852] bg-clip-text text-transparent">Us</span>
             </h1>
             <p className="text-sm text-white/70">
               Get in touch with our team for inquiries, quotes, or technical support.
@@ -148,7 +148,7 @@ const Contact = () => {
             <div className="lg:col-span-3">
               <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg shadow-slate-200/50 border border-slate-100">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#283852] to-[#72c530] rounded-xl flex items-center justify-center">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#283852] to-[#9ee055] rounded-xl flex items-center justify-center">
                     <MessageSquare className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -230,7 +230,7 @@ const Contact = () => {
                   </div>
                   <Button 
                     type="submit" 
-                    className="w-full bg-gradient-to-r from-[#283852] to-[#72c530] hover:from-[#72c530] hover:to-blue-700 text-white rounded-xl h-12 font-semibold shadow-lg shadow-[#283852]/25"
+                    className="w-full bg-gradient-to-r from-[#283852] to-[#9ee055] hover:from-[#9ee055] hover:to-blue-700 text-white rounded-xl h-12 font-semibold shadow-lg shadow-[#283852]/25"
                   >
                     <Send className="w-4 h-4 mr-2" />
                     Send Message
@@ -267,7 +267,7 @@ const Contact = () => {
                 <div className="relative">
                   <div className="flex items-center gap-2 mb-3">
                     <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-                    <span className="text-[#72c530] text-xs font-semibold uppercase tracking-wide">24/7 Available</span>
+                    <span className="text-[#9ee055] text-xs font-semibold uppercase tracking-wide">24/7 Available</span>
                   </div>
                   <h3 className="text-lg font-bold text-white mb-2">Emergency Support</h3>
                   <p className="text-white/60 text-sm mb-4">
@@ -277,7 +277,7 @@ const Contact = () => {
                     href="tel:+919492121315" 
                     className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-colors border border-white/10"
                   >
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#283852] to-[#72c530] rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#283852] to-[#9ee055] rounded-xl flex items-center justify-center">
                       <Phone className="w-6 h-6 text-white" />
                     </div>
                     <div>

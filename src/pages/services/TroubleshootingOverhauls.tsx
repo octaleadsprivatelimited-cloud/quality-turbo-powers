@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Wrench, CheckCircle2, ArrowRight, Phone, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import troubleshootingImg from "@/assets/troubleshooting-overhauls.png";
+import troubleshootingImg from "@/assets/troubleshooting-overhauls.jpg";
 
 const TroubleshootingOverhauls = () => {
   const { ref: contentRef, isVisible: contentVisible } = useScrollAnimation();
@@ -56,18 +56,18 @@ const TroubleshootingOverhauls = () => {
         
         <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-[#283852]/20 border border-[#283852]/30 text-[#72c530] text-xs font-semibold px-3 py-1.5 rounded-full mb-4">
+            <div className="inline-flex items-center gap-2 bg-[#283852]/20 border border-[#283852]/30 text-[#9ee055] text-xs font-semibold px-3 py-1.5 rounded-full mb-4">
               <Sparkles className="w-3 h-3" />
               Our Services
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-              Troubleshooting & <span className="text-[#72c530]">Overhauls</span>
+              Troubleshooting & <span className="text-[#9ee055]">Overhauls</span>
             </h1>
             <p className="text-lg text-white/70 mb-6">
               Complete technical and operational problem-solving solutions for power plant equipment with expert diagnostic capabilities.
             </p>
             <Link to="/contact">
-              <Button className="bg-[#283852] hover:bg-[#72c530] text-white rounded-xl h-12 px-8 shadow-lg shadow-[#283852]/25">
+              <Button className="bg-[#283852] hover:bg-[#9ee055] text-white rounded-xl h-12 px-8 shadow-lg shadow-[#283852]/25">
                 <Phone className="w-4 h-4 mr-2" />
                 Get a Quote
               </Button>
@@ -87,7 +87,7 @@ const TroubleshootingOverhauls = () => {
               {/* Left Content */}
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-14 h-14 bg-gradient-to-br from-[#283852] to-[#72c530] rounded-xl flex items-center justify-center shadow-lg">
+                  <div className="w-14 h-14 bg-gradient-to-br from-[#283852] to-[#9ee055] rounded-xl flex items-center justify-center shadow-lg">
                     <Wrench className="w-7 h-7 text-white" />
                   </div>
                   <div>
@@ -126,7 +126,7 @@ const TroubleshootingOverhauls = () => {
                 <div className="space-y-5">
                   {services.map((item, index) => (
                     <div key={index} className="flex gap-4">
-                      <div className="w-10 h-10 bg-[#72c530]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <div className="w-10 h-10 bg-[#9ee055]/10 rounded-lg flex items-center justify-center flex-shrink-0">
                         <CheckCircle2 className="w-5 h-5 text-[#283852]" />
                       </div>
                       <div>

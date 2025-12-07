@@ -53,14 +53,14 @@ const Footer = () => {
                   href="mailto:qualityturboservices@gmail.com" 
                   className="flex items-center gap-3 text-white/80 hover:text-white transition-colors group"
                 >
-                  <Mail className="w-4 h-4 text-[#72c530]" />
+                  <Mail className="w-4 h-4 text-[#9ee055]" />
                   <span className="text-sm">qualityturboservices@gmail.com</span>
                 </a>
                 <a 
                   href="tel:+919492121315" 
                   className="flex items-center gap-3 text-white/80 hover:text-white transition-colors group"
                 >
-                  <Phone className="w-4 h-4 text-[#72c530]" />
+                  <Phone className="w-4 h-4 text-[#9ee055]" />
                   <span className="text-sm">+91 94921 21315</span>
                 </a>
               </div>
@@ -71,7 +71,7 @@ const Footer = () => {
                   <a 
                     key={index}
                     href="#" 
-                    className="w-9 h-9 bg-white/10 hover:bg-[#72c530] rounded-lg flex items-center justify-center transition-all"
+                    className="w-9 h-9 bg-white/10 hover:bg-[#9ee055] rounded-lg flex items-center justify-center transition-all"
                   >
                     <Icon className="w-4 h-4 text-white" />
                   </a>
@@ -146,7 +146,7 @@ const Footer = () => {
                 href="https://octaleads.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-[#72c530] hover:text-[#72c530]/80 transition-colors"
+                className="text-[#9ee055] hover:text-[#9ee055]/80 transition-colors"
               >
                 Octaleads Private Limited
               </a>

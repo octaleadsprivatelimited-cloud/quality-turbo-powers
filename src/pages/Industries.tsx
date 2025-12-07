@@ -18,42 +18,42 @@ const Industries = () => {
       name: "Power Plants",
       description: "Complete turbine services for thermal and combined cycle power generation facilities.",
       services: ["Turbine Overhauls", "Generator Services", "Boiler Maintenance", "Control Systems"],
-      color: "from-[#283852] to-[#72c530]"
+      color: "from-[#283852] to-[#9ee055]"
     },
     {
       icon: Factory,
       name: "Petrochemicals",
       description: "Specialized maintenance for refinery and petrochemical rotating equipment.",
       services: ["Compressor Services", "Pump Overhauls", "Turbo Expanders", "Reactor Maintenance"],
-      color: "from-[#283852] to-[#72c530]"
+      color: "from-[#283852] to-[#9ee055]"
     },
     {
       icon: Building2,
       name: "Steel & Cement",
       description: "Industrial turbine services for heavy manufacturing and processing plants.",
       services: ["Kiln Drive Systems", "Rolling Mill Motors", "Blower Services", "Heat Recovery"],
-      color: "from-[#283852] to-[#72c530]"
+      color: "from-[#283852] to-[#9ee055]"
     },
     {
       icon: Container,
       name: "Fertilizers",
       description: "Critical equipment maintenance for fertilizer production facilities.",
       services: ["Synthesis Gas Compressors", "Ammonia Converters", "Prilling Towers", "Steam Systems"],
-      color: "from-[#283852] to-[#72c530]"
+      color: "from-[#283852] to-[#9ee055]"
     },
     {
       icon: Flame,
       name: "Oil & Gas",
       description: "Offshore and onshore turbine maintenance and overhaul services.",
       services: ["Gas Turbines", "Centrifugal Compressors", "Pumping Stations", "Pipeline Equipment"],
-      color: "from-[#283852] to-[#72c530]"
+      color: "from-[#283852] to-[#9ee055]"
     },
     {
       icon: Cog,
       name: "Manufacturing",
       description: "Rotating equipment services for diverse manufacturing operations.",
       services: ["Paper Mill Drives", "Sugar Mill Equipment", "Textile Machinery", "General Manufacturing"],
-      color: "from-[#283852] to-[#72c530]"
+      color: "from-[#283852] to-[#9ee055]"
     },
   ];
 
@@ -87,7 +87,7 @@ const Industries = () => {
               Global Industrial Solutions
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 leading-tight">
-              Industries We <span className="bg-gradient-to-r from-[#72c530] to-[#283852] bg-clip-text text-transparent">Serve</span>
+              Industries We <span className="bg-gradient-to-r from-[#9ee055] to-[#283852] bg-clip-text text-transparent">Serve</span>
             </h1>
             <p className="text-sm text-white/70">
               Comprehensive turbine services across multiple industrial sectors worldwide.
@@ -105,7 +105,7 @@ const Industries = () => {
           >
             {/* Section Header */}
             <div className="text-center mb-12">
-              <span className="inline-flex items-center gap-2 text-[#72c530] font-semibold text-sm uppercase tracking-wide mb-3">
+              <span className="inline-flex items-center gap-2 text-[#9ee055] font-semibold text-sm uppercase tracking-wide mb-3">
                 <span className="w-8 h-px bg-[#283852]" />
                 Our Expertise
                 <span className="w-8 h-px bg-[#283852]" />
@@ -136,7 +136,7 @@ const Industries = () => {
                           <Icon className="w-7 h-7 text-white" />
                         </div>
                         <div>
-                          <h3 className="text-lg font-bold text-slate-900 group-hover:text-[#72c530] transition-colors">
+                          <h3 className="text-lg font-bold text-slate-900 group-hover:text-[#9ee055] transition-colors">
                             {industry.name}
                           </h3>
                           <p className="text-slate-500 text-sm mt-1 leading-relaxed">
@@ -192,19 +192,19 @@ const Industries = () => {
             ref={ctaRef}
             className={`max-w-2xl mx-auto text-center transition-all duration-700 ${ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-[#72c530] text-xs font-semibold px-4 py-2 rounded-full mb-4">
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-[#9ee055] text-xs font-semibold px-4 py-2 rounded-full mb-4">
               <Phone className="w-3 h-3" />
               Get in Touch
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
-              Don't See Your <span className="text-[#72c530]">Industry?</span>
+              Don't See Your <span className="text-[#9ee055]">Industry?</span>
             </h2>
             <p className="text-white/60 mb-8 text-sm">
               Contact us to discuss your specific requirements. We provide custom solutions for unique industrial applications.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link to="/contact">
-                <Button className="bg-gradient-to-r from-[#283852] to-[#72c530] hover:from-[#72c530] hover:to-blue-700 text-white font-semibold rounded-xl h-12 px-8 shadow-lg shadow-[#283852]/25">
+                <Button className="bg-gradient-to-r from-[#283852] to-[#9ee055] hover:from-[#9ee055] hover:to-blue-700 text-white font-semibold rounded-xl h-12 px-8 shadow-lg shadow-[#283852]/25">
                   <Phone className="w-4 h-4 mr-2" />
                   Contact Us
                 </Button>

@@ -51,11 +51,11 @@ const Header = () => {
         <div className="container mx-auto px-6 md:px-12 lg:px-20">
           <div className="flex items-center justify-between text-xs">
             <div className="flex items-center gap-5">
-                <a href="tel:+919492121315" className="flex items-center gap-1.5 hover:text-[#72c530] transition-colors">
+                <a href="tel:+919492121315" className="flex items-center gap-1.5 hover:text-[#9ee055] transition-colors">
                 <Phone className="w-3 h-3" />
                 <span>+91 94921 21315</span>
               </a>
-                <a href="mailto:qualityturboservices@gmail.com" className="flex items-center gap-1.5 hover:text-[#72c530] transition-colors">
+                <a href="mailto:qualityturboservices@gmail.com" className="flex items-center gap-1.5 hover:text-[#9ee055] transition-colors">
                 <Mail className="w-3 h-3" />
                 <span>qualityturboservices@gmail.com</span>
               </a>
@@ -79,11 +79,11 @@ const Header = () => {
         <div className="container mx-auto px-6 md:px-12 lg:px-20">
           <div className="flex items-center justify-between h-14 lg:h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2 group py-2">
+            <Link to="/" className="flex items-center gap-2 group">
               <img 
                 src={logoImg} 
                 alt="Quality Turbo Power Services" 
-                className="h-14 lg:h-16 w-auto max-w-[200px] lg:max-w-[240px] object-contain group-hover:scale-105 transition-transform"
+                className="h-[230px] lg:h-[346px] w-auto max-w-[280px] lg:max-w-[1440px] object-contain group-hover:scale-105 transition-transform"
               />
             </Link>
             
@@ -95,7 +95,7 @@ const Header = () => {
                   to={link.href} 
                   className={`px-4 py-1.5 text-sm font-medium rounded-md transition-all ${
                     isActive(link.href)
-                      ? 'text-[#283852] bg-[#72c530]/10'
+                      ? 'text-[#283852] bg-[#9ee055]/10'
                       : 'text-slate-700 hover:text-[#283852] hover:bg-slate-50'
                   }`}
                 >
@@ -109,7 +109,7 @@ const Header = () => {
               <a 
                 href="/brochure.pdf" 
                 download="QTPS-Brochure.pdf"
-                className="inline-flex items-center gap-2 px-4 h-9 text-sm font-medium text-slate-700 hover:text-[#283852] border border-slate-300 hover:border-[#72c530] rounded-full transition-all"
+                className="inline-flex items-center gap-2 px-4 h-9 text-sm font-medium text-slate-700 hover:text-[#283852] border border-slate-300 hover:border-[#9ee055] rounded-full transition-all"
               >
                 <Download className="w-4 h-4" />
                 Brochure
@@ -117,7 +117,7 @@ const Header = () => {
               <Link to="/contact">
                 <Button 
                   size="sm"
-                  className="bg-[#72c530] hover:bg-[#72c530]/90 text-white rounded-full px-5 h-9 text-sm font-semibold shadow-md transition-all hover:scale-105"
+                  className="bg-[#9ee055] hover:bg-[#9ee055]/90 text-white rounded-full px-5 h-9 text-sm font-semibold shadow-md transition-all hover:scale-105"
                 >
                   <Phone className="w-4 h-4 mr-2" />
                   Get Quote
@@ -182,7 +182,7 @@ const Header = () => {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`flex items-center justify-between px-4 py-3 rounded-xl transition-all font-medium ${
                     isActive(link.href)
-                      ? 'text-[#283852] bg-[#72c530]/10'
+                      ? 'text-[#283852] bg-[#9ee055]/10'
                       : 'text-slate-600 hover:text-[#283852] hover:bg-slate-50'
                   }`}
                 >
@@ -198,7 +198,7 @@ const Header = () => {
                 href="tel:+919492121315" 
                 className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600"
               >
-                <div className="w-8 h-8 bg-[#72c530]/10 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-[#9ee055]/10 rounded-lg flex items-center justify-center">
                   <Phone className="w-4 h-4 text-[#283852]" />
                 </div>
                 <span>24/7 Support Available</span>
@@ -207,7 +207,7 @@ const Header = () => {
                 href="mailto:qualityturboservices@gmail.com" 
                 className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600"
               >
-                <div className="w-8 h-8 bg-[#72c530]/10 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-[#9ee055]/10 rounded-lg flex items-center justify-center">
                   <Mail className="w-4 h-4 text-[#283852]" />
                 </div>
                 <span className="text-xs">qualityturboservices@gmail.com</span>
@@ -216,7 +216,7 @@ const Header = () => {
                 <a 
                   href="/brochure.pdf" 
                   download="QTPS-Brochure.pdf"
-                  className="inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-[#283852] border border-slate-200 rounded-xl hover:border-[#72c530] hover:bg-[#72c530]/10 transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-[#283852] border border-slate-200 rounded-xl hover:border-[#9ee055] hover:bg-[#9ee055]/10 transition-all"
                 >
                   <Download className="w-4 h-4" />
                   Download Brochure

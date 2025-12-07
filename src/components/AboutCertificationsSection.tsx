@@ -7,22 +7,22 @@ const AboutCertificationsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   const highlights = [
-    { icon: Wrench, text: "Overhauls & Refurbishments", color: "from-[#283852] to-[#72c530]" },
-    { icon: Zap, text: "Erection & Commissioning", color: "from-[#283852] to-[#72c530]" },
-    { icon: Target, text: "Repairs & Retrofits", color: "from-[#283852] to-[#72c530]" },
+    { icon: Wrench, text: "Overhauls & Refurbishments", color: "from-[#283852] to-[#9ee055]" },
+    { icon: Zap, text: "Erection & Commissioning", color: "from-[#283852] to-[#9ee055]" },
+    { icon: Target, text: "Repairs & Retrofits", color: "from-[#283852] to-[#9ee055]" },
   ];
 
 
   return (
     <section className="relative py-16 overflow-hidden">
       {/* Background with layered gradients */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-[#72c530]/5" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#72c530]/10 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-[#9ee055]/5" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#9ee055]/10 via-transparent to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-300/50 to-transparent" />
       
       {/* Decorative elements */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-[#72c530]/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#72c530]/10 rounded-full blur-3xl" />
+      <div className="absolute top-20 left-10 w-72 h-72 bg-[#9ee055]/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#9ee055]/10 rounded-full blur-3xl" />
       
       <div className="relative container mx-auto px-6 md:px-12 lg:px-20">
         <div 
@@ -47,7 +47,7 @@ const AboutCertificationsSection = () => {
               }`}
             >
               Welcome to{" "}
-              <span className="bg-gradient-to-r from-[#283852] via-[#72c530] to-[#72c530] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#283852] via-[#9ee055] to-[#9ee055] bg-clip-text text-transparent">
                 Quality Turbo Power Services
               </span>
             </h2>
@@ -68,7 +68,7 @@ const AboutCertificationsSection = () => {
                 
                 <div className="relative">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#283852] to-[#72c530] rounded-xl flex items-center justify-center shadow-lg shadow-[#283852]/30">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#283852] to-[#9ee055] rounded-xl flex items-center justify-center shadow-lg shadow-[#283852]/30">
                       <Zap className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -89,7 +89,7 @@ const AboutCertificationsSection = () => {
                       return (
                         <div 
                           key={index}
-                          className={`group bg-slate-50 hover:bg-white rounded-xl p-3 border border-slate-100 hover:border-[#72c530]/20 hover:shadow-lg hover:shadow-[#72c530]/10/50 transition-all duration-500 cursor-default ${
+                          className={`group bg-slate-50 hover:bg-white rounded-xl p-3 border border-slate-100 hover:border-[#9ee055]/20 hover:shadow-lg hover:shadow-[#9ee055]/10/50 transition-all duration-500 cursor-default ${
                             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                           }`}
                           style={{ transitionDelay: `${400 + index * 100}ms` }}
@@ -139,13 +139,13 @@ const AboutCertificationsSection = () => {
                   return (
                     <div 
                       key={index}
-                      className={`group bg-white rounded-xl p-4 shadow-lg shadow-slate-100 border border-slate-100 hover:shadow-xl hover:border-[#72c530]/20 transition-all duration-500 ${
+                      className={`group bg-white rounded-xl p-4 shadow-lg shadow-slate-100 border border-slate-100 hover:shadow-xl hover:border-[#9ee055]/20 transition-all duration-500 ${
                         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                       }`}
                       style={{ transitionDelay: `${500 + index * 100}ms` }}
                     >
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-gradient-to-br from-[#283852] to-[#72c530] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <div className="w-10 h-10 bg-gradient-to-br from-[#283852] to-[#9ee055] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                           <Icon className="w-5 h-5 text-white" />
                         </div>
                         <div>
@@ -172,7 +172,7 @@ const AboutCertificationsSection = () => {
                 </div>
                 
                 <div className="relative flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#72c530] to-[#72c530] rounded-xl flex items-center justify-center shadow-lg shadow-[#283852]/30 flex-shrink-0">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#9ee055] to-[#9ee055] rounded-xl flex items-center justify-center shadow-lg shadow-[#283852]/30 flex-shrink-0">
                     <Zap className="w-5 h-5 text-white" />
                   </div>
                   <div>

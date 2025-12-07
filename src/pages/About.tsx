@@ -92,13 +92,13 @@ const About = () => {
         <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10 py-12 pt-28">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3 py-1.5 mb-4">
-              <Sparkles className="w-3 h-3 text-[#72c530]" />
+              <Sparkles className="w-3 h-3 text-[#9ee055]" />
               <span className="text-white/80 text-xs">Established 2018</span>
             </div>
 
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium text-white mb-4 leading-tight">
               About{" "}
-              <span className="text-[#72c530]">Quality Turbo Power Services</span>
+              <span className="text-[#9ee055]">Quality Turbo Power Services</span>
             </h1>
             <p className="text-base text-white/70 leading-relaxed">
               A Complete Solution for Rotating Equipments
@@ -115,7 +115,7 @@ const About = () => {
               
               {/* Left Column - Content */}
               <div>
-                <div className="inline-flex items-center gap-2 bg-[#72c530]/10 rounded-full px-4 py-1.5 mb-6">
+                <div className="inline-flex items-center gap-2 bg-[#9ee055]/10 rounded-full px-4 py-1.5 mb-6">
                   <Users className="w-4 h-4 text-[#283852]" />
                   <span className="text-[#283852] text-sm font-medium">Who We Are</span>
                 </div>
@@ -139,7 +139,7 @@ const About = () => {
                 <div className="grid grid-cols-2 gap-3 mb-8">
                   {highlights.map((item, index) => (
                     <div key={index} className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-[#72c530] flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-[#9ee055] flex-shrink-0" />
                       <span className="text-slate-700 text-sm">{item}</span>
                     </div>
                   ))}
@@ -182,7 +182,7 @@ const About = () => {
                     ].map((item, index) => {
                       const Icon = item.icon;
                       return (
-                        <div key={index} className="flex items-center gap-4 p-3 bg-slate-50 rounded-xl hover:bg-[#72c530]/10 transition-colors">
+                        <div key={index} className="flex items-center gap-4 p-3 bg-slate-50 rounded-xl hover:bg-[#9ee055]/10 transition-colors">
                           <div className={`w-10 h-10 ${item.color} rounded-lg flex items-center justify-center flex-shrink-0`}>
                             <Icon className="w-5 h-5 text-white" />
                           </div>
@@ -205,9 +205,9 @@ const About = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-[#72c530]/10 rounded-full px-4 py-2 mb-4">
-              <Zap className="w-4 h-4 text-[#72c530]" />
-              <span className="text-[#72c530] text-sm font-medium">Our Strengths</span>
+            <div className="inline-flex items-center gap-2 bg-[#9ee055]/10 rounded-full px-4 py-2 mb-4">
+              <Zap className="w-4 h-4 text-[#9ee055]" />
+              <span className="text-[#9ee055] text-sm font-medium">Our Strengths</span>
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900">What Makes Us Different</h2>
           </div>
@@ -237,11 +237,11 @@ const About = () => {
         <div className="container mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-4">
-              <Users className="w-4 h-4 text-[#72c530]" />
+              <Users className="w-4 h-4 text-[#9ee055]" />
               <span className="text-white/80 text-sm font-medium">Our Team</span>
             </div>
             <h2 className="text-2xl md:text-3xl font-bold">
-              Leadership <span className="text-[#72c530]">Team</span>
+              Leadership <span className="text-[#9ee055]">Team</span>
             </h2>
           </div>
 
@@ -255,7 +255,7 @@ const About = () => {
                   <span className="text-2xl font-bold text-white">{member.name.charAt(4)}</span>
                 </div>
                 <h3 className="text-lg font-bold text-white text-center mb-1">{member.name}</h3>
-                <p className="text-[#72c530] text-sm text-center mb-4">{member.role}</p>
+                <p className="text-[#9ee055] text-sm text-center mb-4">{member.role}</p>
                 <p className="text-white/60 text-sm text-center leading-relaxed">{member.description}</p>
               </div>
             ))}
@@ -273,7 +273,7 @@ const About = () => {
             {["Linde", "ISGEC", "Praxair", "KCPL", "Thermax", "Ultratech", "ACC Cement", "IOCL"].map((client, index) => (
               <div 
                 key={index} 
-                className="px-6 py-3 bg-slate-50 rounded-lg text-slate-600 font-medium text-sm hover:bg-[#72c530]/10 hover:text-[#283852] transition-colors"
+                className="px-6 py-3 bg-slate-50 rounded-lg text-slate-600 font-medium text-sm hover:bg-[#9ee055]/10 hover:text-[#283852] transition-colors"
               >
                 {client}
               </div>
@@ -292,7 +292,7 @@ const About = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link to="/contact">
-                <Button className="bg-[#72c530] hover:bg-[#72c530]/90 text-white font-semibold rounded-lg h-11 px-8">
+                <Button className="bg-[#9ee055] hover:bg-[#9ee055]/90 text-white font-semibold rounded-lg h-11 px-8">
                   Contact Our Team
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>

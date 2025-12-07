@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 // Import service images
 import erectionImg from "@/assets/erection-commissioning.png";
-import troubleshootingImg from "@/assets/troubleshooting-overhauls.png";
+import troubleshootingImg from "@/assets/troubleshooting-overhauls.jpg";
 import repairImg from "@/assets/repair-reconditioning.jpg";
 
 const services = [
@@ -55,12 +55,12 @@ const ServicesFacilitiesSection = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/20" />
                   <div className="relative p-6 min-h-[280px] flex flex-col justify-end">
-                    <div className="w-12 h-12 bg-[#72c530] rounded-xl flex items-center justify-center mb-4">
+                    <div className="w-12 h-12 bg-[#9ee055] rounded-xl flex items-center justify-center mb-4">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-lg font-bold text-white mb-2">{service.title}</h3>
                     <p className="text-white/70 text-sm mb-4">{service.description}</p>
-                    <span className="text-[#72c530] text-sm font-semibold inline-flex items-center group-hover:gap-2 transition-all">
+                    <span className="text-[#9ee055] text-sm font-semibold inline-flex items-center group-hover:gap-2 transition-all">
                       Learn more <ArrowRight className="w-4 h-4 ml-1" />
                     </span>
                   </div>
@@ -73,7 +73,7 @@ const ServicesFacilitiesSection = () => {
         {/* CTA */}
         <div className="text-center">
           <Link to="/services">
-            <Button className="bg-[#72c530] hover:bg-[#72c530]/90 text-white font-semibold rounded-lg px-8 h-11">
+            <Button className="bg-[#9ee055] hover:bg-[#9ee055]/90 text-white font-semibold rounded-lg px-8 h-11">
               View All Services <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </Link>
