@@ -69,6 +69,10 @@ const Header = () => {
                 <Phone className="w-3 h-3" />
                 <span>+91 94921 21315</span>
               </a>
+                <a href="tel:+919492125536" className="flex items-center gap-1.5 hover:text-[#9ee055] transition-colors">
+                <Phone className="w-3 h-3" />
+                <span>+91 94921 25536</span>
+              </a>
                 <a href="mailto:qualityturboservices@gmail.com" className="flex items-center gap-1.5 hover:text-[#9ee055] transition-colors">
                 <Mail className="w-3 h-3" />
                 <span>qualityturboservices@gmail.com</span>
@@ -290,7 +294,16 @@ const Header = () => {
                 <div className="w-8 h-8 bg-[#9ee055]/10 rounded-lg flex items-center justify-center">
                   <Phone className="w-4 h-4 text-[#283852]" />
                 </div>
-                <span>24/7 Support Available</span>
+                <span>+91 94921 21315</span>
+              </a>
+              <a 
+                href="tel:+919492125536" 
+                className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600"
+              >
+                <div className="w-8 h-8 bg-[#9ee055]/10 rounded-lg flex items-center justify-center">
+                  <Phone className="w-4 h-4 text-[#283852]" />
+                </div>
+                <span>+91 94921 25536</span>
               </a>
               <a 
                 href="mailto:qualityturboservices@gmail.com" 

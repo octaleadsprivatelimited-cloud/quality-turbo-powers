@@ -71,6 +71,13 @@ const Footer = () => {
                   <Phone className="w-3.5 md:w-4 h-3.5 md:h-4 text-[#9ee055] flex-shrink-0" />
                   <span className="text-xs md:text-sm">+91 94921 21315</span>
                 </a>
+                <a 
+                  href="tel:+919492125536" 
+                  className="flex items-center gap-2 md:gap-3 text-white/80 hover:text-white transition-colors group"
+                >
+                  <Phone className="w-3.5 md:w-4 h-3.5 md:h-4 text-[#9ee055] flex-shrink-0" />
+                  <span className="text-xs md:text-sm">+91 94921 25536</span>
+                </a>
               </div>
 
               {/* Social Icons */}
