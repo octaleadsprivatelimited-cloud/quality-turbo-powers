@@ -212,19 +212,19 @@ const About = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900">What Makes Us Different</h2>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
             {strengths.map((item, index) => {
               const Icon = item.icon;
               return (
                 <div 
                   key={index} 
-                  className="bg-slate-50 rounded-2xl p-6 hover:bg-white hover:shadow-lg transition-all duration-300"
+                  className="bg-slate-50 rounded-2xl p-4 md:p-6 hover:bg-white hover:shadow-lg transition-all duration-300 flex flex-col h-full"
                 >
-                  <div className="w-12 h-12 bg-[#283852] rounded-xl flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-white" />
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-[#283852] rounded-xl flex items-center justify-center mb-3 md:mb-4 flex-shrink-0">
+                    <Icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">{item.description}</p>
+                  <h3 className="text-base md:text-lg font-bold text-slate-900 mb-2 flex-shrink-0">{item.title}</h3>
+                  <p className="text-slate-600 text-xs md:text-sm leading-relaxed flex-grow">{item.description}</p>
                 </div>
               );
             })}
