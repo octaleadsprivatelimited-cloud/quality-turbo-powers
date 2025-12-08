@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Link } from "react-router-dom";
-import heroPowerplantImg from "@/assets/hero-powerplant.jpg";
 import service1Img from "@/assets/service-1.jpg";
 
 const AboutCertificationsSection = () => {
@@ -10,18 +9,11 @@ const AboutCertificationsSection = () => {
 
   const projects = [
     {
-      type: "Upcoming Projects",
-      company: "M/s SHYAM METALICS",
-      description: "Shutdown Works: Steel Plant",
-      image: heroPowerplantImg,
-      link: "/projects"
-    },
-    {
       type: "Completed Projects",
       company: "M/s KRIBHCO",
       description: "Make: GE-Power, Rating Power: 76MW",
       image: service1Img,
-      link: "/projects"
+      link: "/completed-projects"
     }
   ];
 
@@ -70,7 +62,7 @@ const AboutCertificationsSection = () => {
             </div>
 
             {/* Right Column - Project Cards */}
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 gap-4 md:gap-6">
               {projects.map((project, index) => (
                 <div 
                   key={index}

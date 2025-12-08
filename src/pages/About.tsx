@@ -43,19 +43,19 @@ const About = () => {
 
   const teamMembers = [
     {
-      name: "Mr. Veeresham",
-      role: "Head Services (Ex BHEL - Hyderabad)",
-      description: "Mechanical Engineer with 38+ years experience in Power Plant Erection & Commissioning, Overhauling and Troubleshooting on Steam & Gas Turbines from 1 MW to 500 MW capacities."
+      name: "Mr VEERESHAM",
+      role: "HEAD SERVICES (Ex BHEL - HYDERABAD)",
+      description: "Mechanical Engineer working in Power Plant Erection & Commissioning, Overhauling, and Troubleshooting on Steam & Gas Turbines (1 MW to 500 MW capacities) for over 38 years."
     },
     {
-      name: "Mr. S Balakrishna Reddy",
+      name: "Mr S BALAKRISHNA REDDY",
       role: "Managing Director",
-      description: "Mechanical Engineer with 17 years of experience in Erection, Overhauling and Commissioning of Steam Turbines and Compressor & Operation and Maintenance in various Power Plants."
+      description: "Mechanical Engineer with 17 years of experience in Erection, Overhauling, and Commissioning of Steam Turbines and Compressors, as well as Operation and Maintenance in various Power Plants."
     },
     {
-      name: "Mr. Kista Reddy",
-      role: "Mechanical Services",
-      description: "Mechanical Engineer with 18+ years experience in Troubleshooting, Commissioning & Overhauling - Especially for Regulation System on Steam turbines."
+      name: "Mr KISTA REDDY",
+      role: "MECHANICAL SERVICES",
+      description: "Mechanical Engineer working in the field of power plant Troubleshooting, Commissioning & Overhauling, specifically specializing in Regulation Systems on Steam turbines for over 18 years."
     }
   ];
 
@@ -233,30 +233,22 @@ const About = () => {
       </section>
 
       {/* Our Team */}
-      <section className="py-16 bg-slate-950 text-white">
-        <div className="container mx-auto px-6 md:px-12 lg:px-20">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-4">
-              <Users className="w-4 h-4 text-[#9ee055]" />
-              <span className="text-white/80 text-sm font-medium">Our Team</span>
-            </div>
-            <h2 className="text-2xl md:text-3xl font-bold">
-              Leadership <span className="text-[#9ee055]">Team</span>
-            </h2>
+      <section className="py-12 md:py-16 bg-[#1e3a5f] text-white">
+        <div className="container mx-auto px-4 md:px-6 lg:px-12 xl:px-20">
+          {/* Title Banner */}
+          <div className="bg-[#9ee055] border-2 border-slate-300 rounded-lg px-6 py-3 mb-8 text-center max-w-2xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-white">Our Team</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {teamMembers.map((member, index) => (
               <div 
                 key={index} 
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all"
+                className="bg-white/5 border-2 border-white/30 rounded-lg p-6 hover:bg-white/10 transition-all"
               >
-                <div className="w-16 h-16 bg-[#283852] rounded-2xl flex items-center justify-center mb-4 mx-auto">
-                  <span className="text-2xl font-bold text-white">{member.name.charAt(4)}</span>
-                </div>
-                <h3 className="text-lg font-bold text-white text-center mb-1">{member.name}</h3>
-                <p className="text-[#9ee055] text-sm text-center mb-4">{member.role}</p>
-                <p className="text-white/60 text-sm text-center leading-relaxed">{member.description}</p>
+                <h3 className="text-lg md:text-xl font-bold text-yellow-400 mb-2">{member.name}</h3>
+                <p className="text-yellow-400 font-semibold text-sm md:text-base mb-3">{member.role}</p>
+                <p className="text-white text-sm md:text-base leading-relaxed">{member.description}</p>
               </div>
             ))}
           </div>
@@ -264,18 +256,54 @@ const About = () => {
       </section>
 
       {/* Our Clients */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-6 md:px-12 lg:px-20">
-          <div className="text-center mb-8">
-            <h2 className="text-xl font-bold text-slate-900">Our Clients</h2>
+      <section className="py-12 md:py-16 bg-white">
+        <div className="container mx-auto px-4 md:px-6 lg:px-12 xl:px-20">
+          {/* Section Title */}
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+              Our Clients
+            </h2>
+            <p className="text-slate-600 text-sm md:text-base max-w-2xl mx-auto">
+              Trusted by leading companies across various industries
+            </p>
           </div>
-          <div className="flex flex-wrap justify-center items-center gap-8">
-            {["Linde", "ISGEC", "Praxair", "KCPL", "Thermax", "Ultratech", "ACC Cement", "IOCL"].map((client, index) => (
-              <div 
-                key={index} 
-                className="px-6 py-3 bg-slate-50 rounded-lg text-slate-600 font-medium text-sm hover:bg-[#9ee055]/10 hover:text-[#283852] transition-colors"
+
+          {/* Clients Grid Layout - Circular Logos Only */}
+          <div className="grid grid-cols-3 gap-4 md:gap-6 max-w-2xl mx-auto">
+            {[
+              { 
+                name: "Linde", 
+                logo: "https://logo.clearbit.com/linde.com" 
+              },
+              { 
+                name: "ISGEC", 
+                logo: "https://logo.clearbit.com/isgec.com" 
+              },
+              { 
+                name: "PRAXAIR", 
+                logo: "https://logo.clearbit.com/praxair.com" 
+              },
+            ].map((client, index) => (
+              <div
+                key={index}
+                className="group flex items-center justify-center"
               >
-                {client}
+                {/* Circular Logo Frame */}
+                <div className="relative w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-full bg-white border-2 border-slate-200 group-hover:border-[#9ee055] shadow-md group-hover:shadow-lg transition-all duration-300 overflow-hidden flex items-center justify-center p-2">
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="w-full h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const parent = target.parentElement;
+                      if (parent) {
+                        parent.innerHTML = `<div class="text-slate-700 font-semibold text-[8px] md:text-[10px] text-center leading-tight">${client.name}</div>`;
+                      }
+                    }}
+                  />
+                </div>
               </div>
             ))}
           </div>

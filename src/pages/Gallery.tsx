@@ -15,6 +15,7 @@ const Gallery = () => {
     { id: 4, src: "/gallery/image-4.jpeg", alt: "Gallery Image 4" },
     { id: 5, src: "/gallery/image-5.jpeg", alt: "Gallery Image 5" },
     { id: 6, src: "/gallery/image-6.jpeg", alt: "Gallery Image 6" },
+    { id: 7, src: "/gallery/image-7.jpeg", alt: "Spare Parts" },
   ];
 
   const openModal = (index: number) => {

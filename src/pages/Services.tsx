@@ -59,9 +59,9 @@ const Services = () => {
       title: "Spare Parts Supply",
       description: "Comprehensive spare parts supply for turbines, compressors, and rotating equipment with genuine OEM parts.",
       features: ["Genuine Parts", "Quick Delivery", "Wide Inventory", "Technical Support"],
-      image: repairImg,
+      image: "/gallery/image-7.jpeg",
       color: "from-[#283852] to-[#9ee055]",
-      link: "/services"
+      link: "/services/spare-parts"
     }
   ];
 

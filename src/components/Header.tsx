@@ -6,6 +6,8 @@ import logoImg from "@/assets/logo.png";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
@@ -37,13 +39,24 @@ const Header = () => {
   const navLinks = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Services", href: "/services" },
     { label: "Industries", href: "/industries" },
     { label: "Gallery", href: "/gallery" },
     { label: "Contact", href: "/contact" },
   ];
 
+  const servicesLinks = [
+    { label: "All Services", href: "/services" },
+    { label: "Erection & Commissioning", href: "/services/erection-commissioning" },
+    { label: "Troubleshooting & Overhauls", href: "/services/troubleshooting-overhauls" },
+    { label: "Repair & Reconditioning", href: "/services/repair-reconditioning" },
+    { label: "Operation & Maintenance", href: "/services/operation-maintenance" },
+    { label: "Spare Parts Supply", href: "/services/spare-parts" },
+  ];
+
   const isActive = (path: string) => location.pathname === path;
+  const isServicesActive = () => {
+    return location.pathname.startsWith("/services");
+  };
 
   return (
     <>
@@ -103,6 +116,44 @@ const Header = () => {
                   {link.label}
                 </Link>
               ))}
+              
+              {/* Services Dropdown */}
+              <div 
+                className="relative"
+                onMouseEnter={() => setServicesDropdownOpen(true)}
+                onMouseLeave={() => setServicesDropdownOpen(false)}
+              >
+                <Link
+                  to="/services"
+                  className={`px-4 py-1.5 text-sm font-medium rounded-md transition-all flex items-center gap-1 ${
+                    isServicesActive()
+                      ? 'text-[#283852] bg-[#9ee055]/10'
+                      : 'text-slate-700 hover:text-[#283852] hover:bg-slate-50'
+                  }`}
+                >
+                  Services
+                  <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
+                </Link>
+                
+                {/* Dropdown Menu */}
+                {servicesDropdownOpen && (
+                  <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-xl border border-slate-200 py-2 z-50">
+                    {servicesLinks.map((service, index) => (
+                      <Link
+                        key={index}
+                        to={service.href}
+                        className={`block px-4 py-2 text-sm transition-colors ${
+                          isActive(service.href)
+                            ? 'text-[#283852] bg-[#9ee055]/10 font-medium'
+                            : 'text-slate-700 hover:text-[#283852] hover:bg-slate-50'
+                        }`}
+                      >
+                        {service.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             </nav>
 
             {/* Desktop CTA */}
@@ -191,6 +242,43 @@ const Header = () => {
                   <ChevronDown className="w-4 h-4 -rotate-90 text-slate-400" />
                 </Link>
               ))}
+              
+              {/* Mobile Services Dropdown */}
+              <div>
+                <button
+                  onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                  className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all font-medium ${
+                    isServicesActive()
+                      ? 'text-[#283852] bg-[#9ee055]/10'
+                      : 'text-slate-600 hover:text-[#283852] hover:bg-slate-50'
+                  }`}
+                >
+                  Services
+                  <ChevronDown className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+                </button>
+                
+                {mobileServicesOpen && (
+                  <div className="pl-4 mt-1 space-y-1">
+                    {servicesLinks.map((service, index) => (
+                      <Link
+                        key={index}
+                        to={service.href}
+                        onClick={() => {
+                          setMobileMenuOpen(false);
+                          setMobileServicesOpen(false);
+                        }}
+                        className={`block px-4 py-2 text-sm rounded-lg transition-colors ${
+                          isActive(service.href)
+                            ? 'text-[#283852] bg-[#9ee055]/10 font-medium'
+                            : 'text-slate-600 hover:text-[#283852] hover:bg-slate-50'
+                        }`}
+                      >
+                        {service.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             </nav>
 
             {/* Mobile Contact */}

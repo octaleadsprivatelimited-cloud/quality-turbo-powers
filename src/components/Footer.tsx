@@ -1,4 +1,4 @@
-import { Mail, Phone, ArrowUpRight, Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
+import { Mail, Phone, ArrowUpRight, Linkedin, Twitter, Facebook, Instagram, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import footerBg from "@/assets/hero-powerplant.jpg";
 import logoImg from "@/assets/logo.png";
@@ -49,6 +49,14 @@ const Footer = () => {
               
               {/* Contact Info */}
               <div className="space-y-1.5 md:space-y-2 mb-3 md:mb-4">
+                <div className="flex items-start gap-2 md:gap-3 text-white/80">
+                  <MapPin className="w-3.5 md:w-4 h-3.5 md:h-4 text-[#9ee055] flex-shrink-0 mt-0.5" />
+                  <div className="text-xs md:text-sm">
+                    <div className="font-semibold text-white mb-1">Registered Address:</div>
+                    <div>H.No. 7-66/1, Sai Ram Colony,</div>
+                    <div>Patancheru, Hyderabad - 509 319</div>
+                  </div>
+                </div>
                 <a 
                   href="mailto:qualityturboservices@gmail.com" 
                   className="flex items-center gap-2 md:gap-3 text-white/80 hover:text-white transition-colors group"

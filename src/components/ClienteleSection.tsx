@@ -5,26 +5,6 @@ const ClienteleSection = () => {
 
   const clients = [
     { 
-      name: "Vijayanagar Sugar", 
-      logo: "https://logo.clearbit.com/vijayanagarsugar.com" 
-    },
-    { 
-      name: "BHEL", 
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Bharat_Heavy_Electricals_Limited_logo.svg/200px-Bharat_Heavy_Electricals_Limited_logo.svg.png" 
-    },
-    { 
-      name: "JSW Steel", 
-      logo: "https://logo.clearbit.com/jsw.in" 
-    },
-    { 
-      name: "Sembcorp", 
-      logo: "https://logo.clearbit.com/sembcorp.com" 
-    },
-    { 
-      name: "Murugappa Parrys", 
-      logo: "https://logo.clearbit.com/murugappa.com" 
-    },
-    { 
       name: "Linde", 
       logo: "https://logo.clearbit.com/linde.com" 
     },
@@ -33,28 +13,8 @@ const ClienteleSection = () => {
       logo: "https://logo.clearbit.com/isgec.com" 
     },
     { 
-      name: "Praxair", 
+      name: "PRAXAIR", 
       logo: "https://logo.clearbit.com/praxair.com" 
-    },
-    { 
-      name: "KCPL", 
-      logo: "https://logo.clearbit.com/kcpl.com" 
-    },
-    { 
-      name: "Thermax", 
-      logo: "https://logo.clearbit.com/thermaxglobal.com" 
-    },
-    { 
-      name: "Ultratech", 
-      logo: "https://logo.clearbit.com/ultratechcement.com" 
-    },
-    { 
-      name: "ACC Cement", 
-      logo: "https://logo.clearbit.com/acclimited.com" 
-    },
-    { 
-      name: "IOCL", 
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Indian_Oil_Logo.svg/200px-Indian_Oil_Logo.svg.png" 
     },
   ];
 
@@ -76,7 +36,7 @@ const ClienteleSection = () => {
         </div>
 
         {/* Clients Grid Layout - Circular Logos Only */}
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-4 md:gap-6">
+        <div className="grid grid-cols-3 gap-4 md:gap-6 max-w-2xl mx-auto">
           {clients.map((client, index) => (
             <div
               key={index}
