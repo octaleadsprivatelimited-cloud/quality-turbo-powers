@@ -1,186 +1,115 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Zap, Target, Wrench, Clock, Users, CheckCircle2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Link } from "react-router-dom";
+import heroPowerplantImg from "@/assets/hero-powerplant.jpg";
+import service1Img from "@/assets/service-1.jpg";
 
 const AboutCertificationsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
-  const highlights = [
-    { icon: Wrench, text: "Overhauls & Refurbishments", color: "from-[#283852] to-[#9ee055]" },
-    { icon: Zap, text: "Erection & Commissioning", color: "from-[#283852] to-[#9ee055]" },
-    { icon: Target, text: "Repairs & Retrofits", color: "from-[#283852] to-[#9ee055]" },
+  const projects = [
+    {
+      type: "Upcoming Projects",
+      company: "M/s SHYAM METALICS",
+      description: "Shutdown Works: Steel Plant",
+      image: heroPowerplantImg,
+      link: "/projects"
+    },
+    {
+      type: "Completed Projects",
+      company: "M/s KRIBHCO",
+      description: "Make: GE-Power, Rating Power: 76MW",
+      image: service1Img,
+      link: "/projects"
+    }
   ];
 
 
   return (
-    <section className="relative py-16 overflow-hidden">
-      {/* Background with layered gradients */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-[#9ee055]/5" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#9ee055]/10 via-transparent to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-300/50 to-transparent" />
-      
-      {/* Decorative elements */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-[#9ee055]/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#9ee055]/10 rounded-full blur-3xl" />
-      
-      <div className="relative container mx-auto px-6 md:px-12 lg:px-20">
+    <section className="relative py-10 md:py-12 lg:py-16 overflow-hidden bg-white">
+      <div className="relative container mx-auto px-4 md:px-6 lg:px-12 xl:px-20">
         <div 
           ref={ref}
           className={`transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
           }`}
         >
-          {/* Section Header */}
-          <div className="text-center mb-10">
-            <div 
-              className={`inline-flex items-center gap-2 bg-[#283852]/10 border border-[#283852]/20 text-amber-700 text-sm font-semibold px-5 py-2 rounded-full mb-4 transition-all duration-700 delay-100 ${
-                isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
-              }`}
-            >
-              <span className="w-2 h-2 bg-[#283852] rounded-full animate-pulse" />
-              About Us
-            </div>
-            <h2 
-              className={`text-3xl md:text-4xl font-bold text-slate-900 transition-all duration-700 delay-200 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
-            >
-              Welcome to{" "}
-              <span className="bg-gradient-to-r from-[#283852] via-[#9ee055] to-[#9ee055] bg-clip-text text-transparent">
-                Quality Turbo Power Services
-              </span>
-            </h2>
-          </div>
-
           {/* Main Content Grid */}
-          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-start">
             
-            {/* Left Column - About Content */}
-            <div className="lg:col-span-7">
-              <div 
-                className={`relative bg-white rounded-2xl p-6 md:p-8 shadow-xl shadow-slate-200/50 border border-slate-100 overflow-hidden transition-all duration-700 delay-300 ${
-                  isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
-                }`}
-              >
-                {/* Decorative corner accent */}
-                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[#283852]/10 to-transparent rounded-bl-[80px]" />
-                
-                <div className="relative">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#283852] to-[#9ee055] rounded-xl flex items-center justify-center shadow-lg shadow-[#283852]/30">
-                      <Zap className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-bold text-slate-900">Multi-Disciplinary Excellence</h3>
-                      <p className="text-xs text-slate-500">Est. 2018, Hyderabad</p>
-                    </div>
-                  </div>
-
-                  <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                    A growth-oriented engineering organization with vast experience in Operation & Maintenance, 
-                    Overhauls, Fabrication and Erection & Commissioning of rotating equipment.
-                  </p>
-
-                  {/* Highlights Grid */}
-                  <div className="grid grid-cols-3 gap-3 mb-6">
-                    {highlights.map((item, index) => {
-                      const Icon = item.icon;
-                      return (
-                        <div 
-                          key={index}
-                          className={`group bg-slate-50 hover:bg-white rounded-xl p-3 border border-slate-100 hover:border-[#9ee055]/20 hover:shadow-lg hover:shadow-[#9ee055]/10/50 transition-all duration-500 cursor-default ${
-                            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                          }`}
-                          style={{ transitionDelay: `${400 + index * 100}ms` }}
-                        >
-                          <div className={`w-9 h-9 bg-gradient-to-br ${item.color} rounded-lg flex items-center justify-center mb-2 group-hover:scale-110 transition-transform duration-300`}>
-                            <Icon className="w-4 h-4 text-white" />
-                          </div>
-                          <span className="text-xs font-medium text-slate-700 group-hover:text-slate-900 transition-colors">
-                            {item.text}
-                          </span>
-                        </div>
-                      );
-                    })}
-                  </div>
-
-                  <Link to="/about">
-                    <Button 
-                      className="bg-gradient-to-r from-slate-900 to-slate-800 hover:from-slate-800 hover:to-slate-700 text-white rounded-xl h-10 px-6 shadow-lg shadow-slate-900/20 hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
-                    >
-                      Learn More
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </div>
+            {/* Left Column - Welcome Section */}
+            <div className={`transition-all duration-700 delay-300 ${
+              isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
+            }`}>
+              {/* Welcome Heading */}
+              <div className="mb-4 md:mb-6">
+                <p className="text-slate-600 text-sm md:text-base font-medium mb-2">
+                  WELCOME To
+                </p>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-1">
+                  <span className="text-[#9ee055]">QUALITY TURBO</span>
+                </h2>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#9ee055]">
+                  POWER SERVICES
+                </h2>
               </div>
+
+              {/* Description */}
+              <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6 md:mb-8">
+                M/s. Quality Turbo Power Services is a multi-disciplinary, growth oriented, Engineering and service organization headquartered in Hyderabad, established in 2018, by a group of Engineers with the primary focus to serve the power/process industry. We as an organization have varied & vast experience in Engineering, Operation & Maintenance, Overhauls, Troubleshooting, Fabrication and Erection & Commissioning of rotating equipment & its auxiliaries...
+              </p>
+
+              {/* Read More Button */}
+              <Link to="/about">
+                <Button className="bg-[#283852] hover:bg-[#283852]/90 text-white font-semibold rounded-lg px-6 md:px-8 h-10 md:h-11 text-sm md:text-base">
+                  Read More
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
             </div>
 
-            {/* Right Column - Why Choose Us */}
-            <div className="lg:col-span-5 space-y-4">
-              <div 
-                className={`flex items-center gap-2 transition-all duration-700 delay-400 ${
-                  isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
-                }`}
-              >
-                <CheckCircle2 className="w-5 h-5 text-[#283852]" />
-                <h3 className="text-lg font-bold text-slate-900">Why Choose Us</h3>
-              </div>
-
-              {/* Features Cards */}
-              <div className="space-y-3">
-                {[
-                  { icon: Users, title: "Expert Team", desc: "Skilled professionals" },
-                  { icon: Clock, title: "Quick Response", desc: "24/7 emergency support" },
-                  { icon: Target, title: "Strategic Location", desc: "Based in Hyderabad" }
-                ].map((item, index) => {
-                  const Icon = item.icon;
-                  return (
-                    <div 
-                      key={index}
-                      className={`group bg-white rounded-xl p-4 shadow-lg shadow-slate-100 border border-slate-100 hover:shadow-xl hover:border-[#9ee055]/20 transition-all duration-500 ${
-                        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                      }`}
-                      style={{ transitionDelay: `${500 + index * 100}ms` }}
-                    >
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-gradient-to-br from-[#283852] to-[#9ee055] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                          <Icon className="w-5 h-5 text-white" />
-                        </div>
-                        <div>
-                          <h4 className="font-semibold text-slate-900 text-sm">{item.title}</h4>
-                          <p className="text-slate-500 text-xs">{item.desc}</p>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-
-              {/* Excellence Badge */}
-              <div 
-                className={`relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-xl p-4 overflow-hidden transition-all duration-700 delay-700 ${
-                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
-              >
-                <div className="absolute inset-0 opacity-10">
-                  <div className="absolute inset-0" style={{
-                    backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
-                    backgroundSize: '20px 20px'
-                  }} />
-                </div>
-                
-                <div className="relative flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#9ee055] to-[#9ee055] rounded-xl flex items-center justify-center shadow-lg shadow-[#283852]/30 flex-shrink-0">
-                    <Zap className="w-5 h-5 text-white" />
+            {/* Right Column - Project Cards */}
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-6">
+              {projects.map((project, index) => (
+                <div 
+                  key={index}
+                  className={`bg-white rounded-lg shadow-md border border-slate-200 overflow-hidden transition-all duration-500 hover:shadow-lg ${
+                    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
+                  style={{ transitionDelay: `${400 + index * 100}ms` }}
+                >
+                  {/* Project Image */}
+                  <div className="relative w-full h-48 md:h-56 overflow-hidden">
+                    <img 
+                      src={project.image} 
+                      alt={project.company} 
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
+                    />
                   </div>
-                  <div>
-                    <h4 className="font-bold text-white text-sm">Trusted Partner</h4>
-                    <p className="text-slate-400 text-xs">Quality services since 2018</p>
+                  
+                  {/* Project Details */}
+                  <div className="p-4 md:p-5">
+                    <h3 className="text-slate-900 font-bold text-sm md:text-base mb-2">
+                      {project.type}
+                    </h3>
+                    <p className="text-slate-700 font-semibold text-sm md:text-base mb-1">
+                      {project.company}
+                    </p>
+                    <p className="text-slate-600 text-xs md:text-sm mb-4">
+                      {project.description}
+                    </p>
+                    
+                    {/* Read More Button */}
+                    <Link to={project.link}>
+                      <Button className="w-full bg-[#283852] hover:bg-[#283852]/90 text-white font-semibold rounded-lg h-9 md:h-10 text-xs md:text-sm">
+                        Read More
+                        <ArrowRight className="ml-2 h-3.5 md:h-4 w-3.5 md:w-4" />
+                      </Button>
+                    </Link>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
 
           </div>
