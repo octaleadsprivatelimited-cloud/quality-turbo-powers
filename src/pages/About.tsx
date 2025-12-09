@@ -3,9 +3,14 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Users, Award, Target, ArrowRight, Zap, Heart, Star, ThumbsUp, Sparkles, Clock, MapPin, Shield } from "lucide-react";
+import { CheckCircle2, Users, Award, Target, ArrowRight, Zap, Heart, Star, ThumbsUp, Sparkles, Clock, MapPin, Shield, HardHat, Handshake, Settings, BadgeCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-powerplant.jpg";
+import iconPeople from "@/assets/icon-people.png";
+import iconCommitment from "@/assets/icon-commitment.png";
+import iconIntegrity from "@/assets/icon-integrity.png";
+import iconQuality from "@/assets/icon-quality.png";
+import iconSatisfaction from "@/assets/icon-satisfaction.png";
 
 const About = () => {
   const strengths = [
@@ -176,15 +181,49 @@ const About = () => {
 
                   <div className="space-y-4">
                     {[
-                      { icon: Users, title: "Expert Team", desc: "Skilled professionals", color: "bg-[#283852]" },
-                      { icon: Clock, title: "Quick Response", desc: "24/7 emergency support available", color: "bg-emerald-500" },
-                      { icon: MapPin, title: "Strategic Location", desc: "Based in Hyderabad, serving industries", color: "bg-[#283852]" }
+                      { 
+                        image: iconPeople,
+                        title: "People", 
+                        desc: "Quality Turbine is a company of young entrepreneurs and we consider people as our biggest assets"
+                      },
+                      { 
+                        image: iconCommitment,
+                        title: "Commitment", 
+                        desc: "Our well-defined understanding of client specifications and their requirement for a timely delivery"
+                      },
+                      { 
+                        image: iconIntegrity,
+                        title: "Integrity", 
+                        desc: "We have gained a reputation for integrity from our customers as our work speaks for itself"
+                      },
+                      { 
+                        icon: Heart,
+                        title: "Trust", 
+                        desc: "With decades of world-class engineering services expertise, Quality Turbine has earned the trust and support of clients",
+                        color: "bg-blue-500"
+                      },
+                      { 
+                        image: iconQuality,
+                        title: "Quality", 
+                        desc: "Quality of every project we deliver is the foundation stone of our value proposition"
+                      },
+                      { 
+                        image: iconSatisfaction,
+                        title: "Satisfaction", 
+                        desc: "We are committed to our clients' approval and our work is not complete until all specifications have been met"
+                      }
                     ].map((item, index) => {
-                      const Icon = item.icon;
+                      const IconComponent = item.icon;
                       return (
                         <div key={index} className="flex items-center gap-4 p-3 bg-slate-50 rounded-xl hover:bg-[#9ee055]/10 transition-colors">
-                          <div className={`w-10 h-10 ${item.color} rounded-lg flex items-center justify-center flex-shrink-0`}>
-                            <Icon className="w-5 h-5 text-white" />
+                          <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+                            {item.image ? (
+                              <img src={item.image} alt={item.title} className="w-full h-full object-contain" />
+                            ) : (
+                              <div className={`w-10 h-10 ${item.color} rounded-lg flex items-center justify-center`}>
+                                {IconComponent && <IconComponent className="w-5 h-5 text-white" />}
+                              </div>
+                            )}
                           </div>
                           <div>
                             <div className="text-sm font-bold text-slate-900">{item.title}</div>

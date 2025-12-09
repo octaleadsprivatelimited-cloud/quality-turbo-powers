@@ -36,11 +36,11 @@ const Footer = () => {
             
             {/* Brand Section */}
             <div className="lg:col-span-1 sm:col-span-2 md:col-span-1">
-              <Link to="/" className="inline-block mb-3 md:mb-4 group">
+              <Link to="/" className="inline-block mb-3 md:mb-4 group h-10 md:h-12 overflow-hidden">
                 <img 
                   src={logoImg} 
                   alt="Quality Turbine Power Services" 
-                  className="h-10 md:h-12 w-auto max-h-16 object-contain group-hover:scale-105 transition-transform"
+                  className="h-20 md:h-28 lg:h-32 w-auto object-contain group-hover:scale-105 transition-transform -mt-2 md:-mt-4 lg:-mt-6"
                 />
               </Link>
               <p className="text-white/80 text-xs md:text-sm leading-relaxed mb-3 md:mb-4">
@@ -52,7 +52,7 @@ const Footer = () => {
                 <div className="flex items-start gap-2 md:gap-3 text-white/80">
                   <MapPin className="w-3.5 md:w-4 h-3.5 md:h-4 text-[#9ee055] flex-shrink-0 mt-0.5" />
                   <div className="text-xs md:text-sm">
-                    <div className="font-semibold text-white mb-1">Registered Address:</div>
+                    <div className="font-semibold text-white mb-1">Registered Office:</div>
                     <div>H.No. 7-66/1, Sai Ram Colony,</div>
                     <div>Patancheru, Hyderabad - 509 319</div>
                   </div>

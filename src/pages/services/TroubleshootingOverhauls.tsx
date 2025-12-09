@@ -97,15 +97,11 @@ const TroubleshootingOverhauls = () => {
                 </div>
 
                 <p className="text-slate-600 leading-relaxed mb-6">
-                  We are equipped to solve not only temporary problems but also the entire range of technical and operational problems that can affect a plant. Our team of experienced engineers uses state-of-the-art diagnostic equipment to identify and resolve issues quickly and effectively.
-                </p>
-
-                <p className="text-slate-600 leading-relaxed mb-4">
-                  Whether it's a minor adjustment or a major overhaul, our comprehensive approach ensures your equipment returns to optimal performance with minimal downtime.
+                  Quality Turbine provides troubleshooting services and we are equipped to solve not temporarily problems but also the entire range of technical and operational problems that can afflict a plant.
                 </p>
 
                 <p className="text-slate-600 leading-relaxed mb-8">
-                  In addition to our repair services, we provide genuine spare parts supply for all types of rotating equipment. Our extensive inventory includes OEM parts for turbines, compressors, generators, and their auxiliary systems, ensuring quick replacement and minimal downtime for your operations.
+                  Our team efficiently undertakes complete overhauling services of turbine systems, turbine generators, boilers and its auxiliaries, high speed centrifugal compressors, pumps turbine blowers, gear boxes and gas turbines of all makes and models, at various industries viz., power generation, petro chemicals, fertilizers, paper manufacturing steel production etc.,
                 </p>
 
                 {/* Features */}

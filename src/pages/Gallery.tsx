@@ -21,10 +21,12 @@ const Gallery = () => {
     { id: 10, src: "/gallery/image-10.jpeg", alt: "Gallery Image 10" },
     { id: 11, src: "/gallery/image-11.jpeg", alt: "Gallery Image 11" },
     { id: 12, src: "/gallery/image-12.jpeg", alt: "Gallery Image 12" },
-    { id: 13, src: "/gallery/image-13.jpeg", alt: "Gallery Image 13" },
     { id: 14, src: "/gallery/image-14.jpeg", alt: "Gallery Image 14" },
-    { id: 15, src: "/gallery/image-15.jpeg", alt: "Gallery Image 15" },
     { id: 16, src: "/gallery/image-16.jpeg", alt: "Gallery Image 16" },
+    { id: 17, src: "/gallery/image-17.jpeg", alt: "Gallery Image 17" },
+    { id: 19, src: "/gallery/image-19.jpeg", alt: "Gallery Image 19" },
+    { id: 23, src: "/gallery/image-23.jpeg", alt: "Gallery Image 23" },
+    { id: 24, src: "/gallery/image-24.jpeg", alt: "Gallery Image 24" },
   ];
 
   const openModal = (index: number) => {

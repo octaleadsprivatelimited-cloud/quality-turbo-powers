@@ -101,7 +101,7 @@ const Header = () => {
               <img 
                 src={logoImg} 
                 alt="Quality Turbine Power Services" 
-                className="h-[300px] lg:h-[346px] w-auto max-w-[280px] lg:max-w-[1440px] object-contain group-hover:scale-105 transition-transform"
+                className="h-[350px] lg:h-[400px] w-auto max-w-[320px] lg:max-w-[1440px] object-contain group-hover:scale-105 transition-transform"
               />
             </Link>
             

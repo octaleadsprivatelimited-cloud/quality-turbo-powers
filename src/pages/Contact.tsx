@@ -48,7 +48,7 @@ const Contact = () => {
     },
     {
       icon: MapPin,
-      title: "Address",
+      title: "Registered Office",
       details: ["H.No. 7-66/1, Sai Ram Colony", "Patancheru, Hyderabad - 509 319"],
       color: "from-[#283852] to-[#9ee055]"
     },

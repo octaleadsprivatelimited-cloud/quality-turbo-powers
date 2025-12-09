@@ -92,11 +92,11 @@ const ErectionCommissioning = () => {
                 </div>
 
                 <p className="text-slate-600 leading-relaxed mb-6">
-                  We offer world-class Erection & Commissioning Services with committed quality. These services are being offered by using advanced technology and sophisticated machines. Our experienced team ensures seamless installation and startup of all rotating equipment.
+                  We offer world-class Erection & Commissioning Services with committed quality. These services are being offered by using advanced technology and sophisticated machines.
                 </p>
 
                 <p className="text-slate-600 leading-relaxed mb-8">
-                  From initial site assessment to final commissioning, we handle every aspect of the installation process with precision and expertise, ensuring your equipment operates at peak performance from day one.
+                  We have successfully delivered erection and commissioning of STG Sets, Turbine Blowers, Turbine Compressors, DG Sets & Chillers.
                 </p>
 
                 {/* Features */}

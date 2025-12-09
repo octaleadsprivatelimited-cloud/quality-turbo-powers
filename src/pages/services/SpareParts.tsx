@@ -105,15 +105,14 @@ const SpareParts = () => {
                   With our wide network of suppliers and manufacturers, we can source and deliver critical spare parts quickly, minimizing downtime and ensuring your operations continue smoothly. Our technical team provides expert guidance for part selection and compatibility.
                 </p>
 
-                {/* Features List */}
-                <div className="space-y-3 mb-8">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Available Parts Include:</h3>
-                  {features.map((feature, index) => (
-                    <div key={index} className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#9ee055] flex-shrink-0" />
-                      <span className="text-slate-700">{feature}</span>
-                    </div>
-                  ))}
+                {/* Detailed Parts List */}
+                <div className="mb-8">
+                  <h3 className="text-lg font-bold text-slate-900 mb-4">Available Spare Parts Include:</h3>
+                  <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+                    <p className="text-slate-700 leading-relaxed mb-3">
+                      Guide Blades, Moving Blades, Diaphragms, Journal Bearings of Cylindrical, Two Lobe, Four Lobe, Tilting Pads, Sleeve Bearings and Thrust bearings, Governing System-Spindles, Valve Cones, Bolts, Complete Yoke Assemble, Servomotor & Pilot Valve Assemblies, Steam Glands, Oil Gland Assemblies, Pinion & Gear, Wheel Shafts for Gear Boxes, Impellers & Shafts Etc.,
+                    </p>
+                  </div>
                 </div>
               </div>
 

@@ -91,12 +91,8 @@ const OperationMaintenance = () => {
                   </div>
                 </div>
 
-                <p className="text-slate-600 leading-relaxed mb-6">
-                  We provide fully integrated power plant operations and maintenance and utility services for optimal plant performance. Our comprehensive O&M programs are designed to maximize equipment availability and extend asset life.
-                </p>
-
                 <p className="text-slate-600 leading-relaxed mb-8">
-                  With our experienced team and proven methodologies, we help power plants achieve reliable operations while optimizing maintenance costs and improving overall efficiency.
+                  We provide fully integrated power plant operations and maintenance and utility services.
                 </p>
 
                 {/* Features */}

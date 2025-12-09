@@ -93,11 +93,11 @@ const RepairReconditioning = () => {
                 </div>
 
                 <p className="text-slate-600 leading-relaxed mb-6">
-                  We offer Repair & Reconditioning of various Rotatory Equipments using advanced technology and sophisticated machines. Our state-of-the-art facility is equipped to handle complex repairs and restore components to original specifications.
+                  We offer Repair & Reconditioning of various Rotatory Equipment's. These services are being offered by using advanced technology and sophisticated machines.
                 </p>
 
                 <p className="text-slate-600 leading-relaxed mb-8">
-                  From equipment pickup to delivery and commissioning, we provide end-to-end repair solutions that minimize downtime and extend equipment life.
+                  We have successfully delivered the equipment till the commissioning.
                 </p>
 
                 {/* Features */}
