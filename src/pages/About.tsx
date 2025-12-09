@@ -149,7 +149,7 @@ const About = () => {
                 <div className="flex flex-wrap gap-6">
                   {[
                     { value: "7+", label: "Years Exp." },
-                    { value: "15+", label: "Projects" },
+                    { value: "40+", label: "Projects" },
                     { value: "20+", label: "Clients" },
                     { value: "24/7", label: "Support" }
                   ].map((stat, index) => (
@@ -268,38 +268,38 @@ const About = () => {
             </p>
           </div>
 
-          {/* Clients Grid Layout - Circular Logos Only */}
-          <div className="grid grid-cols-3 gap-4 md:gap-6 max-w-2xl mx-auto">
+          {/* Clients Grid Layout */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-3 max-w-4xl mx-auto">
             {[
               { 
-                name: "Linde", 
-                logo: "https://logo.clearbit.com/linde.com" 
+                name: "Client 1", 
+                logo: "/clients/client-1.png" 
               },
               { 
-                name: "ISGEC", 
-                logo: "https://logo.clearbit.com/isgec.com" 
+                name: "Client 2", 
+                logo: "/clients/client-2.jpeg" 
               },
               { 
-                name: "PRAXAIR", 
-                logo: "https://logo.clearbit.com/praxair.com" 
+                name: "Client 3", 
+                logo: "/clients/client-3.jpeg" 
               },
             ].map((client, index) => (
               <div
                 key={index}
-                className="group flex items-center justify-center"
+                className="group"
               >
-                {/* Circular Logo Frame */}
-                <div className="relative w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-full bg-white border-2 border-slate-200 group-hover:border-[#9ee055] shadow-md group-hover:shadow-lg transition-all duration-300 overflow-hidden flex items-center justify-center p-2">
+                {/* Logo Card */}
+                <div className="relative w-full h-24 md:h-28 lg:h-32 flex items-center justify-center p-2 md:p-3">
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className="w-full h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                    className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.style.display = 'none';
                       const parent = target.parentElement;
                       if (parent) {
-                        parent.innerHTML = `<div class="text-slate-700 font-semibold text-[8px] md:text-[10px] text-center leading-tight">${client.name}</div>`;
+                        parent.innerHTML = `<div class="text-slate-700 font-semibold text-sm md:text-base text-center">${client.name}</div>`;
                       }
                     }}
                   />

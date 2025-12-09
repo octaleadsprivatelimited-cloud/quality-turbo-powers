@@ -5,16 +5,16 @@ const ClienteleSection = () => {
 
   const clients = [
     { 
-      name: "Linde", 
-      logo: "https://logo.clearbit.com/linde.com" 
+      name: "Client 1", 
+      logo: "/clients/client-1.png" 
     },
     { 
-      name: "ISGEC", 
-      logo: "https://logo.clearbit.com/isgec.com" 
+      name: "Client 2", 
+      logo: "/clients/client-2.jpeg" 
     },
     { 
-      name: "PRAXAIR", 
-      logo: "https://logo.clearbit.com/praxair.com" 
+      name: "Client 3", 
+      logo: "/clients/client-3.jpeg" 
     },
   ];
 
@@ -35,24 +35,24 @@ const ClienteleSection = () => {
           </p>
         </div>
 
-        {/* Clients Grid Layout - Circular Logos Only */}
-        <div className="grid grid-cols-3 gap-4 md:gap-6 max-w-2xl mx-auto">
+        {/* Clients Grid Layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-3 max-w-4xl mx-auto">
           {clients.map((client, index) => (
             <div
               key={index}
-              className="group flex items-center justify-center"
+              className="group"
             >
-              {/* Circular Logo Frame */}
-              <div className="relative w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-full bg-white border-2 border-slate-200 group-hover:border-[#9ee055] shadow-md group-hover:shadow-lg transition-all duration-300 overflow-hidden flex items-center justify-center p-2">
+              {/* Logo Card */}
+              <div className="relative w-full h-24 md:h-28 lg:h-32 flex items-center justify-center p-2 md:p-3">
                 {imageErrors.has(index) ? (
-                  <div className="text-slate-700 font-semibold text-[8px] md:text-[10px] text-center leading-tight">
+                  <div className="text-slate-700 font-semibold text-sm md:text-base text-center">
                     {client.name}
                   </div>
                 ) : (
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className="w-full h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                    className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
                     onError={() => handleImageError(index)}
                   />
                 )}

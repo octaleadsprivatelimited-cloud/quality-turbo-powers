@@ -111,9 +111,9 @@ const Header = () => {
                 <Link 
                   key={index}
                   to={link.href} 
-                  className={`px-4 py-1.5 text-sm font-medium rounded-md transition-all ${
+                  className={`px-4 py-1.5 text-sm font-medium rounded-md transition-all active:bg-slate-300 ${
                     isActive(link.href)
-                      ? 'text-[#283852] bg-[#9ee055]/10'
+                      ? 'text-white bg-[#283852]'
                       : 'text-slate-700 hover:text-[#283852] hover:bg-slate-50'
                   }`}
                 >
@@ -129,9 +129,9 @@ const Header = () => {
               >
                 <Link
                   to="/services"
-                  className={`px-4 py-1.5 text-sm font-medium rounded-md transition-all flex items-center gap-1 ${
+                  className={`px-4 py-1.5 text-sm font-medium rounded-md transition-all flex items-center gap-1 active:bg-slate-300 ${
                     isServicesActive()
-                      ? 'text-[#283852] bg-[#9ee055]/10'
+                      ? 'text-white bg-[#283852]'
                       : 'text-slate-700 hover:text-[#283852] hover:bg-slate-50'
                   }`}
                 >
@@ -146,9 +146,9 @@ const Header = () => {
                       <Link
                         key={index}
                         to={service.href}
-                        className={`block px-4 py-2 text-sm transition-colors ${
+                        className={`block px-4 py-2 text-sm transition-colors active:bg-slate-300 ${
                           isActive(service.href)
-                            ? 'text-[#283852] bg-[#9ee055]/10 font-medium'
+                            ? 'text-white bg-[#283852] font-medium'
                             : 'text-slate-700 hover:text-[#283852] hover:bg-slate-50'
                         }`}
                       >
@@ -236,9 +236,9 @@ const Header = () => {
                   key={index}
                   to={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`flex items-center justify-between px-4 py-3 rounded-xl transition-all font-medium active:bg-[#7db844]/30 ${
+                  className={`flex items-center justify-between px-4 py-3 rounded-xl transition-all font-medium active:bg-slate-300 ${
                     isActive(link.href)
-                      ? 'text-[#283852] bg-[#9ee055]/10'
+                      ? 'text-white bg-[#283852]'
                       : 'text-slate-600 hover:text-[#283852] hover:bg-slate-50'
                   }`}
                 >
@@ -251,9 +251,9 @@ const Header = () => {
               <div>
                 <button
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                  className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all font-medium active:bg-[#7db844]/30 ${
+                  className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all font-medium active:bg-slate-300 ${
                     isServicesActive()
-                      ? 'text-[#283852] bg-[#9ee055]/10'
+                      ? 'text-white bg-[#283852]'
                       : 'text-slate-600 hover:text-[#283852] hover:bg-slate-50'
                   }`}
                 >
@@ -271,9 +271,9 @@ const Header = () => {
                           setMobileMenuOpen(false);
                           setMobileServicesOpen(false);
                         }}
-                        className={`block px-4 py-2 text-sm rounded-lg transition-colors active:bg-[#7db844]/30 ${
+                        className={`block px-4 py-2 text-sm rounded-lg transition-colors active:bg-slate-300 ${
                           isActive(service.href)
-                            ? 'text-[#283852] bg-[#9ee055]/10 font-medium'
+                            ? 'text-white bg-[#283852] font-medium'
                             : 'text-slate-600 hover:text-[#283852] hover:bg-slate-50'
                         }`}
                       >
@@ -289,7 +289,7 @@ const Header = () => {
             <div className="mt-6 pt-4 border-t border-slate-100 space-y-3">
               <a 
                 href="tel:+919492121315" 
-                className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600 rounded-lg active:bg-[#7db844]/30 transition-colors"
+                className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600 rounded-lg active:bg-slate-300 transition-colors"
               >
                 <div className="w-8 h-8 bg-[#9ee055]/10 rounded-lg flex items-center justify-center">
                   <Phone className="w-4 h-4 text-[#283852]" />
@@ -298,7 +298,7 @@ const Header = () => {
               </a>
               <a 
                 href="tel:+919492125536" 
-                className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600 rounded-lg active:bg-[#7db844]/30 transition-colors"
+                className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600 rounded-lg active:bg-slate-300 transition-colors"
               >
                 <div className="w-8 h-8 bg-[#9ee055]/10 rounded-lg flex items-center justify-center">
                   <Phone className="w-4 h-4 text-[#283852]" />
@@ -307,7 +307,7 @@ const Header = () => {
               </a>
               <a 
                 href="mailto:qualityturboservices@gmail.com" 
-                className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600 rounded-lg active:bg-[#7db844]/30 transition-colors"
+                className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600 rounded-lg active:bg-slate-300 transition-colors"
               >
                 <div className="w-8 h-8 bg-[#9ee055]/10 rounded-lg flex items-center justify-center">
                   <Mail className="w-4 h-4 text-[#283852]" />
@@ -318,7 +318,7 @@ const Header = () => {
                 <a 
                   href="/brochure.pdf" 
                   download="QTPS-Brochure.pdf"
-                  className="inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-[#283852] border border-slate-200 rounded-xl hover:border-[#9ee055] hover:bg-[#9ee055]/10 active:bg-[#7db844]/30 transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-[#283852] border border-slate-200 rounded-xl hover:border-[#9ee055] hover:bg-[#9ee055]/10 active:bg-slate-300 transition-all"
                 >
                   <Download className="w-4 h-4" />
                   Download Brochure

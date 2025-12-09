@@ -15,7 +15,7 @@ const StatsSection = () => {
       color: "from-[#283852] to-[#9ee055]"
     },
     { 
-      value: 15, 
+      value: 40, 
       suffix: "+", 
       label: "Projects Completed", 
       description: "Successful deliveries",
