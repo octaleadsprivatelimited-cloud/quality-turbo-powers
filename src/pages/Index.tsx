@@ -14,10 +14,10 @@ const Index = () => {
   return (
     <div className="min-h-screen font-sans">
       <Helmet>
-        <title>Quality Turbo Power Services | Industrial Turbine Services in Hyderabad</title>
-        <meta name="description" content="Quality Turbo Power Services offers complete rotating equipment solutions including turbine erection, commissioning, overhauls, repairs, and maintenance services. Based in Hyderabad, serving industries across India." />
+        <title>Quality Turbine Power Services | Industrial Turbine Services in Hyderabad</title>
+        <meta name="description" content="Quality Turbine Power Services offers complete rotating equipment solutions including turbine erection, commissioning, overhauls, repairs, and maintenance services. Based in Hyderabad, serving industries across India." />
         <meta name="keywords" content="turbine services, power plant equipment, erection commissioning, turbine overhaul, turbine repair, rotating equipment, Hyderabad, industrial maintenance, steam turbine, gas turbine" />
-        <meta property="og:title" content="Quality Turbo Power Services | Industrial Turbine Services" />
+        <meta property="og:title" content="Quality Turbine Power Services | Industrial Turbine Services" />
         <meta property="og:description" content="Complete rotating equipment solutions - turbine erection, commissioning, overhauls, repairs, and maintenance services in Hyderabad." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://qualityturbopower.com/" />

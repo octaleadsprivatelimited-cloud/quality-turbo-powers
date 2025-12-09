@@ -24,7 +24,7 @@ const Industries = () => {
       icon: Factory,
       name: "Petrochemicals",
       description: "Specialized maintenance for refinery and petrochemical rotating equipment.",
-      services: ["Compressor Services", "Pump Overhauls", "Turbo Expanders", "Reactor Maintenance"],
+      services: ["Compressor Services", "Pump Overhauls", "Turbine Expanders", "Reactor Maintenance"],
       color: "from-[#283852] to-[#9ee055]"
     },
     {
@@ -60,10 +60,10 @@ const Industries = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Helmet>
-        <title>Industries We Serve | Quality Turbo Power Services</title>
-        <meta name="description" content="Serving power generation, petrochemicals, steel plants, cement, fertilizers, and more. Quality Turbo provides specialized rotating equipment solutions across diverse industrial sectors." />
+        <title>Industries We Serve | Quality Turbine Power Services</title>
+        <meta name="description" content="Serving power generation, petrochemicals, steel plants, cement, fertilizers, and more. Quality Turbine provides specialized rotating equipment solutions across diverse industrial sectors." />
         <meta name="keywords" content="power plant services, petrochemical turbines, steel plant equipment, cement industry services, fertilizer plant maintenance, oil gas turbines, sugar mill equipment, industrial turbine services" />
-        <meta property="og:title" content="Industries We Serve | Quality Turbo Power Services" />
+        <meta property="og:title" content="Industries We Serve | Quality Turbine Power Services" />
         <meta property="og:description" content="Specialized rotating equipment solutions across power generation, petrochemicals, steel, cement, and more." />
         <link rel="canonical" href="https://qualityturbopower.com/industries" />
       </Helmet>

@@ -31,10 +31,10 @@ const RepairReconditioning = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden font-sans">
       <Helmet>
-        <title>Repair & Reconditioning | Quality Turbo Power Services</title>
+        <title>Repair & Reconditioning | Quality Turbine Power Services</title>
         <meta name="description" content="Specialized repair and reconditioning services for turbine blades, rotors, bearings, gearboxes, and compressor components. Advanced machining, welding, and dynamic balancing." />
         <meta name="keywords" content="turbine blade repair, rotor reconditioning, bearing repair, gearbox repair, compressor repair, turbine welding, dynamic balancing, turbine machining" />
-        <meta property="og:title" content="Repair & Reconditioning | Quality Turbo Power Services" />
+        <meta property="og:title" content="Repair & Reconditioning | Quality Turbine Power Services" />
         <meta property="og:description" content="Expert repair and reconditioning of rotating equipment using sophisticated machines." />
         <link rel="canonical" href="https://qualityturbopower.com/services/repair-reconditioning" />
       </Helmet>

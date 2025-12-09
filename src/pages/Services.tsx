@@ -22,7 +22,7 @@ const Services = () => {
       icon: Settings,
       title: "Erection & Commissioning",
       description: "World-class Erection & Commissioning Services with committed quality using advanced technology.",
-      features: ["STG Sets", "Turbo Blowers", "Turbo Compressors", "DG Sets"],
+      features: ["STG Sets", "Turbine Blowers", "Turbine Compressors", "DG Sets"],
       image: erectionImg,
       color: "from-[#283852] to-[#9ee055]",
       link: "/services/erection-commissioning"
@@ -31,7 +31,7 @@ const Services = () => {
       icon: Wrench,
       title: "Troubleshooting & Overhauls",
       description: "Complete technical and operational problem-solving that can affect plant performance.",
-      features: ["Turbine Systems", "Turbo Generators", "Boilers", "Compressors"],
+      features: ["Turbine Systems", "Turbine Generators", "Boilers", "Compressors"],
       image: troubleshootingImg,
       color: "from-[#283852] to-[#9ee055]",
       link: "/services/troubleshooting-overhauls"
@@ -79,10 +79,10 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Helmet>
-        <title>Our Services | Quality Turbo Power Services - Turbine Solutions</title>
+        <title>Our Services | Quality Turbine Power Services - Turbine Solutions</title>
         <meta name="description" content="Comprehensive turbine services including erection & commissioning, troubleshooting & overhauls, repair & reconditioning, operation & maintenance, and spare parts supply. Expert solutions for rotating equipment." />
         <meta name="keywords" content="turbine erection, turbine commissioning, turbine overhaul, turbine repair, turbine maintenance, rotating equipment services, steam turbine services, gas turbine services, power plant maintenance" />
-        <meta property="og:title" content="Our Services | Quality Turbo Power Services" />
+        <meta property="og:title" content="Our Services | Quality Turbine Power Services" />
         <meta property="og:description" content="Comprehensive turbine services - erection, commissioning, overhauls, repairs, and maintenance for rotating equipment." />
         <link rel="canonical" href="https://qualityturbopower.com/services" />
       </Helmet>

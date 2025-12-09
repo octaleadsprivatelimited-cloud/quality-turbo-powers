@@ -12,7 +12,7 @@ const About = () => {
     {
       icon: Users,
       title: "People",
-      description: "Quality Turbo is a company of young entrepreneurs and we consider people as our biggest assets. We encourage excellence and value intellect among our people."
+      description: "Quality Turbine is a company of young entrepreneurs and we consider people as our biggest assets. We encourage excellence and value intellect among our people."
     },
     {
       icon: Heart,
@@ -27,7 +27,7 @@ const About = () => {
     {
       icon: Star,
       title: "Expertise",
-      description: "With decades of world-class engineering services expertise under our belt, Quality Turbo has earned the trust and support to clients."
+      description: "With decades of world-class engineering services expertise under our belt, Quality Turbine has earned the trust and support to clients."
     },
     {
       icon: Award,
@@ -71,10 +71,10 @@ const About = () => {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>About Us | Quality Turbo Power Services - Hyderabad</title>
-        <meta name="description" content="Learn about Quality Turbo Power Services - a growth-oriented engineering organization specializing in rotating equipment services. Expert team, commitment to quality, and excellence since 2018." />
-        <meta name="keywords" content="about quality turbo, turbine company Hyderabad, rotating equipment experts, power plant services company, industrial engineering services, turbine maintenance company" />
-        <meta property="og:title" content="About Us | Quality Turbo Power Services" />
+        <title>About Us | Quality Turbine Power Services - Hyderabad</title>
+        <meta name="description" content="Learn about Quality Turbine Power Services - a growth-oriented engineering organization specializing in rotating equipment services. Expert team, commitment to quality, and excellence since 2018." />
+        <meta name="keywords" content="about quality turbine, turbine company Hyderabad, rotating equipment experts, power plant services company, industrial engineering services, turbine maintenance company" />
+        <meta property="og:title" content="About Us | Quality Turbine Power Services" />
         <meta property="og:description" content="Growth-oriented engineering organization specializing in rotating equipment services since 2018." />
         <link rel="canonical" href="https://qualityturbopower.com/about" />
       </Helmet>
@@ -98,7 +98,7 @@ const About = () => {
 
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium text-white mb-4 leading-tight">
               About{" "}
-              <span className="text-[#9ee055]">Quality Turbo Power Services</span>
+              <span className="text-[#9ee055]">Quality Turbine Power Services</span>
             </h1>
             <p className="text-base text-white/70 leading-relaxed">
               A Complete Solution for Rotating Equipments
@@ -125,7 +125,7 @@ const About = () => {
                 </h2>
                 
                 <p className="text-slate-600 leading-relaxed mb-6">
-                  M/s. Quality Turbo Power Services is a multi disciplinary, growth oriented, Engineering and service 
+                  M/s. Quality Turbine Power Services is a multi disciplinary, growth oriented, Engineering and service 
                   organization headquartered in Hyderabad, established in 2018, by a group of Engineers with the 
                   primary focus to serve the power/process industry.
                 </p>

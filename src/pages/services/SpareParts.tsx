@@ -36,10 +36,10 @@ const SpareParts = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden font-sans">
       <Helmet>
-        <title>Spare Parts Supply | Quality Turbo Power Services</title>
+        <title>Spare Parts Supply | Quality Turbine Power Services</title>
         <meta name="description" content="Comprehensive spare parts supply for turbines, compressors, generators, and rotating equipment. Genuine OEM parts with quick delivery and technical support." />
         <meta name="keywords" content="turbine spare parts, compressor spare parts, generator spare parts, OEM parts, power plant spare parts, rotating equipment parts" />
-        <meta property="og:title" content="Spare Parts Supply | Quality Turbo Power Services" />
+        <meta property="og:title" content="Spare Parts Supply | Quality Turbine Power Services" />
         <meta property="og:description" content="Genuine spare parts supply for turbines, compressors, and rotating equipment with quick delivery." />
         <link rel="canonical" href="https://qualityturbopower.com/services/spare-parts" />
       </Helmet>

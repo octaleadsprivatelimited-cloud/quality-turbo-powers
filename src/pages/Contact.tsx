@@ -70,10 +70,10 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Helmet>
-        <title>Contact Us | Quality Turbo Power Services - Hyderabad</title>
-        <meta name="description" content="Contact Quality Turbo Power Services for turbine solutions. Located in Patancheru, Hyderabad. 24/7 emergency support available. Call +91 94921 21315 or email qualityturboservices@gmail.com." />
-        <meta name="keywords" content="contact quality turbo, turbine services Hyderabad, Patancheru turbine company, emergency turbine support, power plant services contact, industrial equipment services" />
-        <meta property="og:title" content="Contact Us | Quality Turbo Power Services" />
+        <title>Contact Us | Quality Turbine Power Services - Hyderabad</title>
+        <meta name="description" content="Contact Quality Turbine Power Services for turbine solutions. Located in Patancheru, Hyderabad. 24/7 emergency support available. Call +91 94921 21315 or email qualityturboservices@gmail.com." />
+        <meta name="keywords" content="contact quality turbine, turbine services Hyderabad, Patancheru turbine company, emergency turbine support, power plant services contact, industrial equipment services" />
+        <meta property="og:title" content="Contact Us | Quality Turbine Power Services" />
         <meta property="og:description" content="Get in touch for turbine solutions. Located in Hyderabad with 24/7 emergency support." />
         <link rel="canonical" href="https://qualityturbopower.com/contact" />
       </Helmet>
@@ -298,7 +298,7 @@ const Contact = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Quality Turbo Power Services - Sai Ram Colony, Patancheru, Hyderabad"
+                  title="Quality Turbine Power Services - Sai Ram Colony, Patancheru, Hyderabad"
                 />
               </div>
             </div>

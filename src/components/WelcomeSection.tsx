@@ -15,10 +15,10 @@ const WelcomeSection = () => {
           }`}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 uppercase">
-            Welcome to Quality Turbo Power Services
+            Welcome to Quality Turbine Power Services
           </h2>
           <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-            Quality Turbo Power Services is a global service provider for power plant, Petrochemicals, 
+            Quality Turbine Power Services is a global service provider for power plant, Petrochemicals, 
             steel, fertilizers, cement, paper etc. services like Overhauls, Refurbishments, Spares & 
             Services, Repairs & Retrofits, Erection & Commissioning, Re Engineering and Relocation of 
             Power Plants. We have proficient, well experienced, highly qualified and technically skilled 

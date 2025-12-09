@@ -40,7 +40,7 @@ const AboutCertificationsSection = () => {
                   WELCOME To
                 </p>
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-1">
-                  <span className="text-[#9ee055]">QUALITY TURBO</span>
+                  <span className="text-[#9ee055]">QUALITY TURBINE</span>
                 </h2>
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#9ee055]">
                   POWER SERVICES
@@ -49,7 +49,7 @@ const AboutCertificationsSection = () => {
 
               {/* Description */}
               <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6 md:mb-8">
-                M/s. Quality Turbo Power Services is a multi-disciplinary, growth oriented, Engineering and service organization headquartered in Hyderabad, established in 2018, by a group of Engineers with the primary focus to serve the power/process industry. We as an organization have varied & vast experience in Engineering, Operation & Maintenance, Overhauls, Troubleshooting, Fabrication and Erection & Commissioning of rotating equipment & its auxiliaries...
+                M/s. Quality Turbine Power Services is a multi-disciplinary, growth oriented, Engineering and service organization headquartered in Hyderabad, established in 2018, by a group of Engineers with the primary focus to serve the power/process industry. We as an organization have varied & vast experience in Engineering, Operation & Maintenance, Overhauls, Troubleshooting, Fabrication and Erection & Commissioning of rotating equipment & its auxiliaries...
               </p>
 
               {/* Read More Button */}

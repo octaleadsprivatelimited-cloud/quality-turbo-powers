@@ -13,7 +13,7 @@ const TroubleshootingOverhauls = () => {
 
   const features = [
     "Turbine Systems",
-    "Turbo Generators",
+    "Turbine Generators",
     "Boilers & Auxiliaries",
     "Centrifugal Compressors",
     "Gas Turbines",
@@ -31,10 +31,10 @@ const TroubleshootingOverhauls = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden font-sans">
       <Helmet>
-        <title>Troubleshooting & Overhauls | Quality Turbo Power Services</title>
+        <title>Troubleshooting & Overhauls | Quality Turbine Power Services</title>
         <meta name="description" content="Expert troubleshooting and overhaul services for turbines, generators, boilers, and compressors. Diagnostic analysis, major & minor overhauls, spare parts supply, and 24/7 emergency response." />
         <meta name="keywords" content="turbine troubleshooting, turbine overhaul, generator overhaul, boiler maintenance, compressor repair, turbine diagnostic, emergency turbine repair" />
-        <meta property="og:title" content="Troubleshooting & Overhauls | Quality Turbo Power Services" />
+        <meta property="og:title" content="Troubleshooting & Overhauls | Quality Turbine Power Services" />
         <meta property="og:description" content="Complete technical problem-solving and overhaul services for rotating equipment." />
         <link rel="canonical" href="https://qualityturbopower.com/services/troubleshooting-overhauls" />
       </Helmet>

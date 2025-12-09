@@ -13,8 +13,8 @@ const ErectionCommissioning = () => {
 
   const features = [
     "STG Sets (Steam Turbine Generator)",
-    "Turbo Blowers",
-    "Turbo Compressors",
+    "Turbine Blowers",
+    "Turbine Compressors",
     "DG Sets & Chillers",
     "Gas Turbines",
     "Centrifugal Pumps"
@@ -30,10 +30,10 @@ const ErectionCommissioning = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden font-sans">
       <Helmet>
-        <title>Erection & Commissioning Services | Quality Turbo Power Services</title>
-        <meta name="description" content="Professional erection and commissioning services for STG sets, turbo blowers, turbo compressors, DG sets, gas turbines, and centrifugal pumps. Expert installation and commissioning in Hyderabad." />
-        <meta name="keywords" content="turbine erection, turbine commissioning, STG installation, turbo blower installation, turbo compressor commissioning, power plant erection, gas turbine commissioning" />
-        <meta property="og:title" content="Erection & Commissioning Services | Quality Turbo Power Services" />
+        <title>Erection & Commissioning Services | Quality Turbine Power Services</title>
+        <meta name="description" content="Professional erection and commissioning services for STG sets, turbine blowers, turbine compressors, DG sets, gas turbines, and centrifugal pumps. Expert installation and commissioning in Hyderabad." />
+        <meta name="keywords" content="turbine erection, turbine commissioning, STG installation, turbine blower installation, turbine compressor commissioning, power plant erection, gas turbine commissioning" />
+        <meta property="og:title" content="Erection & Commissioning Services | Quality Turbine Power Services" />
         <meta property="og:description" content="World-class erection and commissioning services for rotating equipment with committed quality." />
         <link rel="canonical" href="https://qualityturbopower.com/services/erection-commissioning" />
       </Helmet>

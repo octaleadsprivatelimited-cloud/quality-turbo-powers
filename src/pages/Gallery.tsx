@@ -16,6 +16,15 @@ const Gallery = () => {
     { id: 5, src: "/gallery/image-5.jpeg", alt: "Gallery Image 5" },
     { id: 6, src: "/gallery/image-6.jpeg", alt: "Gallery Image 6" },
     { id: 7, src: "/gallery/image-7.jpeg", alt: "Spare Parts" },
+    { id: 8, src: "/gallery/image-8.jpeg", alt: "Gallery Image 8" },
+    { id: 9, src: "/gallery/image-9.jpeg", alt: "Gallery Image 9" },
+    { id: 10, src: "/gallery/image-10.jpeg", alt: "Gallery Image 10" },
+    { id: 11, src: "/gallery/image-11.jpeg", alt: "Gallery Image 11" },
+    { id: 12, src: "/gallery/image-12.jpeg", alt: "Gallery Image 12" },
+    { id: 13, src: "/gallery/image-13.jpeg", alt: "Gallery Image 13" },
+    { id: 14, src: "/gallery/image-14.jpeg", alt: "Gallery Image 14" },
+    { id: 15, src: "/gallery/image-15.jpeg", alt: "Gallery Image 15" },
+    { id: 16, src: "/gallery/image-16.jpeg", alt: "Gallery Image 16" },
   ];
 
   const openModal = (index: number) => {
@@ -59,7 +68,7 @@ const Gallery = () => {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Gallery | Quality Turbo Power Services</title>
+        <title>Gallery | Quality Turbine Power Services</title>
         <meta name="description" content="View our project gallery showcasing our turbine services, overhauls, and engineering solutions." />
         <link rel="canonical" href="https://qualityturbopower.com/gallery" />
       </Helmet>

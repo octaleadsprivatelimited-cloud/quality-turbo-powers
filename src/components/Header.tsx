@@ -100,7 +100,7 @@ const Header = () => {
             <Link to="/" className="flex items-center gap-2 group">
               <img 
                 src={logoImg} 
-                alt="Quality Turbo Power Services" 
+                alt="Quality Turbine Power Services" 
                 className="h-[300px] lg:h-[346px] w-auto max-w-[280px] lg:max-w-[1440px] object-contain group-hover:scale-105 transition-transform"
               />
             </Link>

@@ -130,7 +130,7 @@ const CompletedProjects = () => {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Completed Projects | Quality Turbo Power Services</title>
+        <title>Completed Projects | Quality Turbine Power Services</title>
         <meta name="description" content="View our completed projects including turbine erection, commissioning, and overhauling services across India." />
         <link rel="canonical" href="https://qualityturbopower.com/completed-projects" />
       </Helmet>
