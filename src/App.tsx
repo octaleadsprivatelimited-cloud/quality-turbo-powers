@@ -13,6 +13,7 @@ import CompletedProjects from "./pages/CompletedProjects";
 import NotFound from "./pages/NotFound";
 import WhatsAppButton from "./components/WhatsAppButton";
 import ScrollToTopOnNavigate from "./components/ScrollToTopOnNavigate";
+import Preloader from "./components/Preloader";
 import ErectionCommissioning from "./pages/services/ErectionCommissioning";
 import TroubleshootingOverhauls from "./pages/services/TroubleshootingOverhauls";
 import RepairReconditioning from "./pages/services/RepairReconditioning";
@@ -25,6 +26,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <div className="font-sans">
+        <Preloader />
         <Toaster />
         <Sonner />
         <BrowserRouter>

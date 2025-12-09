@@ -95,13 +95,13 @@ const Header = () => {
         style={{ backgroundColor: '#e8ecf2' }}
       >
         <div className="container mx-auto px-6 md:px-12 lg:px-20">
-          <div className="flex items-center justify-between h-14 lg:h-16">
-            {/* Logo */}
+          <div className="relative flex items-center justify-center lg:justify-between h-14 lg:h-16">
+            {/* Logo - Centered on mobile, left on desktop */}
             <Link to="/" className="flex items-center gap-2 group">
               <img 
                 src={logoImg} 
                 alt="Quality Turbo Power Services" 
-                className="h-[230px] lg:h-[346px] w-auto max-w-[280px] lg:max-w-[1440px] object-contain group-hover:scale-105 transition-transform"
+                className="h-[300px] lg:h-[346px] w-auto max-w-[280px] lg:max-w-[1440px] object-contain group-hover:scale-105 transition-transform"
               />
             </Link>
             
@@ -181,9 +181,9 @@ const Header = () => {
               </Link>
             </div>
 
-            {/* Mobile Menu Button */}
+            {/* Mobile Menu Button - Absolute positioned on right for mobile */}
             <button
-              className="lg:hidden w-8 h-8 flex items-center justify-center rounded-md bg-slate-100 hover:bg-slate-200 transition-colors"
+              className="lg:hidden absolute right-0 w-8 h-8 flex items-center justify-center rounded-md bg-slate-100 hover:bg-slate-200 transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -236,7 +236,7 @@ const Header = () => {
                   key={index}
                   to={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`flex items-center justify-between px-4 py-3 rounded-xl transition-all font-medium ${
+                  className={`flex items-center justify-between px-4 py-3 rounded-xl transition-all font-medium active:bg-[#7db844]/30 ${
                     isActive(link.href)
                       ? 'text-[#283852] bg-[#9ee055]/10'
                       : 'text-slate-600 hover:text-[#283852] hover:bg-slate-50'
@@ -251,7 +251,7 @@ const Header = () => {
               <div>
                 <button
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                  className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all font-medium ${
+                  className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all font-medium active:bg-[#7db844]/30 ${
                     isServicesActive()
                       ? 'text-[#283852] bg-[#9ee055]/10'
                       : 'text-slate-600 hover:text-[#283852] hover:bg-slate-50'
@@ -271,7 +271,7 @@ const Header = () => {
                           setMobileMenuOpen(false);
                           setMobileServicesOpen(false);
                         }}
-                        className={`block px-4 py-2 text-sm rounded-lg transition-colors ${
+                        className={`block px-4 py-2 text-sm rounded-lg transition-colors active:bg-[#7db844]/30 ${
                           isActive(service.href)
                             ? 'text-[#283852] bg-[#9ee055]/10 font-medium'
                             : 'text-slate-600 hover:text-[#283852] hover:bg-slate-50'
@@ -289,7 +289,7 @@ const Header = () => {
             <div className="mt-6 pt-4 border-t border-slate-100 space-y-3">
               <a 
                 href="tel:+919492121315" 
-                className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600"
+                className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600 rounded-lg active:bg-[#7db844]/30 transition-colors"
               >
                 <div className="w-8 h-8 bg-[#9ee055]/10 rounded-lg flex items-center justify-center">
                   <Phone className="w-4 h-4 text-[#283852]" />
@@ -298,7 +298,7 @@ const Header = () => {
               </a>
               <a 
                 href="tel:+919492125536" 
-                className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600"
+                className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600 rounded-lg active:bg-[#7db844]/30 transition-colors"
               >
                 <div className="w-8 h-8 bg-[#9ee055]/10 rounded-lg flex items-center justify-center">
                   <Phone className="w-4 h-4 text-[#283852]" />
@@ -307,7 +307,7 @@ const Header = () => {
               </a>
               <a 
                 href="mailto:qualityturboservices@gmail.com" 
-                className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600"
+                className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600 rounded-lg active:bg-[#7db844]/30 transition-colors"
               >
                 <div className="w-8 h-8 bg-[#9ee055]/10 rounded-lg flex items-center justify-center">
                   <Mail className="w-4 h-4 text-[#283852]" />
@@ -318,7 +318,7 @@ const Header = () => {
                 <a 
                   href="/brochure.pdf" 
                   download="QTPS-Brochure.pdf"
-                  className="inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-[#283852] border border-slate-200 rounded-xl hover:border-[#9ee055] hover:bg-[#9ee055]/10 transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-[#283852] border border-slate-200 rounded-xl hover:border-[#9ee055] hover:bg-[#9ee055]/10 active:bg-[#7db844]/30 transition-all"
                 >
                   <Download className="w-4 h-4" />
                   Download Brochure
