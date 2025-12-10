@@ -180,7 +180,7 @@ const Services = () => {
                       </div>
 
                       <Link to="/contact">
-                        <Button className={`w-full bg-gradient-to-r ${service.color} hover:opacity-90 text-white rounded-lg h-10 text-sm font-medium shadow-md transition-all duration-300`}>
+                        <Button className="w-full bg-[#283852] hover:bg-[#283852]/90 text-white rounded-lg h-10 text-sm font-medium shadow-md transition-all duration-300">
                           Get a Quote
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>

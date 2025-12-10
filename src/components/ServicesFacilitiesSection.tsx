@@ -83,7 +83,7 @@ const ServicesFacilitiesSection = () => {
         {/* CTA */}
         <div className="text-center">
           <Link to="/services">
-            <Button className="bg-[#9ee055] hover:bg-[#9ee055]/90 text-white font-semibold rounded-lg px-6 md:px-8 h-10 md:h-11 text-sm md:text-base">
+            <Button className="bg-[#283852] hover:bg-[#283852]/90 text-white font-semibold rounded-lg px-6 md:px-8 h-10 md:h-11 text-sm md:text-base">
               View All Services <ArrowRight className="w-4 md:w-5 h-4 md:h-5 ml-2" />
             </Button>
           </Link>

@@ -28,7 +28,7 @@ const ClienteleSection = () => {
         {/* Section Title */}
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
-            Our Clients
+            Clientele
           </h2>
           <p className="text-slate-600 text-sm md:text-base max-w-2xl mx-auto">
             Trusted by leading companies across various industries

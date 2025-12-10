@@ -173,7 +173,7 @@ const Header = () => {
               <Link to="/contact">
                 <Button 
                   size="sm"
-                  className="bg-[#9ee055] hover:bg-[#9ee055]/90 text-white rounded-full px-5 h-9 text-sm font-semibold shadow-md transition-all hover:scale-105"
+                  className="bg-[#283852] hover:bg-[#283852]/90 text-white rounded-full px-5 h-9 text-sm font-semibold shadow-md transition-all hover:scale-105"
                 >
                   <Phone className="w-4 h-4 mr-2" />
                   Get Quote

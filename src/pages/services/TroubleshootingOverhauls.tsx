@@ -67,7 +67,7 @@ const TroubleshootingOverhauls = () => {
               Complete technical and operational problem-solving solutions for power plant equipment with expert diagnostic capabilities.
             </p>
             <Link to="/contact">
-              <Button className="bg-[#283852] hover:bg-[#9ee055] text-white rounded-xl h-12 px-8 shadow-lg shadow-[#283852]/25">
+              <Button className="bg-[#283852] hover:bg-[#283852]/90 text-white rounded-xl h-12 px-8 shadow-lg shadow-[#283852]/25">
                 <Phone className="w-4 h-4 mr-2" />
                 Get a Quote
               </Button>
@@ -97,7 +97,7 @@ const TroubleshootingOverhauls = () => {
                 </div>
 
                 <p className="text-slate-600 leading-relaxed mb-6">
-                  Quality Turbine provides troubleshooting services and we are equipped to solve not temporarily problems but also the entire range of technical and operational problems that can afflict a plant.
+                  Quality Turbo provides troubleshooting services and we are equipped to solve not temporarily problems but also the entire range of technical and operational problems that can afflict a plant.
                 </p>
 
                 <p className="text-slate-600 leading-relaxed mb-8">
@@ -150,13 +150,13 @@ const TroubleshootingOverhauls = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link to="/contact">
-                <Button className="bg-white hover:bg-white/90 text-[#283852] font-semibold rounded-xl h-12 px-8">
+                <Button className="bg-[#283852] hover:bg-[#283852]/90 text-white font-semibold rounded-xl h-12 px-8">
                   <Phone className="w-4 h-4 mr-2" />
                   Contact Us
                 </Button>
               </Link>
               <Link to="/services">
-                <Button className="bg-white/10 border border-white/20 text-white hover:bg-white/20 font-semibold rounded-xl h-12 px-8">
+                <Button className="bg-[#283852] hover:bg-[#283852]/90 text-white font-semibold rounded-xl h-12 px-8">
                   View All Services
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>

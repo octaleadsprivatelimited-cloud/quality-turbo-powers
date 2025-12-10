@@ -2,20 +2,20 @@ import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-background.jpg";
-import heroPowerplantImg from "@/assets/hero-powerplant.jpg";
+import heroTurbineRotor from "@/assets/hero-turbine-rotor.jpg";
+import heroTdpsGenerator from "@/assets/hero-tdps-generator.jpg";
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
-      image: heroImage,
+      image: heroTurbineRotor,
       title: "Major Overhauling of 32MW HTC make Turbine Rotor",
       subtitle: "Expert Turbine Services"
     },
     {
-      image: heroPowerplantImg,
+      image: heroTdpsGenerator,
       title: "Major Overhauling of 18MW TDPS Generator",
       subtitle: "Complete Power Plant Solutions"
     }
@@ -85,13 +85,13 @@ const HeroSection = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-2 md:gap-3 justify-center">
             <Link to="/services" className="w-full sm:w-auto">
-              <Button className="w-full sm:w-auto bg-[#9ee055] hover:bg-[#9ee055]/90 text-white h-10 px-6 text-sm font-semibold rounded-lg">
+              <Button className="w-full sm:w-auto bg-[#283852] hover:bg-[#283852]/90 text-white h-10 px-6 text-sm font-semibold rounded-lg">
                 Explore Services
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
             <Link to="/contact" className="w-full sm:w-auto">
-              <Button className="w-full sm:w-auto bg-white/15 hover:bg-white/25 border border-white/40 text-white h-10 px-6 text-sm font-semibold rounded-lg">
+              <Button className="w-full sm:w-auto bg-[#283852] hover:bg-[#283852]/90 text-white h-10 px-6 text-sm font-semibold rounded-lg">
                 Get a Quote
               </Button>
             </Link>

@@ -17,7 +17,7 @@ const About = () => {
     {
       icon: Users,
       title: "People",
-      description: "Quality Turbine is a company of young entrepreneurs and we consider people as our biggest assets. We encourage excellence and value intellect among our people."
+      description: "Quality Turbo is a company of young entrepreneurs and we consider people as our biggest assets. We encourage excellence and value intellect among our people."
     },
     {
       icon: Heart,
@@ -32,7 +32,7 @@ const About = () => {
     {
       icon: Star,
       title: "Expertise",
-      description: "With decades of world-class engineering services expertise under our belt, Quality Turbine has earned the trust and support to clients."
+      description: "With decades of world-class engineering services expertise under our belt, Quality Turbo has earned the trust and support to clients."
     },
     {
       icon: Award,
@@ -103,7 +103,7 @@ const About = () => {
 
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium text-white mb-4 leading-tight">
               About{" "}
-              <span className="text-[#9ee055]">Quality Turbine Power Services</span>
+              <span className="text-[#9ee055]">Quality Turbo Power Services</span>
             </h1>
             <p className="text-base text-white/70 leading-relaxed">
               A Complete Solution for Rotating Equipments
@@ -130,7 +130,7 @@ const About = () => {
                 </h2>
                 
                 <p className="text-slate-600 leading-relaxed mb-6">
-                  M/s. Quality Turbine Power Services is a multi disciplinary, growth oriented, Engineering and service 
+                  M/s. Quality Turbo Power Services is a multi disciplinary, growth oriented, Engineering and service 
                   organization headquartered in Hyderabad, established in 2018, by a group of Engineers with the 
                   primary focus to serve the power/process industry.
                 </p>
@@ -184,7 +184,7 @@ const About = () => {
                       { 
                         image: iconPeople,
                         title: "People", 
-                        desc: "Quality Turbine is a company of young entrepreneurs and we consider people as our biggest assets"
+                        desc: "Quality Turbo is a company of young entrepreneurs and we consider people as our biggest assets"
                       },
                       { 
                         image: iconCommitment,
@@ -199,7 +199,7 @@ const About = () => {
                       { 
                         icon: Heart,
                         title: "Trust", 
-                        desc: "With decades of world-class engineering services expertise, Quality Turbine has earned the trust and support of clients",
+                        desc: "With decades of world-class engineering services expertise, Quality Turbo has earned the trust and support of clients",
                         color: "bg-blue-500"
                       },
                       { 
@@ -294,13 +294,13 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Clients */}
+      {/* Clientele */}
       <section className="py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6 lg:px-12 xl:px-20">
           {/* Section Title */}
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
-              Our Clients
+              Clientele
             </h2>
             <p className="text-slate-600 text-sm md:text-base max-w-2xl mx-auto">
               Trusted by leading companies across various industries
@@ -359,13 +359,13 @@ const About = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link to="/contact">
-                <Button className="bg-[#9ee055] hover:bg-[#9ee055]/90 text-white font-semibold rounded-lg h-11 px-8">
+                <Button className="bg-[#283852] hover:bg-[#283852]/90 text-white font-semibold rounded-lg h-11 px-8">
                   Contact Our Team
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
               <Link to="/services">
-                <Button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-slate-900 font-semibold rounded-lg h-11 px-8">
+                <Button className="bg-[#283852] hover:bg-[#283852]/90 text-white font-semibold rounded-lg h-11 px-8">
                   View Our Services
                 </Button>
               </Link>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Images } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const GallerySection = () => {
@@ -14,10 +14,6 @@ const GallerySection = () => {
       <div className="container mx-auto px-4 md:px-6 lg:px-12 xl:px-20">
         {/* Section Header */}
         <div className="text-center mb-8 md:mb-12">
-          <div className="inline-flex items-center gap-2 bg-[#9ee055]/10 border border-[#9ee055]/20 text-[#283852] text-xs md:text-sm font-medium px-4 py-1.5 rounded-full mb-3 md:mb-4">
-            <Images className="w-4 h-4" />
-            Our Projects
-          </div>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-3 md:mb-4">
             Project <span className="text-[#9ee055]">Gallery</span>
           </h2>

@@ -115,7 +115,7 @@ const Industries = () => {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {industries.map((industry, index) => {
                 const Icon = industry.icon;
                 return (
@@ -157,7 +157,7 @@ const Industries = () => {
 
                       {/* CTA Button */}
                       <Link to="/contact">
-                        <Button className={`w-full bg-gradient-to-r ${industry.color} hover:opacity-90 text-white rounded-lg h-10 text-sm font-medium shadow-md transition-all duration-300`}>
+                        <Button className="w-full bg-[#283852] hover:bg-[#283852]/90 text-white rounded-lg h-10 text-sm font-medium shadow-md transition-all duration-300">
                           Get a Quote
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
@@ -204,13 +204,13 @@ const Industries = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link to="/contact">
-                <Button className="bg-gradient-to-r from-[#283852] to-[#9ee055] hover:from-[#9ee055] hover:to-blue-700 text-white font-semibold rounded-xl h-12 px-8 shadow-lg shadow-[#283852]/25">
+                <Button className="bg-[#283852] hover:bg-[#283852]/90 text-white font-semibold rounded-xl h-12 px-8 shadow-lg shadow-[#283852]/25">
                   <Phone className="w-4 h-4 mr-2" />
                   Contact Us
                 </Button>
               </Link>
               <Link to="/services">
-                <Button className="bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white hover:text-slate-900 font-semibold rounded-xl h-12 px-8 transition-all duration-300">
+                <Button className="bg-[#283852] hover:bg-[#283852]/90 text-white font-semibold rounded-xl h-12 px-8 transition-all duration-300">
                   View Services
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>

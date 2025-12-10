@@ -88,7 +88,7 @@ const IndustriesSection = () => {
             }`}
           >
             <Link to="/industries">
-              <Button className="bg-gradient-to-r from-[#283852] to-[#9ee055] hover:from-[#283852] hover:to-[#9ee055]/90 text-white rounded-lg h-9 md:h-10 px-5 md:px-6 text-xs md:text-sm shadow-lg shadow-[#9ee055]/25 hover:shadow-xl hover:shadow-[#9ee055]/30 transition-all duration-300 hover:-translate-y-0.5">
+              <Button className="bg-[#283852] hover:bg-[#283852]/90 text-white rounded-lg h-9 md:h-10 px-5 md:px-6 text-xs md:text-sm font-semibold transition-all duration-300">
                 View All Industries
                 <ArrowRight className="ml-2 h-3.5 md:h-4 w-3.5 md:w-4" />
               </Button>
