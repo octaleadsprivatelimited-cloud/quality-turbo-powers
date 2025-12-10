@@ -105,8 +105,8 @@ const Services = () => {
               <Sparkles className="w-3 h-3" />
               Complete Rotating Equipment Solutions
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 leading-tight">
-              Our <span className="bg-gradient-to-r from-[#9ee055] to-[#283852] bg-clip-text text-transparent">Services</span>
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 leading-tight drop-shadow-lg">
+              Our <span className="text-[#9ee055] drop-shadow-lg">Services</span>
             </h1>
             <p className="text-sm text-white/70">
               Power plant equipment erection, services, troubleshooting, refurbishment & spare parts.

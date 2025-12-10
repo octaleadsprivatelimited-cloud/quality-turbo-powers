@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Factory, Zap, Flame, Building2, Container, Cog, ArrowRight, CheckCircle2, Sparkles, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import heroImage from "@/assets/hero-powerplant.jpg";
+import industriesImage from "@/assets/industries.jpg";
 
 const Industries = () => {
   const { ref: industriesRef, isVisible: industriesVisible } = useScrollAnimation();
@@ -72,7 +72,7 @@ const Industries = () => {
       {/* Hero Section */}
       <section className="relative pt-24 pb-10 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImage} alt="Industries" className="w-full h-full object-cover" />
+          <img src={industriesImage} alt="Industries" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-slate-900/60" />
         </div>
         
@@ -86,8 +86,8 @@ const Industries = () => {
               <Sparkles className="w-3 h-3" />
               Global Industrial Solutions
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 leading-tight">
-              Industries We <span className="bg-gradient-to-r from-[#9ee055] to-[#283852] bg-clip-text text-transparent">Serve</span>
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 leading-tight drop-shadow-lg">
+              Industries We <span className="text-[#9ee055] drop-shadow-lg">Serve</span>
             </h1>
             <p className="text-sm text-white/70">
               Comprehensive turbine services across multiple industrial sectors worldwide.

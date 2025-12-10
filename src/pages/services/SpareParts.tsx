@@ -68,7 +68,7 @@ const SpareParts = () => {
               Comprehensive spare parts supply for turbines, compressors, and rotating equipment with genuine OEM parts and quick delivery.
             </p>
             <Link to="/contact">
-              <Button className="bg-[#283852] hover:bg-[#283852]/90 text-white rounded-xl h-12 px-8 shadow-lg shadow-[#283852]/25">
+              <Button className="bg-[#9ee055] hover:bg-[#9ee055]/90 text-white rounded-xl h-12 px-8 shadow-lg shadow-[#9ee055]/25">
                 <Phone className="w-4 h-4 mr-2" />
                 Get a Quote
               </Button>
