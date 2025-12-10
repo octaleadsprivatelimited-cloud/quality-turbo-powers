@@ -27,7 +27,7 @@ const IndustriesSection = () => {
           {/* Header */}
           <div className="text-center mb-6 md:mb-8">
             <div 
-              className={`inline-flex items-center gap-2 bg-[#9ee055]/10 border border-[#9ee055]/20 text-[#283852] text-[10px] md:text-xs font-medium px-3 md:px-4 py-1 md:py-1.5 rounded-full mb-2 md:mb-3 transition-all duration-700 delay-100 ${
+              className={`inline-flex items-center gap-2 bg-[#283852] border-2 border-[#283852] text-white text-[10px] md:text-xs font-medium px-3 md:px-4 py-1 md:py-1.5 rounded-full mb-2 md:mb-3 transition-all duration-700 delay-100 ${
                 isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
               }`}
             >

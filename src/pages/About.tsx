@@ -120,9 +120,9 @@ const About = () => {
               
               {/* Left Column - Content */}
               <div>
-                <div className="inline-flex items-center gap-2 bg-[#9ee055]/10 rounded-full px-4 py-1.5 mb-6">
-                  <Users className="w-4 h-4 text-[#283852]" />
-                  <span className="text-[#283852] text-sm font-medium">Who We Are</span>
+                <div className="inline-flex items-center gap-2 bg-[#283852] border-2 border-[#283852] rounded-full px-4 py-1.5 mb-6">
+                  <Users className="w-4 h-4 text-white" />
+                  <span className="text-white text-sm font-medium">Who We Are</span>
                 </div>
                 
                 <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6 leading-tight">
@@ -244,9 +244,9 @@ const About = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-[#9ee055]/10 rounded-full px-4 py-2 mb-4">
-              <Zap className="w-4 h-4 text-[#9ee055]" />
-              <span className="text-[#9ee055] text-sm font-medium">Our Strengths</span>
+            <div className="inline-flex items-center gap-2 bg-[#283852] border-2 border-[#283852] rounded-full px-4 py-2 mb-4">
+              <Zap className="w-4 h-4 text-white" />
+              <span className="text-white text-sm font-medium">Our Strengths</span>
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900">What Makes Us Different</h2>
           </div>
@@ -294,21 +294,21 @@ const About = () => {
         </div>
       </section>
 
-      {/* Clientele */}
+      {/* Our Clients */}
       <section className="py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6 lg:px-12 xl:px-20">
           {/* Section Title */}
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
-              Clientele
+              Our Clients
             </h2>
             <p className="text-slate-600 text-sm md:text-base max-w-2xl mx-auto">
               Trusted by leading companies across various industries
             </p>
           </div>
 
-          {/* Clients Grid Layout */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-3 max-w-4xl mx-auto">
+          {/* Clients Carousel Layout */}
+          <div className="flex items-center justify-center gap-3 md:gap-4 overflow-x-auto pb-4 scrollbar-hide">
             {[
               { 
                 name: "Client 1", 
@@ -325,20 +325,19 @@ const About = () => {
             ].map((client, index) => (
               <div
                 key={index}
-                className="group"
+                className="group flex-shrink-0"
               >
-                {/* Logo Card */}
-                <div className="relative w-full h-24 md:h-28 lg:h-32 flex items-center justify-center p-2 md:p-3">
+                <div className="relative w-32 h-24 md:w-40 md:h-28 bg-white border border-slate-300 rounded-lg hover:border-[#283852] hover:shadow-md transition-all duration-300 flex items-center justify-center p-3 md:p-4">
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                    className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-all duration-300"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.style.display = 'none';
                       const parent = target.parentElement;
                       if (parent) {
-                        parent.innerHTML = `<div class="text-slate-700 font-semibold text-sm md:text-base text-center">${client.name}</div>`;
+                        parent.innerHTML = `<div class="text-slate-700 font-semibold text-xs md:text-sm text-center">${client.name}</div>`;
                       }
                     }}
                   />
