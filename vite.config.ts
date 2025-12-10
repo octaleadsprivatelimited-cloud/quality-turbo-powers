@@ -9,10 +9,20 @@ export default defineConfig(({ mode }) => ({
     host: "localhost",
     port: 8081,
   },
+  preview: {
+    port: 8081,
+  },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
     },
   },
 }));
