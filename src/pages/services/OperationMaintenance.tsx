@@ -35,6 +35,8 @@ const OperationMaintenance = () => {
         <meta name="keywords" content="power plant operation, turbine maintenance, preventive maintenance, predictive maintenance, condition monitoring, O&M services, plant operations support" />
         <meta property="og:title" content="Operation & Maintenance | Quality Turbine Power Services" />
         <meta property="og:description" content="Professional O&M services for power plants with 24/7 support and condition monitoring." />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://qualityturbopower.com/services/operation-maintenance" />
       </Helmet>
       <Header />

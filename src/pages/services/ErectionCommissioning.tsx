@@ -35,6 +35,8 @@ const ErectionCommissioning = () => {
         <meta name="keywords" content="turbine erection, turbine commissioning, STG installation, turbine blower installation, turbine compressor commissioning, power plant erection, gas turbine commissioning" />
         <meta property="og:title" content="Erection & Commissioning Services | Quality Turbine Power Services" />
         <meta property="og:description" content="World-class erection and commissioning services for rotating equipment with committed quality." />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://qualityturbopower.com/services/erection-commissioning" />
       </Helmet>
       <Header />

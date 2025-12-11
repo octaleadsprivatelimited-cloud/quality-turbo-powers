@@ -65,6 +65,8 @@ const Industries = () => {
         <meta name="keywords" content="power plant services, petrochemical turbines, steel plant equipment, cement industry services, fertilizer plant maintenance, oil gas turbines, sugar mill equipment, industrial turbine services" />
         <meta property="og:title" content="Industries We Serve | Quality Turbine Power Services" />
         <meta property="og:description" content="Specialized rotating equipment solutions across power generation, petrochemicals, steel, cement, and more." />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://qualityturbopower.com/industries" />
       </Helmet>
       <Header />

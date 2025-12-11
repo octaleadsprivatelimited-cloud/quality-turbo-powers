@@ -132,6 +132,11 @@ const CompletedProjects = () => {
       <Helmet>
         <title>Completed Projects | Quality Turbine Power Services</title>
         <meta name="description" content="View our completed projects including turbine erection, commissioning, and overhauling services across India." />
+        <meta name="keywords" content="completed turbine projects, turbine erection projects, turbine commissioning projects, turbine overhaul projects, power plant projects India, industrial turbine projects, Quality Turbo Power Services projects" />
+        <meta property="og:title" content="Completed Projects | Quality Turbine Power Services" />
+        <meta property="og:description" content="View our completed projects including turbine erection, commissioning, and overhauling services across India." />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://qualityturbopower.com/completed-projects" />
       </Helmet>
       <Header />

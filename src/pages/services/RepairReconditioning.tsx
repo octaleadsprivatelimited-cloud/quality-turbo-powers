@@ -36,6 +36,8 @@ const RepairReconditioning = () => {
         <meta name="keywords" content="turbine blade repair, rotor reconditioning, bearing repair, gearbox repair, compressor repair, turbine welding, dynamic balancing, turbine machining" />
         <meta property="og:title" content="Repair & Reconditioning | Quality Turbine Power Services" />
         <meta property="og:description" content="Expert repair and reconditioning of rotating equipment using sophisticated machines." />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://qualityturbopower.com/services/repair-reconditioning" />
       </Helmet>
       <Header />

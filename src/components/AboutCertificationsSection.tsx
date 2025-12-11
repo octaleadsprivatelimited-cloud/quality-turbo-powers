@@ -10,7 +10,6 @@ const AboutCertificationsSection = () => {
   const projects = [
     {
       type: "Completed Projects",
-      company: "M/s KRIBHCO",
       description: "Make: GE-Power, Rating Power: 76MW",
       image: service1Img,
       link: "/completed-projects"
@@ -47,11 +46,6 @@ const AboutCertificationsSection = () => {
                 </h2>
               </div>
 
-              {/* Description */}
-              <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6 md:mb-8">
-                M/s. Quality Turbo Power Services is a multi-disciplinary, growth oriented, Engineering and service organization headquartered in Hyderabad, established in 2018, by a group of Engineers with the primary focus to serve the power/process industry. We as an organization have varied & vast experience in Engineering, Operation & Maintenance, Overhauls, Troubleshooting, Fabrication and Erection & Commissioning of rotating equipment & its auxiliaries...
-              </p>
-
               {/* Read More Button */}
               <Link to="/about">
                 <Button className="bg-[#283852] hover:bg-[#283852]/90 text-white font-semibold rounded-lg px-6 md:px-8 h-10 md:h-11 text-sm md:text-base">
@@ -75,7 +69,7 @@ const AboutCertificationsSection = () => {
                   <div className="relative w-full h-48 md:h-56 overflow-hidden">
                     <img 
                       src={project.image} 
-                      alt={project.company} 
+                      alt={project.type} 
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
                     />
                   </div>
@@ -85,9 +79,6 @@ const AboutCertificationsSection = () => {
                     <h3 className="text-slate-900 font-bold text-sm md:text-base mb-2">
                       {project.type}
                     </h3>
-                    <p className="text-slate-700 font-semibold text-sm md:text-base mb-1">
-                      {project.company}
-                    </p>
                     <p className="text-slate-600 text-xs md:text-sm mb-4">
                       {project.description}
                     </p>

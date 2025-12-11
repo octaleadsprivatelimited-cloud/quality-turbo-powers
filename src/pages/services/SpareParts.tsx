@@ -42,6 +42,8 @@ const SpareParts = () => {
         <meta name="keywords" content="turbine spare parts, compressor spare parts, generator spare parts, OEM parts, power plant spare parts, rotating equipment parts" />
         <meta property="og:title" content="Spare Parts Supply | Quality Turbine Power Services" />
         <meta property="og:description" content="Genuine spare parts supply for turbines, compressors, and rotating equipment with quick delivery." />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://qualityturbopower.com/services/spare-parts" />
       </Helmet>
       <Header />

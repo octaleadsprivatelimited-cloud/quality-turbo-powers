@@ -75,6 +75,8 @@ const Contact = () => {
         <meta name="keywords" content="contact quality turbine, turbine services Hyderabad, Patancheru turbine company, emergency turbine support, power plant services contact, industrial equipment services" />
         <meta property="og:title" content="Contact Us | Quality Turbine Power Services" />
         <meta property="og:description" content="Get in touch for turbine solutions. Located in Hyderabad with 24/7 emergency support." />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://qualityturbopower.com/contact" />
       </Helmet>
       <Header />

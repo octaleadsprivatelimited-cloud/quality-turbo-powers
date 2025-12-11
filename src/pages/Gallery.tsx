@@ -73,6 +73,11 @@ const Gallery = () => {
       <Helmet>
         <title>Gallery | Quality Turbine Power Services</title>
         <meta name="description" content="View our project gallery showcasing our turbine services, overhauls, and engineering solutions." />
+        <meta name="keywords" content="turbine project gallery, turbine services photos, power plant projects, turbine overhaul gallery, industrial equipment gallery, turbine maintenance projects, Quality Turbo Power Services gallery" />
+        <meta property="og:title" content="Gallery | Quality Turbine Power Services" />
+        <meta property="og:description" content="View our project gallery showcasing our turbine services, overhauls, and engineering solutions." />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://qualityturbopower.com/gallery" />
       </Helmet>
       <Header />

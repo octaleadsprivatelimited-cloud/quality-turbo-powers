@@ -81,6 +81,8 @@ const About = () => {
         <meta name="keywords" content="about quality turbine, turbine company Hyderabad, rotating equipment experts, power plant services company, industrial engineering services, turbine maintenance company" />
         <meta property="og:title" content="About Us | Quality Turbine Power Services" />
         <meta property="og:description" content="Growth-oriented engineering organization specializing in rotating equipment services since 2018." />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://qualityturbopower.com/about" />
       </Helmet>
       <Header />

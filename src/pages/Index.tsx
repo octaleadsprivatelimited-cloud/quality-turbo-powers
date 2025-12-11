@@ -16,10 +16,11 @@ const Index = () => {
       <Helmet>
         <title>Quality Turbine Power Services | Industrial Turbine Services in Hyderabad</title>
         <meta name="description" content="Quality Turbine Power Services offers complete rotating equipment solutions including turbine erection, commissioning, overhauls, repairs, and maintenance services. Based in Hyderabad, serving industries across India." />
-        <meta name="keywords" content="turbine services, power plant equipment, erection commissioning, turbine overhaul, turbine repair, rotating equipment, Hyderabad, industrial maintenance, steam turbine, gas turbine" />
+        <meta name="keywords" content="turbine services, power plant equipment, erection commissioning, turbine overhaul, turbine repair, rotating equipment, Hyderabad, industrial maintenance, steam turbine, gas turbine, Quality Turbo Power Services, QTPS, turbine maintenance Hyderabad" />
         <meta property="og:title" content="Quality Turbine Power Services | Industrial Turbine Services" />
         <meta property="og:description" content="Complete rotating equipment solutions - turbine erection, commissioning, overhauls, repairs, and maintenance services in Hyderabad." />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="/logo.png" />
         <link rel="canonical" href="https://qualityturbopower.com/" />
       </Helmet>
       <Header />

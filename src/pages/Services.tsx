@@ -85,6 +85,8 @@ const Services = () => {
         <meta name="keywords" content="turbine erection, turbine commissioning, turbine overhaul, turbine repair, turbine maintenance, rotating equipment services, steam turbine services, gas turbine services, power plant maintenance" />
         <meta property="og:title" content="Our Services | Quality Turbine Power Services" />
         <meta property="og:description" content="Comprehensive turbine services - erection, commissioning, overhauls, repairs, and maintenance for rotating equipment." />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://qualityturbopower.com/services" />
       </Helmet>
       <Header />

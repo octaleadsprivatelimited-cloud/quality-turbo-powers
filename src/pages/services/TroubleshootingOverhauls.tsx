@@ -36,6 +36,8 @@ const TroubleshootingOverhauls = () => {
         <meta name="keywords" content="turbine troubleshooting, turbine overhaul, generator overhaul, boiler maintenance, compressor repair, turbine diagnostic, emergency turbine repair" />
         <meta property="og:title" content="Troubleshooting & Overhauls | Quality Turbine Power Services" />
         <meta property="og:description" content="Complete technical problem-solving and overhaul services for rotating equipment." />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://qualityturbopower.com/services/troubleshooting-overhauls" />
       </Helmet>
       <Header />
