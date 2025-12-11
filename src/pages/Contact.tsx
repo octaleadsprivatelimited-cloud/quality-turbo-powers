@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock, Send, Sparkles, CheckCircle2, MessageSquare } from "lucide-react";
 import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import heroImage from "@/assets/hero-powerplant.jpg";
+import industriesImage from "@/assets/industries.jpg";
 
 const Contact = () => {
   const { ref: formRef, isVisible: formVisible } = useScrollAnimation();
@@ -82,7 +82,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="relative pt-24 pb-10 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImage} alt="Contact" className="w-full h-full object-cover" />
+          <img src={industriesImage} alt="Contact" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-slate-900/60" />
         </div>
         
@@ -128,7 +128,7 @@ const Contact = () => {
                   </div>
                   <h3 className="font-bold text-slate-900 text-sm mb-1">{info.title}</h3>
                   {info.details.map((detail, idx) => (
-                    <p key={idx} className="text-slate-600 text-xs">{detail}</p>
+                    <p key={idx} className={`text-slate-600 text-[10px] md:text-xs ${info.title === "Email" ? "break-all" : ""}`}>{detail}</p>
                   ))}
                 </div>
               );

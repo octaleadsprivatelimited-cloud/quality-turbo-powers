@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Package, CheckCircle2, ArrowRight, Phone, Sparkles, Truck, Shield, Clock, Wrench } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import industriesImage from "@/assets/industries.jpg";
 
 const SpareParts = () => {
   const { ref: contentRef, isVisible: contentVisible } = useScrollAnimation();
@@ -48,7 +49,7 @@ const SpareParts = () => {
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/gallery/image-7.jpeg" alt="Spare Parts" className="w-full h-full object-cover" />
+          <img src={industriesImage} alt="Spare Parts" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-slate-900/60" />
         </div>
         

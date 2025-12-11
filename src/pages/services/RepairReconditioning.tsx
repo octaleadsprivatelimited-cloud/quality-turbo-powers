@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { RefreshCw, CheckCircle2, ArrowRight, Phone, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import repairImg from "@/assets/repair-reconditioning.jpg";
+import industriesImage from "@/assets/industries.jpg";
 
 const RepairReconditioning = () => {
   const { ref: contentRef, isVisible: contentVisible } = useScrollAnimation();
@@ -43,7 +43,7 @@ const RepairReconditioning = () => {
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={repairImg} alt="Repair & Reconditioning" className="w-full h-full object-cover" />
+          <img src={industriesImage} alt="Repair & Reconditioning" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-slate-900/60" />
         </div>
         

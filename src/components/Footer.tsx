@@ -1,7 +1,7 @@
 import { Mail, Phone, ArrowUpRight, Linkedin, Twitter, Facebook, Instagram, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import footerBg from "@/assets/hero-powerplant.jpg";
-import logoImg from "@/assets/logo.png";
+import logoImg from "@/assets/footer-logo.png";
 
 const Footer = () => {
   const services = [
@@ -36,11 +36,11 @@ const Footer = () => {
             
             {/* Brand Section */}
             <div className="lg:col-span-1 sm:col-span-2 md:col-span-1">
-              <Link to="/" className="inline-block mb-3 md:mb-4 group h-10 md:h-12 overflow-hidden">
+              <Link to="/" className="inline-block mb-3 md:mb-4 group h-16 md:h-20 lg:h-16 overflow-hidden">
                 <img 
                   src={logoImg} 
                   alt="Quality Turbine Power Services" 
-                  className="h-20 md:h-28 lg:h-32 w-auto object-contain group-hover:scale-105 transition-transform -mt-2 md:-mt-4 lg:-mt-6"
+                  className="h-16 md:h-20 lg:h-16 w-auto object-contain group-hover:scale-105 transition-transform"
                 />
               </Link>
               <p className="text-white/80 text-xs md:text-sm leading-relaxed mb-3 md:mb-4">

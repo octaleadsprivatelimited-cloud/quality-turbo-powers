@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 // Import service images
+import industriesImage from "@/assets/industries.jpg";
 import erectionImg from "@/assets/erection-commissioning.png";
 import troubleshootingImg from "@/assets/troubleshooting-overhauls.jpg";
 import repairImg from "@/assets/repair-reconditioning.jpg";
@@ -91,7 +92,7 @@ const Services = () => {
       {/* Hero Section */}
       <section className="relative pt-24 pb-10 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={erectionImg} alt="Services" className="w-full h-full object-cover" />
+          <img src={industriesImage} alt="Services" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/60" />
         </div>
         

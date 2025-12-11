@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Cog, CheckCircle2, ArrowRight, Phone, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import maintenanceImg from "@/assets/operation-maintenance.png";
+import industriesImage from "@/assets/industries.jpg";
 
 const OperationMaintenance = () => {
   const { ref: contentRef, isVisible: contentVisible } = useScrollAnimation();
@@ -42,7 +42,7 @@ const OperationMaintenance = () => {
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={maintenanceImg} alt="Operation & Maintenance" className="w-full h-full object-cover" />
+          <img src={industriesImage} alt="Operation & Maintenance" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-slate-900/60" />
         </div>
         

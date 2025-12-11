@@ -319,3 +319,27 @@ img[loading] {
 img:not([loading]) {
   @apply opacity-100;
 }
+
+/* Mobile hero section - 412x258 aspect ratio, full image display */
+@media (max-width: 768px) {
+  .hero-section-mobile {
+    width: 100% !important;
+    aspect-ratio: 412 / 258 !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+  
+  .hero-bg-container {
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: 412 / 258 !important;
+  }
+  
+  .hero-bg-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    min-width: 100% !important;
+  }
+}

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Settings, CheckCircle2, ArrowRight, Phone, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import erectionImg from "@/assets/erection-commissioning.png";
+import industriesImage from "@/assets/industries.jpg";
 
 const ErectionCommissioning = () => {
   const { ref: contentRef, isVisible: contentVisible } = useScrollAnimation();
@@ -42,7 +42,7 @@ const ErectionCommissioning = () => {
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={erectionImg} alt="Erection & Commissioning" className="w-full h-full object-cover" />
+          <img src={industriesImage} alt="Erection & Commissioning" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-slate-900/60" />
         </div>
         

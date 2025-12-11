@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { useState, useEffect } from "react";
 import { X, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
+import industriesImage from "@/assets/industries.jpg";
 
 const Gallery = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
@@ -77,13 +78,18 @@ const Gallery = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative py-16 md:py-20 bg-gradient-to-br from-slate-900 to-slate-800">
-        <div className="container mx-auto px-4 md:px-6 lg:px-12 xl:px-20">
-          <div className="text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-              Our <span className="text-[#9ee055]">Gallery</span>
+      <section className="relative pt-24 pb-10 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={industriesImage} alt="Gallery" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-slate-900/60" />
+        </div>
+        
+        <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
+          <div className="max-w-2xl mx-auto text-center">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 leading-tight drop-shadow-lg">
+              Our <span className="text-[#9ee055] drop-shadow-lg">Gallery</span>
             </h1>
-            <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto">
+            <p className="text-sm text-white/70">
               Explore our projects and see the quality of our work in action
             </p>
           </div>

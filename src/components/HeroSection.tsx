@@ -36,9 +36,9 @@ const HeroSection = () => {
   }, [nextSlide]);
 
   return (
-    <section className="relative h-[70vh] md:min-h-[420px] lg:min-h-[500px] flex items-center font-sans overflow-hidden">
+    <section className="relative hero-section-mobile md:min-h-[420px] lg:min-h-[500px] flex items-center font-sans overflow-hidden">
       {/* Carousel Background */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 hero-bg-container">
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -49,7 +49,7 @@ const HeroSection = () => {
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hero-bg-image"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent" />
           </div>
@@ -89,13 +89,13 @@ const HeroSection = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-2 md:gap-3 justify-center">
             <Link to="/services" className="w-full sm:w-auto">
-              <Button className="w-full sm:w-auto bg-[#283852] hover:bg-[#283852]/90 text-white h-10 px-6 text-sm font-semibold rounded-lg">
+              <Button className="w-full sm:w-auto bg-[#283852] hover:bg-[#283852]/90 text-white h-8 md:h-10 px-4 md:px-6 text-xs md:text-sm font-semibold rounded-lg">
                 Explore Services
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className="ml-2 h-3.5 w-3.5 md:h-4 md:w-4" />
               </Button>
             </Link>
             <Link to="/contact" className="w-full sm:w-auto">
-              <Button className="w-full sm:w-auto bg-[#283852] hover:bg-[#283852]/90 text-white h-10 px-6 text-sm font-semibold rounded-lg">
+              <Button className="w-full sm:w-auto bg-[#283852] hover:bg-[#283852]/90 text-white h-8 md:h-10 px-4 md:px-6 text-xs md:text-sm font-semibold rounded-lg">
                 Get a Quote
               </Button>
             </Link>

@@ -5,7 +5,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Users, Award, Target, ArrowRight, Zap, Heart, Star, ThumbsUp, Sparkles, Clock, MapPin, Shield, HardHat, Handshake, Settings, BadgeCheck } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-powerplant.jpg";
+import heroImage from "@/assets/industries.jpg";
 import iconPeople from "@/assets/icon-people.png";
 import iconCommitment from "@/assets/icon-commitment.png";
 import iconIntegrity from "@/assets/icon-integrity.png";
