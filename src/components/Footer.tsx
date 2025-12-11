@@ -15,7 +15,8 @@ const Footer = () => {
     { name: "About Us", link: "/about" },
     { name: "Our Services", link: "/services" },
     { name: "Industries", link: "/industries" },
-    { name: "Contact Us", link: "/contact" }
+    { name: "Contact Us", link: "/contact" },
+    { name: "Sitemap", link: "/sitemap.xml" }
   ];
 
   const industries = ["Power Plants", "Petrochemicals", "Steel & Cement", "Oil & Gas"];
@@ -100,12 +101,21 @@ const Footer = () => {
               <ul className="space-y-1.5 md:space-y-2">
                 {quickLinks.map((item) => (
                   <li key={item.name}>
-                    <Link 
-                      to={item.link} 
-                      className="text-white/80 hover:text-white text-xs md:text-sm transition-colors"
-                    >
-                      {item.name}
-                    </Link>
+                    {item.link === "/sitemap.xml" ? (
+                      <a 
+                        href={item.link} 
+                        className="text-white/80 hover:text-white text-xs md:text-sm transition-colors"
+                      >
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link 
+                        to={item.link} 
+                        className="text-white/80 hover:text-white text-xs md:text-sm transition-colors"
+                      >
+                        {item.name}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -154,6 +164,13 @@ const Footer = () => {
             <span className="text-white/70 text-xs md:text-sm">
               © {new Date().getFullYear()} Quality Turbine Power Services. All rights reserved.
             </span>
+            <span className="hidden md:inline text-white/40">•</span>
+            <a 
+              href="/sitemap.xml" 
+              className="text-white/70 hover:text-white text-xs md:text-sm transition-colors"
+            >
+              Sitemap
+            </a>
             <span className="hidden md:inline text-white/40">•</span>
             <span className="text-white/70 text-xs md:text-sm">
               Developed by{" "}

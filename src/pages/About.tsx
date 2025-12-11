@@ -76,14 +76,16 @@ const About = () => {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>About Us | Quality Turbine Power Services - Hyderabad</title>
-        <meta name="description" content="Learn about Quality Turbine Power Services - a growth-oriented engineering organization specializing in rotating equipment services. Expert team, commitment to quality, and excellence since 2018." />
-        <meta name="keywords" content="about quality turbine, turbine company Hyderabad, rotating equipment experts, power plant services company, industrial engineering services, turbine maintenance company" />
-        <meta property="og:title" content="About Us | Quality Turbine Power Services" />
-        <meta property="og:description" content="Growth-oriented engineering organization specializing in rotating equipment services since 2018." />
-        <meta property="og:image" content="/logo.png" />
+        <title>About Us | Quality Turbine Power Services - Expert Rotating Equipment Solutions | Hyderabad</title>
+        <meta name="description" content="Learn about Quality Turbine Power Services - a growth-oriented engineering organization specializing in rotating equipment services since 2018. Expert team with 38+ years experience in turbine erection, commissioning, overhauls, and maintenance. Committed to quality, integrity, and customer satisfaction." />
+        <meta name="keywords" content="about quality turbine power services, turbine company Hyderabad, rotating equipment experts India, power plant services company, industrial engineering services, turbine maintenance company, steam turbine experts, gas turbine specialists, BHEL experienced engineers, turbine erection commissioning team, power plant overhaul experts, industrial equipment repair services" />
+        <meta property="og:title" content="About Us | Quality Turbine Power Services - Expert Rotating Equipment Solutions" />
+        <meta property="og:description" content="Growth-oriented engineering organization specializing in rotating equipment services since 2018. Expert team with decades of experience in turbine services." />
+        <meta property="og:url" content="https://qualityturbopowerservices.com/about" />
+        <meta property="og:image" content="https://qualityturbopowerservices.com/logo.png" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://qualityturbopower.com/about" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://qualityturbopowerservices.com/about" />
       </Helmet>
       <Header />
       

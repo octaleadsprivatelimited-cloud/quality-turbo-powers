@@ -71,14 +71,16 @@ const Gallery = () => {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Gallery | Quality Turbine Power Services</title>
-        <meta name="description" content="View our project gallery showcasing our turbine services, overhauls, and engineering solutions." />
-        <meta name="keywords" content="turbine project gallery, turbine services photos, power plant projects, turbine overhaul gallery, industrial equipment gallery, turbine maintenance projects, Quality Turbo Power Services gallery" />
-        <meta property="og:title" content="Gallery | Quality Turbine Power Services" />
-        <meta property="og:description" content="View our project gallery showcasing our turbine services, overhauls, and engineering solutions." />
-        <meta property="og:image" content="/logo.png" />
+        <title>Gallery | Quality Turbine Power Services - Turbine Projects & Engineering Solutions</title>
+        <meta name="description" content="View our comprehensive project gallery showcasing turbine erection, commissioning, overhauls, repairs, and maintenance projects. See our expertise in STG sets, turbine blowers, compressors, DG sets, and rotating equipment solutions across power plants, petrochemicals, steel, cement, and other industries." />
+        <meta name="keywords" content="turbine project gallery, turbine services photos, power plant projects gallery, turbine overhaul gallery, industrial equipment gallery, turbine maintenance projects, turbine erection photos, turbine commissioning gallery, STG sets projects, turbine blowers gallery, turbine compressors projects, DG sets maintenance, rotating equipment gallery, Quality Turbo Power Services projects" />
+        <meta property="og:title" content="Gallery | Quality Turbine Power Services - Turbine Projects & Engineering Solutions" />
+        <meta property="og:description" content="View our comprehensive project gallery showcasing turbine erection, commissioning, overhauls, repairs, and maintenance projects across various industries." />
+        <meta property="og:url" content="https://qualityturbopowerservices.com/gallery" />
+        <meta property="og:image" content="https://qualityturbopowerservices.com/logo.png" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://qualityturbopower.com/gallery" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://qualityturbopowerservices.com/gallery" />
       </Helmet>
       <Header />
 

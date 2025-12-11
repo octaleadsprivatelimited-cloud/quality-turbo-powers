@@ -37,14 +37,16 @@ const SpareParts = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden font-sans">
       <Helmet>
-        <title>Spare Parts Supply | Quality Turbine Power Services</title>
-        <meta name="description" content="Comprehensive spare parts supply for turbines, compressors, generators, and rotating equipment. Genuine OEM parts with quick delivery and technical support." />
-        <meta name="keywords" content="turbine spare parts, compressor spare parts, generator spare parts, OEM parts, power plant spare parts, rotating equipment parts" />
-        <meta property="og:title" content="Spare Parts Supply | Quality Turbine Power Services" />
-        <meta property="og:description" content="Genuine spare parts supply for turbines, compressors, and rotating equipment with quick delivery." />
-        <meta property="og:image" content="/logo.png" />
+        <title>Spare Parts Supply | Quality Turbine Power Services - Genuine OEM Turbine Parts</title>
+        <meta name="description" content="Comprehensive spare parts supply for turbines, compressors, generators, boilers, and rotating equipment. Genuine OEM parts including turbine blades, compressor parts, generator components, bearings, seals, and control system components. Quick delivery, 24/7 availability, and expert technical support." />
+        <meta name="keywords" content="turbine spare parts, compressor spare parts, generator spare parts, OEM parts supply, power plant spare parts, rotating equipment parts, turbine blades supply, compressor impellers, generator stator windings, turbine bearings, turbine seals, steam turbine parts, gas turbine parts, genuine OEM parts, turbine components supply" />
+        <meta property="og:title" content="Spare Parts Supply | Quality Turbine Power Services - Genuine OEM Turbine Parts" />
+        <meta property="og:description" content="Genuine spare parts supply for turbines, compressors, and rotating equipment with quick delivery and 24/7 support." />
+        <meta property="og:url" content="https://qualityturbopowerservices.com/services/spare-parts" />
+        <meta property="og:image" content="https://qualityturbopowerservices.com/logo.png" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://qualityturbopower.com/services/spare-parts" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://qualityturbopowerservices.com/services/spare-parts" />
       </Helmet>
       <Header />
       

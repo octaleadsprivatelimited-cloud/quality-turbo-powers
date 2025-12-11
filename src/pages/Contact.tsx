@@ -70,14 +70,16 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Helmet>
-        <title>Contact Us | Quality Turbine Power Services - Hyderabad</title>
-        <meta name="description" content="Contact Quality Turbine Power Services for turbine solutions. Located in Patancheru, Hyderabad. 24/7 emergency support available. Call +91 94921 21315 or email qualityturboservices@gmail.com." />
-        <meta name="keywords" content="contact quality turbine, turbine services Hyderabad, Patancheru turbine company, emergency turbine support, power plant services contact, industrial equipment services" />
-        <meta property="og:title" content="Contact Us | Quality Turbine Power Services" />
-        <meta property="og:description" content="Get in touch for turbine solutions. Located in Hyderabad with 24/7 emergency support." />
-        <meta property="og:image" content="/logo.png" />
+        <title>Contact Us | Quality Turbine Power Services - Get Expert Turbine Solutions | Hyderabad</title>
+        <meta name="description" content="Contact Quality Turbine Power Services for expert turbine solutions. Located in Patancheru, Hyderabad - 509 319. 24/7 emergency support available. Call +91 94921 21315, +91 94921 25536 or email qualityturboservices@gmail.com. Expert team ready to assist with turbine erection, commissioning, overhauls, repairs, and maintenance." />
+        <meta name="keywords" content="contact quality turbine power services, turbine services Hyderabad contact, Patancheru turbine company, emergency turbine support 24/7, power plant services contact, industrial equipment services contact, turbine repair contact, turbine maintenance contact, turbine erection services contact, Hyderabad turbine experts phone" />
+        <meta property="og:title" content="Contact Us | Quality Turbine Power Services - Get Expert Turbine Solutions" />
+        <meta property="og:description" content="Get in touch for turbine solutions. Located in Hyderabad with 24/7 emergency support. Expert team ready to assist." />
+        <meta property="og:url" content="https://qualityturbopowerservices.com/contact" />
+        <meta property="og:image" content="https://qualityturbopowerservices.com/logo.png" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://qualityturbopower.com/contact" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://qualityturbopowerservices.com/contact" />
       </Helmet>
       <Header />
       

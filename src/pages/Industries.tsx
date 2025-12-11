@@ -60,14 +60,16 @@ const Industries = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Helmet>
-        <title>Industries We Serve | Quality Turbine Power Services</title>
-        <meta name="description" content="Serving power generation, petrochemicals, steel plants, cement, fertilizers, and more. Quality Turbine provides specialized rotating equipment solutions across diverse industrial sectors." />
-        <meta name="keywords" content="power plant services, petrochemical turbines, steel plant equipment, cement industry services, fertilizer plant maintenance, oil gas turbines, sugar mill equipment, industrial turbine services" />
-        <meta property="og:title" content="Industries We Serve | Quality Turbine Power Services" />
-        <meta property="og:description" content="Specialized rotating equipment solutions across power generation, petrochemicals, steel, cement, and more." />
-        <meta property="og:image" content="/logo.png" />
+        <title>Industries We Serve | Quality Turbine Power Services - Power Plants, Petrochemicals, Steel, Cement</title>
+        <meta name="description" content="Serving power generation, petrochemicals, steel plants, cement, fertilizers, oil & gas, and manufacturing industries. Quality Turbine provides specialized rotating equipment solutions including turbine overhauls, compressor services, generator maintenance, and industrial equipment repair across diverse industrial sectors." />
+        <meta name="keywords" content="power plant turbine services, petrochemical turbine maintenance, steel plant equipment services, cement industry turbine services, fertilizer plant maintenance, oil gas turbine services, sugar mill equipment, paper mill drives, industrial turbine services, thermal power plant services, combined cycle power plant, refinery rotating equipment, kiln drive systems, synthesis gas compressors, gas turbine maintenance" />
+        <meta property="og:title" content="Industries We Serve | Quality Turbine Power Services - Power Plants, Petrochemicals, Steel, Cement" />
+        <meta property="og:description" content="Specialized rotating equipment solutions across power generation, petrochemicals, steel, cement, fertilizers, oil & gas, and manufacturing industries." />
+        <meta property="og:url" content="https://qualityturbopowerservices.com/industries" />
+        <meta property="og:image" content="https://qualityturbopowerservices.com/logo.png" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://qualityturbopower.com/industries" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://qualityturbopowerservices.com/industries" />
       </Helmet>
       <Header />
       

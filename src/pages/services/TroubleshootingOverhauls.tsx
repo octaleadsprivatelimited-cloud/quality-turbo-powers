@@ -31,14 +31,16 @@ const TroubleshootingOverhauls = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden font-sans">
       <Helmet>
-        <title>Troubleshooting & Overhauls | Quality Turbine Power Services</title>
-        <meta name="description" content="Expert troubleshooting and overhaul services for turbines, generators, boilers, and compressors. Diagnostic analysis, major & minor overhauls, spare parts supply, and 24/7 emergency response." />
-        <meta name="keywords" content="turbine troubleshooting, turbine overhaul, generator overhaul, boiler maintenance, compressor repair, turbine diagnostic, emergency turbine repair" />
-        <meta property="og:title" content="Troubleshooting & Overhauls | Quality Turbine Power Services" />
-        <meta property="og:description" content="Complete technical problem-solving and overhaul services for rotating equipment." />
-        <meta property="og:image" content="/logo.png" />
+        <title>Troubleshooting & Overhauls | Quality Turbine Power Services - Expert Turbine Diagnostic & Repair</title>
+        <meta name="description" content="Expert troubleshooting and overhaul services for turbines, generators, boilers, and compressors. Advanced diagnostic analysis, major & minor overhauls, spare parts supply, and 24/7 emergency response. Complete technical and operational problem-solving for power plants and industrial facilities." />
+        <meta name="keywords" content="turbine troubleshooting services, turbine overhaul services, generator overhaul, boiler maintenance services, compressor repair, turbine diagnostic analysis, emergency turbine repair, major turbine overhaul, minor turbine overhaul, turbine system troubleshooting, power plant troubleshooting, industrial equipment troubleshooting, turbine performance optimization, rotating equipment overhauls" />
+        <meta property="og:title" content="Troubleshooting & Overhauls | Quality Turbine Power Services - Expert Turbine Diagnostic & Repair" />
+        <meta property="og:description" content="Complete technical problem-solving and overhaul services for rotating equipment with 24/7 emergency support." />
+        <meta property="og:url" content="https://qualityturbopowerservices.com/services/troubleshooting-overhauls" />
+        <meta property="og:image" content="https://qualityturbopowerservices.com/logo.png" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://qualityturbopower.com/services/troubleshooting-overhauls" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://qualityturbopowerservices.com/services/troubleshooting-overhauls" />
       </Helmet>
       <Header />
       
