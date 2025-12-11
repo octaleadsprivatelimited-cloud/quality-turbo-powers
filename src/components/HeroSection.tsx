@@ -87,15 +87,15 @@ const HeroSection = () => {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row flex-wrap gap-2 md:gap-3 justify-center">
-            <Link to="/services" className="w-full sm:w-auto">
-              <Button className="w-full sm:w-auto bg-[#283852] hover:bg-[#283852]/90 text-white h-8 md:h-10 px-4 md:px-6 text-xs md:text-sm font-semibold rounded-lg">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-1.5 md:gap-3 justify-center items-center">
+            <Link to="/services" className="w-auto">
+              <Button className="w-auto bg-[#283852] hover:bg-[#283852]/90 text-white h-6 md:h-10 px-2.5 md:px-6 text-[9px] md:text-sm font-semibold rounded-md md:rounded-lg">
                 Explore Services
-                <ArrowRight className="ml-2 h-3.5 w-3.5 md:h-4 md:w-4" />
+                <ArrowRight className="ml-1 h-2.5 w-2.5 md:h-4 md:w-4" />
               </Button>
             </Link>
-            <Link to="/contact" className="w-full sm:w-auto">
-              <Button className="w-full sm:w-auto bg-[#283852] hover:bg-[#283852]/90 text-white h-8 md:h-10 px-4 md:px-6 text-xs md:text-sm font-semibold rounded-lg">
+            <Link to="/contact" className="w-auto">
+              <Button className="w-auto bg-[#283852] hover:bg-[#283852]/90 text-white h-6 md:h-10 px-2.5 md:px-6 text-[9px] md:text-sm font-semibold rounded-md md:rounded-lg">
                 Get a Quote
               </Button>
             </Link>
