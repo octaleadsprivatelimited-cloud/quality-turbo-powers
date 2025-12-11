@@ -36,28 +36,30 @@ const ClienteleSection = () => {
         </div>
 
         {/* Clients Carousel Layout */}
-        <div className="flex items-center justify-center gap-3 md:gap-4 overflow-x-auto pb-4 scrollbar-hide">
-          {clients.map((client, index) => (
-            <div
-              key={index}
-              className="group flex-shrink-0"
-            >
-              <div className="relative w-32 h-24 md:w-40 md:h-28 bg-white border border-slate-300 rounded-lg hover:border-[#283852] hover:shadow-md transition-all duration-300 flex items-center justify-center p-3 md:p-4">
-                {imageErrors.has(index) ? (
-                  <div className="text-slate-700 font-semibold text-xs md:text-sm text-center">
-                    {client.name}
-                  </div>
-                ) : (
-                  <img
-                    src={client.logo}
-                    alt={client.name}
-                    className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-all duration-300"
-                    onError={() => handleImageError(index)}
-                  />
-                )}
+        <div className="overflow-hidden pb-4 -mx-4 md:mx-0 px-4 md:px-0">
+          <div className="flex items-center gap-3 md:gap-4 md:justify-center animate-scroll-mobile md:animate-none">
+            {clients.map((client, index) => (
+              <div
+                key={index}
+                className="group flex-shrink-0"
+              >
+                <div className="relative w-32 h-24 md:w-40 md:h-28 bg-white border border-slate-300 rounded-lg hover:border-[#283852] hover:shadow-md transition-all duration-300 flex items-center justify-center p-3 md:p-4">
+                  {imageErrors.has(index) ? (
+                    <div className="text-slate-700 font-semibold text-xs md:text-sm text-center">
+                      {client.name}
+                    </div>
+                  ) : (
+                    <img
+                      src={client.logo}
+                      alt={client.name}
+                      className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-all duration-300"
+                      onError={() => handleImageError(index)}
+                    />
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

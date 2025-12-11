@@ -297,6 +297,28 @@
   animation: marquee 20s linear infinite;
 }
 
+/* Auto-scroll animation for mobile client logos */
+@keyframes scroll-mobile {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 0.75rem));
+  }
+}
+
+.animate-scroll-mobile {
+  animation: scroll-mobile 15s linear infinite;
+  width: max-content;
+}
+
+@media (min-width: 768px) {
+  .animate-scroll-mobile {
+    animation: none;
+    width: auto;
+  }
+}
+
 /* Selection styling */
 ::selection {
   @apply bg-[#9ee055]/30 text-slate-900;
