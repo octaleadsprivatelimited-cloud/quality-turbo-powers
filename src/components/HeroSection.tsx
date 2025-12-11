@@ -36,17 +36,21 @@ const HeroSection = () => {
   }, [nextSlide]);
 
   return (
-    <section className="relative min-h-[380px] md:min-h-[420px] lg:min-h-[500px] flex items-center font-sans overflow-hidden">
+    <section className="relative h-[70vh] md:min-h-[420px] lg:min-h-[500px] flex items-center font-sans overflow-hidden">
       {/* Carousel Background */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+            className={`absolute inset-0 transition-opacity duration-1000 ${
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
-            style={{ backgroundImage: `url(${slide.image})` }}
           >
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="w-full h-full object-cover"
+            />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent" />
           </div>
         ))}
