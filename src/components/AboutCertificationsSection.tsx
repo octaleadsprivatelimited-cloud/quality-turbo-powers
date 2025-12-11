@@ -10,7 +10,6 @@ const AboutCertificationsSection = () => {
   const projects = [
     {
       type: "Completed Projects",
-      description: "Make: GE-Power, Rating Power: 76MW",
       image: service1Img,
       link: "/completed-projects"
     }
@@ -76,12 +75,9 @@ const AboutCertificationsSection = () => {
                   
                   {/* Project Details */}
                   <div className="p-4 md:p-5">
-                    <h3 className="text-slate-900 font-bold text-sm md:text-base mb-2">
+                    <h3 className="text-slate-900 font-bold text-sm md:text-base mb-4">
                       {project.type}
                     </h3>
-                    <p className="text-slate-600 text-xs md:text-sm mb-4">
-                      {project.description}
-                    </p>
                     
                     {/* Read More Button */}
                     <Link to={project.link}>

@@ -1,7 +1,7 @@
 import { Mail, Phone, ArrowUpRight, Linkedin, Twitter, Facebook, Instagram, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import footerBg from "@/assets/hero-powerplant.jpg";
-import logoImg from "@/assets/footer-logo.png";
+import logoImg from "@/assets/footer-logo-new.jpg";
 
 const Footer = () => {
   const services = [
