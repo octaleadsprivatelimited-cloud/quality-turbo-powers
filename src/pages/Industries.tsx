@@ -115,13 +115,13 @@ const Industries = () => {
               </h2>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
               {industries.map((industry, index) => {
                 const Icon = industry.icon;
                 return (
                   <div 
                     key={index} 
-                    className={`group relative bg-white rounded-2xl overflow-hidden shadow-lg shadow-slate-200/50 border border-slate-100 hover:shadow-xl hover:border-slate-200 transition-all duration-500 ${
+                    className={`group relative bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-lg shadow-slate-200/50 border border-slate-100 hover:shadow-xl hover:border-slate-200 transition-all duration-500 ${
                       industriesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                     }`}
                     style={{ transitionDelay: `${index * 100}ms` }}
@@ -129,37 +129,37 @@ const Industries = () => {
                     {/* Top gradient bar */}
                     <div className={`h-1.5 bg-gradient-to-r ${industry.color}`} />
                     
-                    <div className="p-6">
+                    <div className="p-4 md:p-6">
                       {/* Icon and Title */}
-                      <div className="flex items-start gap-4 mb-4">
-                        <div className={`w-14 h-14 bg-gradient-to-br ${industry.color} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}>
-                          <Icon className="w-7 h-7 text-white" />
+                      <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
+                        <div className={`w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br ${industry.color} rounded-lg md:rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}>
+                          <Icon className="w-6 h-6 md:w-7 md:h-7 text-white" />
                         </div>
-                        <div>
-                          <h3 className="text-lg font-bold text-slate-900 group-hover:text-[#9ee055] transition-colors">
+                        <div className="flex-1 min-w-0">
+                          <h3 className="text-base md:text-lg font-bold text-slate-900 group-hover:text-[#9ee055] transition-colors leading-tight">
                             {industry.name}
                           </h3>
-                          <p className="text-slate-500 text-sm mt-1 leading-relaxed">
+                          <p className="text-slate-500 text-xs md:text-sm mt-1 leading-relaxed">
                             {industry.description}
                           </p>
                         </div>
                       </div>
 
                       {/* Services */}
-                      <div className="grid grid-cols-2 gap-2 mb-5">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4 md:mb-5">
                         {industry.services.map((service, idx) => (
-                          <div key={idx} className="flex items-center gap-2 bg-slate-50 rounded-lg px-3 py-2">
-                            <CheckCircle2 className="w-3.5 h-3.5 text-[#283852] flex-shrink-0" />
-                            <span className="text-xs text-slate-700">{service}</span>
+                          <div key={idx} className="flex items-start gap-2 bg-slate-50 rounded-lg px-2 md:px-3 py-1.5 md:py-2">
+                            <CheckCircle2 className="w-3 h-3 md:w-3.5 md:h-3.5 text-[#283852] flex-shrink-0 mt-0.5" />
+                            <span className="text-[10px] md:text-xs text-slate-700 leading-tight">{service}</span>
                           </div>
                         ))}
                       </div>
 
                       {/* CTA Button */}
                       <Link to="/contact">
-                        <Button className="w-full bg-[#283852] hover:bg-[#283852]/90 text-white rounded-lg h-10 text-sm font-medium shadow-md transition-all duration-300">
+                        <Button className="w-full bg-[#283852] hover:bg-[#283852]/90 text-white rounded-lg h-9 md:h-10 text-xs md:text-sm font-medium shadow-md transition-all duration-300">
                           Get a Quote
-                          <ArrowRight className="ml-2 h-4 w-4" />
+                          <ArrowRight className="ml-2 h-3.5 w-3.5 md:h-4 md:w-4" />
                         </Button>
                       </Link>
                     </div>
