@@ -23,10 +23,45 @@ const Contact = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
+    
+    const form = e.currentTarget;
+    const formDataToSend = new FormData(form);
+    
+    try {
+      const response = await fetch('https://formspree.io/f/manrlgbb', {
+        method: 'POST',
+        body: formDataToSend,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        alert('Thank you for your message! We will get back to you soon.');
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          subject: '',
+          message: ''
+        });
+        form.reset();
+      } else {
+        const data = await response.json();
+        if (data.errors) {
+          alert('There was an error: ' + JSON.stringify(data.errors));
+        } else {
+          alert('There was an error sending your message. Please try again.');
+        }
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error sending your message. Please try again.');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -161,7 +196,7 @@ const Contact = () => {
                   </div>
                 </div>
                 
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form onSubmit={handleSubmit} action="https://formspree.io/f/manrlgbb" method="POST" className="space-y-4">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-medium text-slate-700 mb-1.5">Full Name *</label>
