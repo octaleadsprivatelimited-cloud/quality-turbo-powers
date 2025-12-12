@@ -60,10 +60,10 @@ const Industries = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Helmet>
-        <title>Industries We Serve | Quality Turbine Power Services - Power Plants, Petrochemicals, Steel, Cement</title>
-        <meta name="description" content="Serving power generation, petrochemicals, steel plants, cement, fertilizers, oil & gas, and manufacturing industries. Quality Turbine provides specialized rotating equipment solutions including turbine overhauls, compressor services, generator maintenance, and industrial equipment repair across diverse industrial sectors." />
+        <title>Industries We Serve | Quality Turbo Power Services - Power Plants, Petrochemicals, Steel, Cement</title>
+        <meta name="description" content="Serving power generation, petrochemicals, steel plants, cement, fertilizers, oil & gas, and manufacturing industries. Quality Turbo provides specialized rotating equipment solutions including turbine overhauls, compressor services, generator maintenance, and industrial equipment repair across diverse industrial sectors." />
         <meta name="keywords" content="power plant turbine services, petrochemical turbine maintenance, steel plant equipment services, cement industry turbine services, fertilizer plant maintenance, oil gas turbine services, sugar mill equipment, paper mill drives, industrial turbine services, thermal power plant services, combined cycle power plant, refinery rotating equipment, kiln drive systems, synthesis gas compressors, gas turbine maintenance" />
-        <meta property="og:title" content="Industries We Serve | Quality Turbine Power Services - Power Plants, Petrochemicals, Steel, Cement" />
+        <meta property="og:title" content="Industries We Serve | Quality Turbo Power Services - Power Plants, Petrochemicals, Steel, Cement" />
         <meta property="og:description" content="Specialized rotating equipment solutions across power generation, petrochemicals, steel, cement, fertilizers, oil & gas, and manufacturing industries." />
         <meta property="og:url" content="https://qualityturbopowerservices.com/industries" />
         <meta property="og:image" content="https://qualityturbopowerservices.com/logo.png" />

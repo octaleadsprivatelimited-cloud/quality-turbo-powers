@@ -40,7 +40,7 @@ const Footer = () => {
               <Link to="/" className="inline-block mb-3 md:mb-4 group h-16 md:h-20 lg:h-16 overflow-hidden">
                 <img 
                   src={logoImg} 
-                  alt="Quality Turbine Power Services" 
+                  alt="Quality Turbo Power Services" 
                   className="h-16 md:h-20 lg:h-16 w-auto object-contain group-hover:scale-105 transition-transform"
                 />
               </Link>
@@ -162,7 +162,7 @@ const Footer = () => {
         <div className="border-t border-white/10 py-3 md:py-4">
           <div className="flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 text-center px-4">
             <span className="text-white/70 text-xs md:text-sm">
-              © {new Date().getFullYear()} Quality Turbine Power Services. All rights reserved.
+              © {new Date().getFullYear()} Quality Turbo Power Services. All rights reserved.
             </span>
             <span className="hidden md:inline text-white/40">•</span>
             <a 

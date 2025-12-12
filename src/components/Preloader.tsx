@@ -34,7 +34,7 @@ const Preloader = () => {
         <div className="relative">
           <img
             src={logoImg}
-            alt="Quality Turbine Power Services"
+            alt="Quality Turbo Power Services"
             className="h-32 w-auto md:h-40 lg:h-48 object-contain animate-pulse"
           />
           {/* Spinning loader ring */}

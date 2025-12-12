@@ -12,11 +12,11 @@ const NotFound = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">
       <Helmet>
-        <title>404 - Page Not Found | Quality Turbine Power Services</title>
-        <meta name="description" content="The page you are looking for could not be found. Return to Quality Turbine Power Services homepage for turbine services, erection, commissioning, overhauls, repairs, and maintenance solutions." />
-        <meta name="keywords" content="404, page not found, Quality Turbine Power Services" />
-        <meta property="og:title" content="404 - Page Not Found | Quality Turbine Power Services" />
-        <meta property="og:description" content="The page you are looking for could not be found. Return to Quality Turbine Power Services homepage." />
+        <title>404 - Page Not Found | Quality Turbo Power Services</title>
+        <meta name="description" content="The page you are looking for could not be found. Return to Quality Turbo Power Services homepage for turbine services, erection, commissioning, overhauls, repairs, and maintenance solutions." />
+        <meta name="keywords" content="404, page not found, Quality Turbo Power Services" />
+        <meta property="og:title" content="404 - Page Not Found | Quality Turbo Power Services" />
+        <meta property="og:description" content="The page you are looking for could not be found. Return to Quality Turbo Power Services homepage." />
         <meta property="og:url" content="https://qualityturbopowerservices.com/404" />
         <meta property="og:image" content="https://qualityturbopowerservices.com/logo.png" />
         <meta property="og:type" content="website" />

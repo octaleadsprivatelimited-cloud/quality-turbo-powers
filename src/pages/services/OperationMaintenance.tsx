@@ -30,10 +30,10 @@ const OperationMaintenance = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden font-sans">
       <Helmet>
-        <title>Operation & Maintenance | Quality Turbine Power Services - Power Plant O&M Services</title>
+        <title>Operation & Maintenance | Quality Turbo Power Services - Power Plant O&M Services</title>
         <meta name="description" content="Comprehensive operation and maintenance services for power plants. Preventive & predictive maintenance, condition monitoring, utility services, and 24/7 support to maximize uptime and optimize performance. Fully integrated power plant operations and maintenance for optimal efficiency." />
         <meta name="keywords" content="power plant operation services, turbine maintenance services, preventive maintenance, predictive maintenance services, condition monitoring, O&M services, plant operations support, power plant maintenance, utility services, 24/7 plant support, industrial plant maintenance, rotating equipment maintenance, plant performance optimization, maintenance planning services" />
-        <meta property="og:title" content="Operation & Maintenance | Quality Turbine Power Services - Power Plant O&M Services" />
+        <meta property="og:title" content="Operation & Maintenance | Quality Turbo Power Services - Power Plant O&M Services" />
         <meta property="og:description" content="Professional O&M services for power plants with 24/7 support, condition monitoring, and preventive maintenance." />
         <meta property="og:url" content="https://qualityturbopowerservices.com/services/operation-maintenance" />
         <meta property="og:image" content="https://qualityturbopowerservices.com/logo.png" />

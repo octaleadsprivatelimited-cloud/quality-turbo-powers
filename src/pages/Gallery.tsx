@@ -71,10 +71,10 @@ const Gallery = () => {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Gallery | Quality Turbine Power Services - Turbine Projects & Engineering Solutions</title>
+        <title>Gallery | Quality Turbo Power Services - Turbine Projects & Engineering Solutions</title>
         <meta name="description" content="View our comprehensive project gallery showcasing turbine erection, commissioning, overhauls, repairs, and maintenance projects. See our expertise in STG sets, turbine blowers, compressors, DG sets, and rotating equipment solutions across power plants, petrochemicals, steel, cement, and other industries." />
         <meta name="keywords" content="turbine project gallery, turbine services photos, power plant projects gallery, turbine overhaul gallery, industrial equipment gallery, turbine maintenance projects, turbine erection photos, turbine commissioning gallery, STG sets projects, turbine blowers gallery, turbine compressors projects, DG sets maintenance, rotating equipment gallery, Quality Turbo Power Services projects" />
-        <meta property="og:title" content="Gallery | Quality Turbine Power Services - Turbine Projects & Engineering Solutions" />
+        <meta property="og:title" content="Gallery | Quality Turbo Power Services - Turbine Projects & Engineering Solutions" />
         <meta property="og:description" content="View our comprehensive project gallery showcasing turbine erection, commissioning, overhauls, repairs, and maintenance projects across various industries." />
         <meta property="og:url" content="https://qualityturbopowerservices.com/gallery" />
         <meta property="og:image" content="https://qualityturbopowerservices.com/logo.png" />

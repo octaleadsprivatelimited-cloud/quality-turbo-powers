@@ -31,10 +31,10 @@ const RepairReconditioning = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden font-sans">
       <Helmet>
-        <title>Repair & Reconditioning | Quality Turbine Power Services - Advanced Turbine Component Repair</title>
+        <title>Repair & Reconditioning | Quality Turbo Power Services - Advanced Turbine Component Repair</title>
         <meta name="description" content="Specialized repair and reconditioning services for turbine blades, rotors, bearings, gearboxes, and compressor components. Advanced CNC machining, specialized welding, dynamic balancing, and quality assurance. Expert repair services using sophisticated machines for all rotating equipment." />
         <meta name="keywords" content="turbine blade repair, rotor reconditioning, bearing repair services, gearbox repair, compressor repair services, turbine welding services, dynamic balancing services, turbine machining, CNC machining turbine parts, turbine component repair, rotating equipment reconditioning, turbine refurbishment, industrial equipment repair, precision turbine repair" />
-        <meta property="og:title" content="Repair & Reconditioning | Quality Turbine Power Services - Advanced Turbine Component Repair" />
+        <meta property="og:title" content="Repair & Reconditioning | Quality Turbo Power Services - Advanced Turbine Component Repair" />
         <meta property="og:description" content="Expert repair and reconditioning of rotating equipment using sophisticated machines and advanced techniques." />
         <meta property="og:url" content="https://qualityturbopowerservices.com/services/repair-reconditioning" />
         <meta property="og:image" content="https://qualityturbopowerservices.com/logo.png" />

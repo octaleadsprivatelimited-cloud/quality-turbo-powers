@@ -130,10 +130,10 @@ const CompletedProjects = () => {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Completed Projects | Quality Turbine Power Services - Successful Turbine Projects Across India</title>
+        <title>Completed Projects | Quality Turbo Power Services - Successful Turbine Projects Across India</title>
         <meta name="description" content="View our completed projects including turbine erection, commissioning, and overhauling services across India. Successfully completed projects for Siemens TG sets, BHEL turbines, power plants, cement industries, sugar mills, and fertilizer plants in Karnataka, Andhra Pradesh, Madhya Pradesh, Chhattisgarh, Himachal Pradesh, Maharashtra, and more." />
         <meta name="keywords" content="completed turbine projects, turbine erection projects India, turbine commissioning projects, turbine overhaul projects, Siemens TG set projects, BHEL turbine projects, power plant projects India, cement industry turbine projects, sugar mill turbine projects, fertilizer plant turbine services, industrial turbine projects, Quality Turbo Power Services completed projects, turbine projects Karnataka, turbine projects Andhra Pradesh" />
-        <meta property="og:title" content="Completed Projects | Quality Turbine Power Services - Successful Turbine Projects Across India" />
+        <meta property="og:title" content="Completed Projects | Quality Turbo Power Services - Successful Turbine Projects Across India" />
         <meta property="og:description" content="View our completed projects including turbine erection, commissioning, and overhauling services across India for various industries." />
         <meta property="og:url" content="https://qualityturbopowerservices.com/completed-projects" />
         <meta property="og:image" content="https://qualityturbopowerservices.com/logo.png" />

@@ -30,10 +30,10 @@ const ErectionCommissioning = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden font-sans">
       <Helmet>
-        <title>Erection & Commissioning Services | Quality Turbine Power Services - STG Sets, Turbine Blowers, Compressors</title>
+        <title>Erection & Commissioning Services | Quality Turbo Power Services - STG Sets, Turbine Blowers, Compressors</title>
         <meta name="description" content="Professional erection and commissioning services for STG sets, turbine blowers, turbine compressors, DG sets, gas turbines, and centrifugal pumps. Expert installation, testing, and commissioning in Hyderabad. World-class quality using advanced technology for power plants, petrochemicals, steel, cement, and other industries." />
         <meta name="keywords" content="turbine erection services, turbine commissioning services, STG sets installation, turbine blower installation, turbine compressor commissioning, power plant erection, gas turbine commissioning, DG sets commissioning, centrifugal pump installation, steam turbine generator erection, turbine installation Hyderabad, power plant commissioning services, industrial equipment erection, rotating equipment commissioning" />
-        <meta property="og:title" content="Erection & Commissioning Services | Quality Turbine Power Services - STG Sets, Turbine Blowers, Compressors" />
+        <meta property="og:title" content="Erection & Commissioning Services | Quality Turbo Power Services - STG Sets, Turbine Blowers, Compressors" />
         <meta property="og:description" content="World-class erection and commissioning services for rotating equipment with committed quality using advanced technology." />
         <meta property="og:url" content="https://qualityturbopowerservices.com/services/erection-commissioning" />
         <meta property="og:image" content="https://qualityturbopowerservices.com/logo.png" />
