@@ -28,9 +28,9 @@ const Contact = () => {
     
     const form = e.currentTarget;
     const formDataToSend = new FormData(form);
-    
+
     try {
-      const response = await fetch('https://formspree.io/f/manrlgbb', {
+      const response = await fetch('https://formspree.io/f/xnnekqek', {
         method: 'POST',
         body: formDataToSend,
         headers: {
@@ -195,8 +195,8 @@ const Contact = () => {
                     <p className="text-xs text-slate-500">We'll get back to you within 24 hours</p>
                   </div>
                 </div>
-                
-                <form onSubmit={handleSubmit} action="https://formspree.io/f/manrlgbb" method="POST" className="space-y-4">
+
+                <form onSubmit={handleSubmit} action="https://formspree.io/f/xnnekqek" method="POST" className="space-y-4">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-medium text-slate-700 mb-1.5">Full Name *</label>
