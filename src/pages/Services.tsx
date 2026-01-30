@@ -10,7 +10,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 // Import service images
 import industriesImage from "@/assets/industries.jpg";
 import erectionImg from "@/assets/erection-commissioning.png";
-import troubleshootingImg from "@/assets/troubleshooting-overhauls.jpg";
+import troubleshootingImg from "@/assets/Overhauls2.jpeg";
 import repairImg from "@/assets/repair-reconditioning.jpg";
 import maintenanceImg from "@/assets/operation-maintenance.png";
 

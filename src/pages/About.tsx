@@ -11,6 +11,7 @@ import iconCommitment from "@/assets/icon-commitment.png";
 import iconIntegrity from "@/assets/icon-integrity.png";
 import iconQuality from "@/assets/icon-quality.png";
 import iconSatisfaction from "@/assets/icon-satisfaction.png";
+import nandaClientLogo from "@/assets/Nanda Client.png";
 
 const About = () => {
   const strengths = [
@@ -325,6 +326,10 @@ const About = () => {
               { 
                 name: "Client 3", 
                 logo: "/clients/client-3.jpeg" 
+              },
+              { 
+                name: "Nanda Client", 
+                logo: nandaClientLogo 
               },
             ].map((client, index) => (
               <div

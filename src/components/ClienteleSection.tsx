@@ -1,4 +1,5 @@
 import { useState } from "react";
+import nandaClientLogo from "@/assets/Nanda Client.png";
 
 const ClienteleSection = () => {
   const [imageErrors, setImageErrors] = useState<Set<number>>(new Set());
@@ -15,6 +16,10 @@ const ClienteleSection = () => {
     { 
       name: "Client 3", 
       logo: "/clients/client-3.jpeg" 
+    },
+    { 
+      name: "Nanda Client", 
+      logo: nandaClientLogo 
     },
   ];
 

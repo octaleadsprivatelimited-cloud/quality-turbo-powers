@@ -59,11 +59,11 @@ const Footer = () => {
                   </div>
                 </div>
                 <a 
-                  href="mailto:qualityturboservices@gmail.com" 
+                  href="mailto:info@qualityturbopowerservices.com" 
                   className="flex items-center gap-2 md:gap-3 text-white/80 hover:text-white transition-colors group"
                 >
                   <Mail className="w-3.5 md:w-4 h-3.5 md:h-4 text-[#9ee055] flex-shrink-0" />
-                  <span className="text-xs md:text-sm break-all">qualityturboservices@gmail.com</span>
+                  <span className="text-xs md:text-sm break-all">info@qualityturbopowerservices.com</span>
                 </a>
                 <a 
                   href="tel:+919492121315" 
@@ -78,6 +78,13 @@ const Footer = () => {
                 >
                   <Phone className="w-3.5 md:w-4 h-3.5 md:h-4 text-[#9ee055] flex-shrink-0" />
                   <span className="text-xs md:text-sm">+91 94921 25536</span>
+                </a>
+                <a 
+                  href="tel:+9185442462064" 
+                  className="flex items-center gap-2 md:gap-3 text-white/80 hover:text-white transition-colors group"
+                >
+                  <Phone className="w-3.5 md:w-4 h-3.5 md:h-4 text-[#9ee055] flex-shrink-0" />
+                  <span className="text-xs md:text-sm">08542 462064</span>
                 </a>
               </div>
 

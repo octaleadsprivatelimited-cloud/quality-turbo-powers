@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 // Import service images
 import erectionImg from "@/assets/erection-commissioning.png";
-import troubleshootingImg from "@/assets/troubleshooting-overhauls.jpg";
+import troubleshootingImg from "@/assets/Overhauls2.jpeg";
 import repairImg from "@/assets/repair-reconditioning.jpg";
 import manufacturingImg from "@/assets/manufacturing.webp";
 import operationMaintenanceImg from "@/assets/operation-maintenance.png";

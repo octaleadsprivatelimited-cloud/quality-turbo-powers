@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Wrench, CheckCircle2, ArrowRight, Phone, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import industriesImage from "@/assets/industries.jpg";
+import overhaulsImage from "@/assets/Overhauls2.jpeg";
 
 const TroubleshootingOverhauls = () => {
   const { ref: contentRef, isVisible: contentVisible } = useScrollAnimation();
@@ -48,7 +48,7 @@ const TroubleshootingOverhauls = () => {
       <section className="relative pt-24 pb-16 overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src={industriesImage} 
+            src={overhaulsImage} 
             alt="Troubleshooting & Overhauls" 
             className="w-full h-full object-cover object-center brightness-110 contrast-125 saturate-110" 
           />
