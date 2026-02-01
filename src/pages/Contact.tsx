@@ -78,7 +78,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      details: ["info@qualityturbopowerservices.com"],
+      details: ["info@qualityturbopowerservices.com", "qualityturboservices@gmail.com"],
       color: "from-[#283852] to-[#9ee055]"
     },
     {
@@ -106,7 +106,7 @@ const Contact = () => {
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Helmet>
         <title>Contact Us | Quality Turbo Power Services - Get Expert Turbine Solutions | Hyderabad</title>
-        <meta name="description" content="Contact Quality Turbo Power Services for expert turbine solutions. Located in Patancheru, Hyderabad - 509 319. 24/7 emergency support available. Call +91 94921 21315, +91 94921 25536, 08542 462064 or email info@qualityturbopowerservices.com. Expert team ready to assist with turbine erection, commissioning, overhauls, repairs, and maintenance." />
+        <meta name="description" content="Contact Quality Turbo Power Services for expert turbine solutions. Located in Patancheru, Hyderabad - 509 319. 24/7 emergency support available. Call +91 94921 21315, +91 94921 25536, 08542 462064 or email info@qualityturbopowerservices.com, qualityturboservices@gmail.com. Expert team ready to assist with turbine erection, commissioning, overhauls, repairs, and maintenance." />
         <meta name="keywords" content="contact quality turbo power services, turbine services Hyderabad contact, Patancheru turbine company, emergency turbine support 24/7, power plant services contact, industrial equipment services contact, turbine repair contact, turbine maintenance contact, turbine erection services contact, Hyderabad turbine experts phone" />
         <meta property="og:title" content="Contact Us | Quality Turbo Power Services - Get Expert Turbine Solutions" />
         <meta property="og:description" content="Get in touch for turbine solutions. Located in Hyderabad with 24/7 emergency support. Expert team ready to assist." />

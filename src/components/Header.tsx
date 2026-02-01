@@ -79,7 +79,11 @@ const Header = () => {
               </a>
                 <a href="mailto:info@qualityturbopowerservices.com" className="flex items-center gap-1.5 hover:text-[#9ee055] transition-colors">
                 <Mail className="w-3 h-3" />
-                <span>info@qualityturbopowerservices.com</span>
+                <span className="text-[10px]">info@qualityturbopowerservices.com</span>
+              </a>
+                <a href="mailto:qualityturboservices@gmail.com" className="flex items-center gap-1.5 hover:text-[#9ee055] transition-colors">
+                <Mail className="w-3 h-3" />
+                <span>qualityturboservices@gmail.com</span>
               </a>
             </div>
             <div className="text-slate-400">
@@ -325,7 +329,16 @@ const Header = () => {
                 <div className="w-8 h-8 bg-[#9ee055]/10 rounded-lg flex items-center justify-center">
                   <Mail className="w-4 h-4 text-[#283852]" />
                 </div>
-                <span className="text-xs">info@qualityturbopowerservices.com</span>
+                <span className="text-[10px]">info@qualityturbopowerservices.com</span>
+              </a>
+              <a 
+                href="mailto:qualityturboservices@gmail.com" 
+                className="flex items-center gap-3 px-4 py-2 text-sm text-slate-600 rounded-lg active:bg-slate-300 transition-colors"
+              >
+                <div className="w-8 h-8 bg-[#9ee055]/10 rounded-lg flex items-center justify-center">
+                  <Mail className="w-4 h-4 text-[#283852]" />
+                </div>
+                <span className="text-xs">qualityturboservices@gmail.com</span>
               </a>
               <div className="flex flex-col gap-2 mt-4">
                 <a 

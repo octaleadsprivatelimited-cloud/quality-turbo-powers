@@ -63,7 +63,14 @@ const Footer = () => {
                   className="flex items-center gap-2 md:gap-3 text-white/80 hover:text-white transition-colors group"
                 >
                   <Mail className="w-3.5 md:w-4 h-3.5 md:h-4 text-[#9ee055] flex-shrink-0" />
-                  <span className="text-xs md:text-sm break-all">info@qualityturbopowerservices.com</span>
+                  <span className="text-[10px] md:text-xs break-all">info@qualityturbopowerservices.com</span>
+                </a>
+                <a 
+                  href="mailto:qualityturboservices@gmail.com" 
+                  className="flex items-center gap-2 md:gap-3 text-white/80 hover:text-white transition-colors group"
+                >
+                  <Mail className="w-3.5 md:w-4 h-3.5 md:h-4 text-[#9ee055] flex-shrink-0" />
+                  <span className="text-xs md:text-sm break-all">qualityturboservices@gmail.com</span>
                 </a>
                 <a 
                   href="tel:+919492121315" 
